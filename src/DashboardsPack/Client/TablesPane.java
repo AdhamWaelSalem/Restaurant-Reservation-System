@@ -7,10 +7,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.text.TextAlignment;
 
 import javax.swing.*;
 import java.net.URL;
@@ -22,7 +24,6 @@ public class TablesPane implements Initializable{
 
     @FXML
     GridPane Gridpane = new GridPane();
-
     List<JFXButton> tab = new ArrayList<>();
 
     @Override
@@ -30,7 +31,10 @@ public class TablesPane implements Initializable{
         int i=0,j=0;
         for (Table table : Restaurant.getRestaurant().getTables()) {
             JFXButton b = new JFXButton(table.info());
+            b.setStyle("-fx-text-fill: WHITE;-fx-font-size: 12PX;-fx-alignment: CENTER");
+            b.setTextAlignment(TextAlignment.CENTER);
             tab.add(b);
+            GridPane.setFillHeight(b,true);
             GridPane.setConstraints(b,i,j/2);
             Gridpane.getChildren().add(b);
             if(i==0)
