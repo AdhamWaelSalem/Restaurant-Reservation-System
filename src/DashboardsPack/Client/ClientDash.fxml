@@ -9,11 +9,11 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardsPack.Client.ClientDash">
    <children>
       <AnchorPane prefHeight="500.0" prefWidth="180.0" style="-fx-background-radius: 0.5cm; -fx-border-radius: 0.5cm; -fx-background-color: #061b33;">
          <children>
-            <JFXButton alignment="BASELINE_LEFT" layoutX="-5.0" layoutY="258.0" prefWidth="175.0" text="Reservations" textFill="WHITE">
+            <JFXButton fx:id="reservations" alignment="BASELINE_LEFT" layoutX="-5.0" layoutY="258.0" onAction="#TablesPane" prefWidth="175.0" text="Reservations" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
@@ -95,9 +95,9 @@
                </children>
             </AnchorPane>
          </children></AnchorPane>
-      <StackPane layoutX="175.0" prefHeight="500.0" prefWidth="575.0">
+      <StackPane fx:id="stackPane" layoutX="175.0" prefHeight="500.0" prefWidth="575.0" style="-fx-background-radius: 0.5cm; -fx-border-radius: 0.5cm;">
          <children>
-            <AnchorPane prefHeight="500.0" prefWidth="575.0" style="-fx-background-radius: 0.5cm; -fx-border-radius: 0.5cm; -fx-background-color: #124583;">
+            <AnchorPane fx:id="anchorPane" prefHeight="500.0" prefWidth="575.0" style="-fx-background-radius: 0.5cm; -fx-border-radius: 0.5cm; -fx-background-color: #124583;">
                <effect>
                   <DropShadow height="0.0" radius="12.0" width="50.0" />
                </effect>

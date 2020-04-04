@@ -53,9 +53,9 @@ public class Table extends ReserveItem{
         String info,smoking="Non Smoking";
         if (this.smoking)
             smoking="Smoking";
-        info = "Number: " + this.number + "\n" +
-                "Number Of Seats: " + this.numberOfSeats + "\n" +
-                smoking + "\n" + "Location: " + location.toString();
+        info = "Table " + this.number + "\n" +
+                this.numberOfSeats + " Seats\n" +
+                smoking + "\n" + location.toString();
         return info;
     }
 }
