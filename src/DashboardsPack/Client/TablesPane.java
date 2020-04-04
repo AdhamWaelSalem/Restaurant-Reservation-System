@@ -43,12 +43,12 @@ public class TablesPane implements Initializable {
                 break;
             }
         }
-
-        restaurant.getTables().get(i).Reserve();
-        System.out.println(restaurant.getTables().get(i).getNumber());
-        Reservation reservation = new Reservation(restaurant.getTables().get(i), Calendar.getInstance().getTime());
-        restaurant.addReservation(reservation);
-
+        if (!restaurant.getTables().get(i).isReserved()) {
+            restaurant.getTables().get(i).Reserve();
+           // System.out.println(restaurant.getTables().get(i).getNumber());
+            Reservation reservation = new Reservation(restaurant.getTables().get(i), Calendar.getInstance().getTime());
+            restaurant.addReservation(reservation);
+        }
     }
 
     public Client getClient(Client client) {
@@ -61,7 +61,7 @@ public class TablesPane implements Initializable {
                 int i;
                 if (event.getPickResult().getIntersectedNode().getStyle().equals("-fx-background-color: GREEN"))
                     event.getPickResult().getIntersectedNode().setStyle("-fx-text-fill: WHITE;-fx-font-size: 12PX;-fx-alignment: CENTER");
-                else {
+                else if(event.getPickResult().getIntersectedNode().getStyle().equals("-fx-text-fill: WHITE;-fx-font-size: 12PX;-fx-alignment: CENTER")) {
                     for (i = 0; i < Gridpane.getChildren().size(); i++) {
                         if (Gridpane.getChildren().get(i).getStyle().equals("-fx-background-color: GREEN")) {
                             Gridpane.getChildren().get(i).setStyle("-fx-text-fill: WHITE;-fx-font-size: 12PX;-fx-alignment: CENTER");
@@ -72,7 +72,7 @@ public class TablesPane implements Initializable {
 
                 }
 
-            //    ConfirmReservation();
+                //    ConfirmReservation();
             });
 
         });
@@ -84,7 +84,9 @@ public class TablesPane implements Initializable {
         int i = 0, j = 0;
         for (Table table : Restaurant.getRestaurant().getTables()) {
             JFXButton b = new JFXButton(table.info());
+            if (!table.isReserved())
             b.setStyle("-fx-text-fill: WHITE;-fx-font-size: 12PX;-fx-alignment: CENTER");
+            else b.setStyle("-fx-background-color: RED");
             b.setTextAlignment(TextAlignment.CENTER);
             tab.add(b);
             GridPane.setHgrow(b, Priority.ALWAYS);

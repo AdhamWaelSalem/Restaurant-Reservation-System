@@ -2,21 +2,24 @@ package ReservationPack;
 
 import java.util.Random;
 
-public class Table extends ReserveItem{
+public class Table extends ReserveItem {
 
     private int number;
     private int numberOfSeats;
     private boolean smoking;
-    public enum Location{
+
+    public enum Location {
         Indoors,
         Outdoors
     }
+
     private Location location;
 
-    public static Location randomLocation(){
+    public static Location randomLocation() {
         Random random = new Random();
         return Location.values()[random.nextInt(Location.values().length)];
     }
+
     public int getNumber() {
         return number;
     }
@@ -49,10 +52,15 @@ public class Table extends ReserveItem{
         this.location = location;
     }
 
-    public String info(){
-        String info,smoking="Non Smoking";
+    ////
+    public boolean isReserved() {
+        return reserved;
+    }
+
+    public String info() {
+        String info, smoking = "Non Smoking";
         if (this.smoking)
-            smoking="Smoking";
+            smoking = "Smoking";
         info = "Table " + this.number + "\n" +
                 this.numberOfSeats + " Seats\n" +
                 smoking + "\n" + location.toString();
