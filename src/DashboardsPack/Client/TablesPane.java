@@ -34,6 +34,7 @@ public class TablesPane implements Initializable {
     GridPane Gridpane = new GridPane();
     List<JFXButton> tab = new ArrayList<>();
 
+
     public void ConfirmReservation() {
         Restaurant restaurant = Restaurant.getRestaurant();
         int i;
@@ -69,9 +70,11 @@ public class TablesPane implements Initializable {
                     }
                     event.getPickResult().getIntersectedNode().setStyle("-fx-background-color: GREEN");
 
-
                 }
+
+            //    ConfirmReservation();
             });
+
         });
 
     }
