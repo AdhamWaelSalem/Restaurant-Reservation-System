@@ -11,6 +11,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Priority;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.TextAlignment;
 
@@ -34,7 +35,8 @@ public class TablesPane implements Initializable{
             b.setStyle("-fx-text-fill: WHITE;-fx-font-size: 12PX;-fx-alignment: CENTER");
             b.setTextAlignment(TextAlignment.CENTER);
             tab.add(b);
-            GridPane.setFillHeight(b,true);
+            GridPane.setHgrow(b, Priority.ALWAYS);
+            GridPane.setVgrow(b, Priority.ALWAYS);
             GridPane.setConstraints(b,i,j/2);
             Gridpane.getChildren().add(b);
             if(i==0)
