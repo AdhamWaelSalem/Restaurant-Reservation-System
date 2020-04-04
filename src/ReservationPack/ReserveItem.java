@@ -1,7 +1,7 @@
 package ReservationPack;
 
 public abstract class ReserveItem {
-    public boolean reserved;
+    protected boolean reserved;
     public void Reserve(){
         this.reserved = true;
     }

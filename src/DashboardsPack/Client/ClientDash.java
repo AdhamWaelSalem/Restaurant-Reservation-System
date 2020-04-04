@@ -41,23 +41,31 @@ public class ClientDash implements Initializable {
 
     }
 
-    public void TablesPane(ActionEvent event) throws Exception{
+    public void TablesPane(ActionEvent event) throws Exception {
         Parent parent = FXMLLoader.load(getClass().getResource("TablesPane.fxml"));
         stackPane.getChildren().clear();
         stackPane.getChildren().add(parent);
     }
-    /*public void OrdersPane(ActionEvent event) throws Exception{
-        Parent parent = FXMLLoader.load(getClass().getResource("OrdersPane.fxml"));
+//LOL//
+    public void OrdersPane(ActionEvent event) throws Exception {
+        Parent parent = FXMLLoader.load(getClass().getResource("ClientOrdersPane.fxml"));
         stackPane.getChildren().clear();
         stackPane.getChildren().add(parent);
     }
-    public void FinancesPane(ActionEvent event) throws Exception{
+
+    public void FinancesPane(ActionEvent event) throws Exception {
         Parent parent = FXMLLoader.load(getClass().getResource("FinancesPane.fxml"));
         stackPane.getChildren().clear();
         stackPane.getChildren().add(parent);
     }
-    public void SignOut(ActionEvent event) throws Exception{
 
-    }*/
+    public void SignOut(ActionEvent event) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("../LoginDash.fxml"));
+        Scene Dashboard = new Scene(root);
+        Dashboard.setFill(Color.TRANSPARENT);
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(Dashboard);
+        stage.show();
+    }
 
 }

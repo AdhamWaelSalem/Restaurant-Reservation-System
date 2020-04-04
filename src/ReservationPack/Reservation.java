@@ -10,6 +10,7 @@ public class Reservation {
 
     private Client client;
     private List<ReserveItem> ReservedItems;
+    private Table table;
     private Date reservationDate;
     private String specialRequest;
 
@@ -20,6 +21,18 @@ public class Reservation {
         this.specialRequest = specialRequest;
     }
 
+    public Reservation(Table table,Date date) {
+        this.table=table;
+        this.reservationDate=date;
+    }
+
+    public Table getTable() {
+        return table;
+    }
+
+    public void setTable(Table table) {
+        this.table = table;
+    }
 
     public Client getClient() {
         return client;
@@ -53,9 +66,9 @@ public class Reservation {
         this.specialRequest = specialRequest;
     }
 
-    public String info(){
+    public String info() {
         String reservedItems = null;
-        for (ReserveItem reserveItem: this.ReservedItems) {
+        for (ReserveItem reserveItem : this.ReservedItems) {
             reservedItems.concat(reserveItem.getClass().toString() + "\n" + reserveItem.info());
         }
 

@@ -23,6 +23,7 @@ public class Restaurant {
     //Singleton Class
     private Restaurant() {
     }
+
     public static MainPack.Restaurant getRestaurant() {
         return Restaurant;
     }
@@ -58,6 +59,10 @@ public class Restaurant {
 
     public void setReservations(List<Reservation> reservations) {
         Reservations = reservations;
+    }
+
+    public void addReservation(Reservation reservation) {
+        this.Reservations.add(reservation);
     }
 
     public List<Order> getOrders() {
