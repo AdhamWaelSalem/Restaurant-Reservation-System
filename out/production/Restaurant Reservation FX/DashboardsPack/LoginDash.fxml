@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardsPack.LoginDash">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="380.0" style="-fx-background-radius: 0.5cm; -fx-border-radius: 0.5cm; -fx-background-color: #F7F7F7;">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="380.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Restaurant%20Logo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="370.0" prefHeight="500.0" prefWidth="380.0" style="-fx-background-radius: 0.5cm; -fx-border-radius: 0.5cm; -fx-background-color: #424242;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#424242" height="25.0" offsetX="-5.0" radius="18.25" width="50.0" />
+         </effect>
+         <children>
+            <VBox layoutX="40.0" layoutY="100.0" prefHeight="250.0" prefWidth="300.0" spacing="10.0">
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="35.0" prefWidth="300.0" text="Username" textFill="#f7f7f7" />
+                  <JFXTextField fx:id="usernameField" focusColor="#a85b40" labelFloat="true" onKeyPressed="#keyPressed" promptText="Enter Username" unFocusColor="#f7f7f7" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="35.0" prefWidth="300.0" text="Password" textFill="#f7f7f7" />
+                  <JFXPasswordField fx:id="passwordField" focusColor="#a85b40" labelFloat="true" onKeyReleased="#keyPressed" promptText="Enter Password" unFocusColor="#f7f7f7" />
+               </children>
+            </VBox>
+            <JFXButton fx:id="signIn" alignment="CENTER" buttonType="RAISED" layoutX="37.0" layoutY="352.0" onAction="#Login" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #F7F7F7;" text="Sign In" textAlignment="JUSTIFY" textFill="#424242" />
+         </children>
+      </AnchorPane>
+      <Accordion />
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="180.0" style="-fx-background-radius: 0.5cm; -fx-border-radius: 0.5cm; -fx-background-color: #061b33;">
+         <children>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="-5.0" layoutY="315.0" prefHeight="57.0" prefWidth="175.0" text="Orders" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/Menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="-4.0" layoutY="429.0" prefHeight="57.0" prefWidth="175.0" text="Sign Out" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <AnchorPane layoutX="-4.0" layoutY="14.0" prefHeight="175.0" prefWidth="175.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="89.0" prefHeight="35.0" prefWidth="130.0" text="Full Name" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="50.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/chef.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="23.0" layoutY="124.0" prefHeight="20.0" prefWidth="130.0" text="\@username" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="144.0" prefHeight="35.0" prefWidth="130.0" text="Chef" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane layoutX="175.0" prefHeight="500.0" prefWidth="575.0" style="-fx-background-radius: 0.5cm; -fx-border-radius: 0.5cm; -fx-background-color: #124583;">
+         <effect>
+            <DropShadow height="0.0" radius="12.0" width="50.0" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
