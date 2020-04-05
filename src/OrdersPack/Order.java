@@ -13,6 +13,9 @@ public class Order {
     private Date readyAt;
     private String specialRequest;
 
+    public Order() {
+    }
+
     public Order(List<OrderItem> OrderedItems, Date date) {
         this.OrderedItems = OrderedItems;
         this.readyAt = date;

@@ -9,4 +9,7 @@ public abstract class ReserveItem {
         this.reserved = false;
     }
     public String info(){return null;}
+    public boolean isReserved() {
+        return reserved;
+    }
 }

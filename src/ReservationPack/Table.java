@@ -53,9 +53,6 @@ public class Table extends ReserveItem {
     }
 
     ////
-    public boolean isReserved() {
-        return reserved;
-    }
 
     public String info() {
         String info, smoking = "Non Smoking";
