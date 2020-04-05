@@ -1,5 +1,6 @@
 package MainPack;
 
+import FinancesPack.Statement.IncomeStatement;
 import OrdersPack.Dish;
 import OrdersPack.Order;
 import OrdersPack.OrderItem;
@@ -12,14 +13,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Restaurant {
-
     private static Restaurant Restaurant = new Restaurant();
     private List<User> Users;
     private List<Table> Tables = new ArrayList<>();
     private List<Dish> Dishes = new ArrayList<>();
     private List<Reservation> Reservations = new ArrayList<>();
-    private List<Order> Orders;
-
+    private List<Order> Orders = new ArrayList<>();
+    private IncomeStatement incomeStatement = new IncomeStatement();
     //Singleton Class
     private Restaurant() {
     }
@@ -71,5 +71,15 @@ public class Restaurant {
 
     public void setOrders(List<Order> orders) {
         Orders = orders;
+    }
+
+    public List<String> getStatement(){
+        List<String> blank = new ArrayList<>();
+        blank.add("NO ORDERS MADE YET");
+        try {
+            return incomeStatement.getInfo();
+        }catch (NullPointerException e){
+            return blank;
+        }
     }
 }
