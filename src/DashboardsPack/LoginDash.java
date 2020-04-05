@@ -45,8 +45,6 @@ public class LoginDash implements Initializable {
             passwordField.setFocusColor(Color.FIREBRICK);
             passwordField.setUnFocusColor(Color.FIREBRICK);
         }
-
-
     }
 
     public void keyPressed(){

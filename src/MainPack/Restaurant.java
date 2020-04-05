@@ -78,8 +78,6 @@ public class Restaurant {
         blank.add("NO ORDERS MADE YET");
         try {
             return incomeStatement.getInfo();
-        }catch (NullPointerException e){
-            return blank;
-        }
+
     }
 }

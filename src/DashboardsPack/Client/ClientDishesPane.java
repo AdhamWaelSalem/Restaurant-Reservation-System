@@ -22,13 +22,10 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class ClientDishesPane extends ClientDash implements Initializable {
-    @FXML
-    protected StackPane stackPane;
+
     @FXML
     GridPane Gridpane = new GridPane();
     List<JFXButton> tab = new ArrayList<>();
-    @FXML
-    JFXButton jfxButton = new JFXButton();
     Client client = new Client();
 
 
@@ -71,10 +68,8 @@ public class ClientDishesPane extends ClientDash implements Initializable {
         for (Dish dish : Restaurant.getRestaurant().getDishes()) {
             JFXButton b = new JFXButton(dish.info());
             b.setStyle("-fx-text-fill: WHITE;-fx-font-size: 12PX;-fx-alignment: CENTER");
-            b.setTextAlignment(TextAlignment.CENTER);
+            b.setPrefWidth(287.5);
             tab.add(b);
-            GridPane.setHgrow(b, Priority.ALWAYS);
-            GridPane.setVgrow(b, Priority.ALWAYS);
             GridPane.setConstraints(b, i, j / 2);
             Gridpane.getChildren().add(b);
             if (i == 0)

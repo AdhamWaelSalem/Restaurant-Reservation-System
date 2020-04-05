@@ -27,12 +27,6 @@ public class ClientDash extends UserDash implements Initializable {
     @FXML
     private JFXButton reservations;
     @FXML
-    private JFXButton orders;
-    @FXML
-    private JFXButton finances;
-    @FXML
-    private JFXButton signOut;
-    @FXML
     private StackPane stackPane;
     @FXML
     private AnchorPane anchorPane;
@@ -55,7 +49,7 @@ public class ClientDash extends UserDash implements Initializable {
     }
 
     public void FinancesPane(ActionEvent event) throws Exception {
-        Parent parent = FXMLLoader.load(getClass().getResource("/FinancesPane.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource(""));
         stackPane.getChildren().clear();
         stackPane.getChildren().add(parent);
     }

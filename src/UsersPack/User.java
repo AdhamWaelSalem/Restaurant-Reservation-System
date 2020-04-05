@@ -15,7 +15,6 @@ public abstract class User {
     protected String lastName;
     protected String username;
     protected String password;
-    ///TO CHECK IF LOGGED IN
     protected boolean loggedIn;
     //Constructors
 
@@ -64,7 +63,7 @@ public abstract class User {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource(this.dashLocation()));
             Parent parent = loader.load();
-            Scene Dash = new Scene(parent,1000,500);
+            Scene Dash = new Scene(parent);
             S.setScene(Dash);
         } catch (IOException e) {
             e.printStackTrace();

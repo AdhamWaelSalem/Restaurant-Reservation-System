@@ -28,12 +28,10 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("../DashboardsPack/LoginDash.fxml"));
-        primaryStage.setTitle("Hello World");
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         Scene scene = new Scene(root,750,500);
-        primaryStage.setScene(scene);
         scene.setFill(Color.TRANSPARENT);
-
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 
