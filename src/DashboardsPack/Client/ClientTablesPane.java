@@ -28,7 +28,7 @@ import java.net.URL;
 import java.util.*;
 import java.util.List;
 
-public class TablesPane implements Initializable {
+public class ClientTablesPane implements Initializable {
 
     @FXML
     GridPane Gridpane = new GridPane();

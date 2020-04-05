@@ -44,19 +44,19 @@ public class ClientDash extends UserDash implements Initializable {
     }
 
     public void TablesPane(ActionEvent event) throws Exception {
-        Parent parent = FXMLLoader.load(getClass().getResource("TablesPane.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("ClientReservationPane.fxml"));
         stackPane.getChildren().clear();
         stackPane.getChildren().add(parent);
     }
-//LOL//
+
     public void OrdersPane(ActionEvent event) throws Exception {
-        Parent parent = FXMLLoader.load(getClass().getResource("ClientOrdersPane.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/ClientDishesPane.fxml"));
         stackPane.getChildren().clear();
         stackPane.getChildren().add(parent);
     }
 
     public void FinancesPane(ActionEvent event) throws Exception {
-        Parent parent = FXMLLoader.load(getClass().getResource("FinancesPane.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/FinancesPane.fxml"));
         stackPane.getChildren().clear();
         stackPane.getChildren().add(parent);
     }

@@ -1,12 +1,17 @@
 package DashboardsPack.Client;
 
+import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.layout.StackPane;
 
-public class ClientOrdersPane {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class ClientReservationPane{
     @FXML
     private StackPane stackPane;
     public void New(ActionEvent event) throws Exception {

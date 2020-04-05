@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="ABC">
-      <change beforePath="$PROJECT_DIR$/src/FinancesPack/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FinancesPack/Sales.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Pushed">
+      <change afterPath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientDishesPane.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientDishesPane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientReservationPane.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientReservationPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Client/ClientDash.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Client/ClientDash.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Client/ClientDash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Client/ClientDash.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientDash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientDash.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientDash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientDash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientOrdersPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientOrdersPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientOrdersPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientOrdersPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/TablesPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientTablesPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/TablesPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientTablesPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/UserDash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashboardsPack/UserDash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FinancesPack/IncomeStatement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FinancesPack/Invoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FinancesPack/Sales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UsersPack/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +114,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Jar Files/jfoenix-8.0.8.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/DashboardsPack/Client" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -119,6 +137,7 @@
       <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\DashboardsPack" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\DashboardsPack\Client" />
       <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\ManagerDashPack" />
     </key>
   </component>
@@ -297,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586059917545</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ABC">
+      <created>1586060223632</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586060223632</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +336,8 @@
     <MESSAGE value="Commit Number 3" />
     <MESSAGE value="lol" />
     <MESSAGE value="ABC" />
-    <option name="LAST_COMMIT_MESSAGE" value="ABC" />
+    <MESSAGE value="Pushed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pushed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="397" y="22" key="#Main" timestamp="1585959703636">
@@ -326,10 +353,10 @@
     </state>
     <state x="197" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1585959893687" />
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1585922134356" />
-    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1586060213995">
+    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1586065472736">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1586060213995" />
+    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1586065472736" />
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586042291642" />
     <state x="442" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585982326551">
       <screen x="0" y="0" width="1360" height="728" />
@@ -340,35 +367,35 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="528" y="293" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1585925851434" />
-    <state x="201" y="0" key="CommitChangelistDialog2" timestamp="1586059914473">
+    <state x="201" y="0" key="CommitChangelistDialog2" timestamp="1586060259192">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="201" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1586059914473" />
+    <state x="201" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1586060259192" />
     <state x="227" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586043172122" />
     <state x="277" y="150" width="588" height="481" key="FileChooserDialogImpl" timestamp="1586045623603">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="277" y="150" width="588" height="481" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1586045623603" />
     <state x="473" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586033300178" />
-    <state width="1317" height="2" key="GridCell.Tab.0.bottom" timestamp="1586059869651">
+    <state width="1317" height="129" key="GridCell.Tab.0.bottom" timestamp="1586066713047">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="2" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1586059869651" />
+    <state width="1317" height="129" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1586066713047" />
     <state width="1493" height="95" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586042822112" />
-    <state width="1317" height="2" key="GridCell.Tab.0.center" timestamp="1586059869651">
+    <state width="1317" height="129" key="GridCell.Tab.0.center" timestamp="1586066713047">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="2" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1586059869651" />
+    <state width="1317" height="129" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1586066713047" />
     <state width="1493" height="95" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586042822111" />
-    <state width="1317" height="2" key="GridCell.Tab.0.left" timestamp="1586059869651">
+    <state width="1317" height="129" key="GridCell.Tab.0.left" timestamp="1586066713047">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="2" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1586059869651" />
+    <state width="1317" height="129" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1586066713047" />
     <state width="1493" height="95" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586042822111" />
-    <state width="1317" height="2" key="GridCell.Tab.0.right" timestamp="1586059869651">
+    <state width="1317" height="129" key="GridCell.Tab.0.right" timestamp="1586066713047">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="2" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1586059869651" />
+    <state width="1317" height="129" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1586066713047" />
     <state width="1493" height="95" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586042822112" />
     <state width="1317" height="223" key="GridCell.Tab.1.bottom" timestamp="1586055425013">
       <screen x="0" y="0" width="1360" height="728" />
@@ -395,10 +422,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="527" y="279" key="VCS.ChangelistChooser/0.0.1360.728@0.0.1360.728" timestamp="1586047145157" />
-    <state x="320" y="128" key="Vcs.Push.Dialog.v2" timestamp="1586059919809">
+    <state x="320" y="128" key="Vcs.Push.Dialog.v2" timestamp="1586060226437">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="320" y="128" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1586059919809" />
+    <state x="320" y="128" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1586060226437" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586039761870" />
     <state x="376" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1586001366445">
       <screen x="0" y="0" width="1360" height="728" />

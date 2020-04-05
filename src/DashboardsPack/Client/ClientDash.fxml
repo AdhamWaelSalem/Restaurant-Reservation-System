@@ -95,7 +95,7 @@
                </children>
             </AnchorPane>
          </children></AnchorPane>
-      <StackPane fx:id="stackPane" layoutX="175.0" prefHeight="500.0" prefWidth="575.0" style="-fx-background-radius: 0.5cm; -fx-border-radius: 0.5cm;">
+      <StackPane fx:id="stackPane" layoutX="165.0" prefHeight="500.0" prefWidth="585.0" style="-fx-background-radius: 0.5cm; -fx-border-radius: 0.5cm;">
          <children>
             <AnchorPane fx:id="anchorPane" prefHeight="500.0" prefWidth="575.0" style="-fx-background-radius: 0.5cm; -fx-border-radius: 0.5cm; -fx-background-color: #124583;">
                <effect>

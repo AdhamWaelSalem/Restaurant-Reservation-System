@@ -18,8 +18,8 @@ import java.util.List;
 
 public class Client extends User {
 
-    private List<Reservation> Reservations = new ArrayList<>();
-    private List<Order> Orders = new ArrayList<>();
+    private Reservation reservation;
+    private Order order;
     private int starPoints; //User get points for discounts and offers
 
     public Client(String username, String password, String firstName, String lastName) {
@@ -32,16 +32,16 @@ public class Client extends User {
     public void MakeReservation(List<ReserveItem> reserveItems, Date reservationDate, String specialRequests) {
         for (ReserveItem item: reserveItems) { item.Reserve(); }
         Reservation reservation = new Reservation(this,reserveItems,reservationDate,specialRequests);
-        starPoints += 10;
-        this.Reservations.add(reservation);
+        this.reservation=reservation;
         Restaurant.getRestaurant().getReservations().add(reservation);
+        starPoints += 10;
     }
 
-    public void CancelReservation(Reservation reservation) {
+    public void CancelReservation() {
         for (ReserveItem item: reservation.getReservedItems()) { item.Free(); }
         starPoints -= 10;
-        this.Reservations.remove(reservation);
         Restaurant.getRestaurant().getReservations().remove(reservation);
+        reservation=null;
     }
 
 
@@ -49,7 +49,6 @@ public class Client extends User {
         Order order = new Order();
         /*TODO: MAKE ORDER CODE*/
         starPoints++;
-        this.Orders.add(order);
     }
 
     @Override
