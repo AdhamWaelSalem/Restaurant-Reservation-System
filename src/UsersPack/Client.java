@@ -33,6 +33,14 @@ public class Client extends User {
 
     }
 
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
+    }
+
     public void MakeReservation(List<ReserveItem> reserveItems, Date reservationDate, String specialRequests) {
         for (ReserveItem item: reserveItems) { item.Reserve(); }
         Reservation reservation = new Reservation(this,reserveItems,reservationDate,specialRequests);
