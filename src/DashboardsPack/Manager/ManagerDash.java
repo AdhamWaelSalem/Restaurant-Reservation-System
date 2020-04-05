@@ -1,9 +1,11 @@
 package DashboardsPack.Manager;
 
+import DashboardsPack.UserDash;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -18,7 +20,7 @@ import javafx.stage.StageStyle;
 
 import java.awt.*;
 
-public class ManagerDash {
+public class ManagerDash extends UserDash {
 
     @FXML
     private JFXButton reservations;
