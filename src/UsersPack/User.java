@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLOutput;
 
 public abstract class User {
 
@@ -63,9 +64,9 @@ public abstract class User {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource(this.dashLocation()));
+            Parent parent = loader.load();
             UserDash userDash = loader.getController();
             userDash.setUser(this);
-            Parent parent = loader.load();
             Scene Dash = new Scene(parent);
             S.setScene(Dash);
         } catch (IOException e) {

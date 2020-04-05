@@ -3,6 +3,7 @@ package DashboardsPack.Client;
 import DashboardsPack.UserDash;
 import MainPack.Restaurant;
 import UsersPack.Client;
+import UsersPack.User;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -68,5 +69,4 @@ public class ClientDash extends UserDash implements Initializable {
         stage.setScene(Dashboard);
         stage.show();
     }
-
 }
