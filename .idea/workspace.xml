@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="ABC">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Client/ClientDash.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Client/ClientDash.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientDash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientDash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/UserDash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashboardsPack/UserDash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersPack/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FinancesPack/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FinancesPack/Sales.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586056547579</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ABC">
+      <created>1586059917545</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586059917545</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,10 +326,10 @@
     </state>
     <state x="197" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1585959893687" />
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1585922134356" />
-    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1586059503321">
+    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1586060213995">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1586059503321" />
+    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1586060213995" />
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586042291642" />
     <state x="442" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585982326551">
       <screen x="0" y="0" width="1360" height="728" />
@@ -338,10 +340,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="528" y="293" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1585925851434" />
-    <state x="201" y="0" key="CommitChangelistDialog2" timestamp="1586056545238">
+    <state x="201" y="0" key="CommitChangelistDialog2" timestamp="1586059914473">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="201" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1586056545238" />
+    <state x="201" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1586059914473" />
     <state x="227" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586043172122" />
     <state x="277" y="150" width="588" height="481" key="FileChooserDialogImpl" timestamp="1586045623603">
       <screen x="0" y="0" width="1360" height="728" />
@@ -393,10 +395,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="527" y="279" key="VCS.ChangelistChooser/0.0.1360.728@0.0.1360.728" timestamp="1586047145157" />
-    <state x="320" y="128" key="Vcs.Push.Dialog.v2" timestamp="1586056549814">
+    <state x="320" y="128" key="Vcs.Push.Dialog.v2" timestamp="1586059919809">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="320" y="128" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1586056549814" />
+    <state x="320" y="128" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1586059919809" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586039761870" />
     <state x="376" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1586001366445">
       <screen x="0" y="0" width="1360" height="728" />

@@ -8,22 +8,28 @@ import java.util.List;
 
 public class Sales {
     private List<OrderItem> orderItems = new ArrayList<>();
-    private float salesAmount;
-    private float taxesAmount;
+
     public float getSalesAmount(){
-        float f=0;
+        float salesAmount=0;
         for (OrderItem order: this.orderItems) {
-            f+=order.getPrice();
+            salesAmount+=order.getPrice();
         }
-        this.salesAmount=f;
-        return this.salesAmount;
+        return salesAmount;
     }
+
     public float getTaxesAmount(){
-        float f=0;
+        float taxesAmount=0;
         for (OrderItem order: this.orderItems) {
-            f+=order.getPrice()*order.getTaxes();
+            taxesAmount+=order.getPrice()*order.getTaxes();
         }
-        this.taxesAmount=f;
-        return this.taxesAmount;
+        return taxesAmount;
+    }
+
+    public List<OrderItem> getOrderItems() {
+        return orderItems;
+    }
+
+    public void setOrderItems(List<OrderItem> orderItems) {
+        this.orderItems = orderItems;
     }
 }
