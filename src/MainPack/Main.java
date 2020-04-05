@@ -1,5 +1,6 @@
 package MainPack;
 
+import DashboardsPack.UserDash;
 import XMLPack.LoadXML;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -16,7 +17,6 @@ import javafx.stage.StageStyle;
 public class Main extends Application {
 
     Restaurant Restaurant = MainPack.Restaurant.getRestaurant();
-
     @Override
     public void init() throws Exception {
         LoadXML xml = new LoadXML();
@@ -28,14 +28,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("../DashboardsPack/LoginDash.fxml"));
-
-        //DRAFT CODE FOR LOGIN - Start
-        Button signIn = new Button("Sign In");
-        TextField username = new TextField();
-        PasswordField password = new PasswordField();
-
-        //DRAFT CODE FOR LOGIN - END
-
         primaryStage.setTitle("Hello World");
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         Scene scene = new Scene(root,750,500);

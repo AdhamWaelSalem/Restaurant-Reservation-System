@@ -36,6 +36,7 @@ public class LoginDash implements Initializable {
         for (User user : Restaurant.getUsers()) {
             if (user.getUsername().equals(usernameField.getText()) && user.getPassword().equals(passwordField.getText())) {
                 found = true;
+                user.setLoggedIn(true);
                 user.login((Stage) ((Node) event.getSource()).getScene().getWindow());
             }
         } if (!found){

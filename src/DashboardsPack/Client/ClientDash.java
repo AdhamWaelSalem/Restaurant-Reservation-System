@@ -22,7 +22,6 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-
 public class ClientDash extends UserDash implements Initializable {
 
     @FXML
@@ -37,10 +36,14 @@ public class ClientDash extends UserDash implements Initializable {
     private StackPane stackPane;
     @FXML
     private AnchorPane anchorPane;
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        for (User user: Restaurant.getRestaurant().getUsers()) {
+            if (user.isLoggedIn()){
+                this.user = user;
+            }
+        }
+        System.out.println(user.getUsername()+"LOGGED IN");
     }
 
     public void TablesPane(ActionEvent event) throws Exception {
