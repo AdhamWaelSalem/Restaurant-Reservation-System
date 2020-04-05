@@ -1,5 +1,13 @@
 package UsersPack;
 
+import DashboardsPack.UserDash;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
 public class Chef extends Employee {
     public Chef(String username, String password, String firstName, String lastName) {
         this.username = username;
@@ -8,7 +16,13 @@ public class Chef extends Employee {
         this.lastName = lastName;
     }
     @Override
-    public String login() {
-        return "Chef/ChefDash.fxml";
+    public float getDailyWages() {
+        this.dailyWages= (float) 22.5;
+        return this.dailyWages;
+    }
+
+    @Override
+    public String dashLocation(){
+        return "/DashboardsPack/Chef/ChefDash.fxml";
     }
 }

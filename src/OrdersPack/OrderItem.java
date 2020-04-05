@@ -4,6 +4,7 @@ public abstract class OrderItem {
 
     protected String name;
     protected int price;
+    protected float taxes;
 
     public String getName() {
         return name;
@@ -19,5 +20,13 @@ public abstract class OrderItem {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public float getTaxes() {
+        return taxes;
+    }
+
+    public void setTaxes(float taxes) {
+        this.taxes = taxes;
     }
 }

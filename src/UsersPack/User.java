@@ -1,5 +1,13 @@
 package UsersPack;
 
+import DashboardsPack.UserDash;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
 public abstract class User {
 
     //Attributes
@@ -51,9 +59,21 @@ public abstract class User {
         this.password = password;
     }
 
-    public String login() {
-        return null;
+    public void login(Stage S){
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource(this.dashLocation()));
+            UserDash userDash = loader.getController();
+            userDash.setUser(this);
+            Parent parent = loader.load();
+            Scene Dash = new Scene(parent);
+            S.setScene(Dash);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
+
+    public String dashLocation(){return null;}
 
     public void logout() {
     }

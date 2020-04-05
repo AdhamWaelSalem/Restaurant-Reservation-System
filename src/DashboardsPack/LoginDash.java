@@ -36,11 +36,7 @@ public class LoginDash implements Initializable {
         for (User user : Restaurant.getUsers()) {
             if (user.getUsername().equals(usernameField.getText()) && user.getPassword().equals(passwordField.getText())) {
                 found = true;
-                Parent parent = FXMLLoader.load(getClass().getResource(user.login()));
-                Scene Dashboard = new Scene(parent);
-                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                stage.setScene(Dashboard);
-                stage.show();
+                user.login((Stage) ((Node) event.getSource()).getScene().getWindow());
             }
         } if (!found){
             usernameField.setFocusColor(Color.FIREBRICK);

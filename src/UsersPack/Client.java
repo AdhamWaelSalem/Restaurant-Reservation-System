@@ -1,10 +1,17 @@
 package UsersPack;
 
+import DashboardsPack.Client.ClientDash;
+import DashboardsPack.UserDash;
 import MainPack.Restaurant;
 import OrdersPack.Order;
 import ReservationPack.Reservation;
 import ReservationPack.ReserveItem;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -46,7 +53,7 @@ public class Client extends User {
     }
 
     @Override
-    public String login() {
-        return "Client/ClientDash.fxml";
+    public String dashLocation(){
+        return "/DashboardsPack/Client/ClientDash.fxml";
     }
 }

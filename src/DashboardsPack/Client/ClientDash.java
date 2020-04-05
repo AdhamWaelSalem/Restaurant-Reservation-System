@@ -1,5 +1,6 @@
 package DashboardsPack.Client;
 
+import DashboardsPack.UserDash;
 import MainPack.Restaurant;
 import UsersPack.Client;
 import com.jfoenix.controls.JFXButton;
@@ -21,7 +22,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class ClientDash implements Initializable {
+public class ClientDash extends UserDash implements Initializable {
 
     @FXML
     private JFXButton reservations;

@@ -22,6 +22,17 @@ public class Dish extends OrderItem {
         this.type = type;
     }
 
+    @Override
+    public float getTaxes() {
+        if (type.equals(Type.MainCourse))
+            this.taxes= (float) 0.15;
+        else if (type.equals(Type.Appetizer))
+            this.taxes= (float) 0.1;
+        else if (type.equals(Type.Dessert))
+            this.taxes= (float) 0.2;
+        return this.taxes;
+    }
+
     public String info() {
         String info;
         info = this.type.toString() + "\n" +
