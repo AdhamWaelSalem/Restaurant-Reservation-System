@@ -10,7 +10,8 @@ public class ClientOrdersPane {
     @FXML
     private StackPane stackPane;
     public void New(ActionEvent event) throws Exception {
-        Parent parent = FXMLLoader.load(getClass().getResource(""));
+        System.out.println("hi");
+        Parent parent = FXMLLoader.load(getClass().getResource("ClientTablesPane.fxml"));
         stackPane.getChildren().clear();
         stackPane.getChildren().add(parent);
     }

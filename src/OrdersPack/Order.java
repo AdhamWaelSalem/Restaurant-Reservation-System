@@ -3,6 +3,7 @@ package OrdersPack;
 import ReservationPack.ReserveItem;
 import UsersPack.Client;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -16,8 +17,9 @@ public class Order {
     public Order() {
     }
 
-    public Order(List<OrderItem> OrderedItems, Date date) {
+    public Order(List<OrderItem> OrderedItems, Client client, Date date) {
         this.OrderedItems = OrderedItems;
         this.readyAt = date;
+        this.client = client;
     }
 }

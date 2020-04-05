@@ -29,6 +29,10 @@ public class Client extends User {
         this.lastName = lastName;
     }
 
+    public Client() {
+
+    }
+
     public void MakeReservation(List<ReserveItem> reserveItems, Date reservationDate, String specialRequests) {
         for (ReserveItem item: reserveItems) { item.Reserve(); }
         Reservation reservation = new Reservation(this,reserveItems,reservationDate,specialRequests);

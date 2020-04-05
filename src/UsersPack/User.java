@@ -64,7 +64,7 @@ public abstract class User {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource(this.dashLocation()));
             Parent parent = loader.load();
-            Scene Dash = new Scene(parent);
+            Scene Dash = new Scene(parent,1000,500);
             S.setScene(Dash);
         } catch (IOException e) {
             e.printStackTrace();

@@ -21,7 +21,7 @@ public class Reservation {
         this.specialRequest = specialRequest;
     }
 
-    public Reservation(Table table,Date date) {
+    public Reservation(Client client,Table table,Date date) {
         this.table=table;
         this.reservationDate=date;
     }

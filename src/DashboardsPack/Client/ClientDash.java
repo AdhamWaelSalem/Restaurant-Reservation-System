@@ -36,24 +36,20 @@ public class ClientDash extends UserDash implements Initializable {
     private StackPane stackPane;
     @FXML
     private AnchorPane anchorPane;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        for (User user: Restaurant.getRestaurant().getUsers()) {
-            if (user.isLoggedIn()){
-                this.user = user;
-            }
-        }
-        System.out.println(user.getUsername()+"LOGGED IN");
+
     }
 
     public void TablesPane(ActionEvent event) throws Exception {
-        Parent parent = FXMLLoader.load(getClass().getResource("ClientReservationPane.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("ClientOrdersPane.fxml"));
         stackPane.getChildren().clear();
         stackPane.getChildren().add(parent);
     }
 
     public void OrdersPane(ActionEvent event) throws Exception {
-        Parent parent = FXMLLoader.load(getClass().getResource("/ClientDishesPane.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("ClientDishesPane.fxml"));
         stackPane.getChildren().clear();
         stackPane.getChildren().add(parent);
     }

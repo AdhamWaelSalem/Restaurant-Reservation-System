@@ -4,11 +4,14 @@ import MainPack.Restaurant;
 import OrdersPack.Dish;
 import OrdersPack.Order;
 import OrdersPack.OrderItem;
+import UsersPack.Client;
+import UsersPack.User;
 import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
+import javafx.scene.layout.StackPane;
 import javafx.scene.text.TextAlignment;
 
 import java.awt.*;
@@ -18,12 +21,16 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class ClientDishesPane implements Initializable {
+public class ClientDishesPane extends ClientDash implements Initializable {
+    @FXML
+    protected StackPane stackPane;
     @FXML
     GridPane Gridpane = new GridPane();
     List<JFXButton> tab = new ArrayList<>();
     @FXML
     JFXButton jfxButton = new JFXButton();
+    Client client = new Client();
+
 
     public void confirmOrder() {
         Restaurant restaurant = Restaurant.getRestaurant();
@@ -33,8 +40,15 @@ public class ClientDishesPane implements Initializable {
             if (Gridpane.getChildren().get(i).getStyle().equals("-fx-background-color: GREEN"))
                 OrderedItems.add(restaurant.getDishes().get(i));
         }
-        order = new Order(OrderedItems, Calendar.getInstance().getTime());
-        restaurant.getOrders().add(order);
+        for (User user : Restaurant.getRestaurant().getUsers()) {
+            if (user.isLoggedIn()) {
+                client = (Client) user;
+                order = new Order(OrderedItems, client, Calendar.getInstance().getTime());
+                restaurant.getOrders().add(order);
+                break;
+            }
+        }
+
 
     }
 
@@ -53,6 +67,7 @@ public class ClientDishesPane implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         int i = 0, j = 0;
+
         for (Dish dish : Restaurant.getRestaurant().getDishes()) {
             JFXButton b = new JFXButton(dish.info());
             b.setStyle("-fx-text-fill: WHITE;-fx-font-size: 12PX;-fx-alignment: CENTER");

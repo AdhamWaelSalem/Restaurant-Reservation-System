@@ -1,9 +1,11 @@
 package DashboardsPack.Client;
 
 import MainPack.Restaurant;
+import OrdersPack.Order;
 import ReservationPack.Reservation;
 import ReservationPack.Table;
 import UsersPack.Client;
+import UsersPack.User;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
@@ -24,18 +26,20 @@ import javafx.scene.text.TextAlignment;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 import java.net.URL;
 import java.util.*;
 import java.util.List;
 
-public class ClientTablesPane implements Initializable {
+public class ClientTablesPane extends ClientDash implements Initializable {
 
     @FXML
     GridPane Gridpane = new GridPane();
     List<JFXButton> tab = new ArrayList<>();
+    Client client = new Client();
 
 
-    public void ConfirmReservation() {
+    public void ConfirmReservation(ActionEvent event) throws Exception {
         Restaurant restaurant = Restaurant.getRestaurant();
         int i;
         for (i = 0; i < Gridpane.getChildren().size(); i++) {
@@ -45,10 +49,18 @@ public class ClientTablesPane implements Initializable {
         }
         if (!restaurant.getTables().get(i).isReserved()) {
             restaurant.getTables().get(i).Reserve();
-           // System.out.println(restaurant.getTables().get(i).getNumber());
-            Reservation reservation = new Reservation(restaurant.getTables().get(i), Calendar.getInstance().getTime());
-            restaurant.addReservation(reservation);
+            for (User user : Restaurant.getRestaurant().getUsers()) {
+                if (user.isLoggedIn()) {
+                    client = (Client) user;
+                    Reservation reservation = new Reservation(client, restaurant.getTables().get(i), Calendar.getInstance().getTime());
+                    restaurant.addReservation(reservation);
+                    break;
+                }
+            }
+
         }
+        //OrdersPane(event);
+
     }
 
     public Client getClient(Client client) {
@@ -61,7 +73,7 @@ public class ClientTablesPane implements Initializable {
                 int i;
                 if (event.getPickResult().getIntersectedNode().getStyle().equals("-fx-background-color: GREEN"))
                     event.getPickResult().getIntersectedNode().setStyle("-fx-text-fill: WHITE;-fx-font-size: 12PX;-fx-alignment: CENTER");
-                else if(event.getPickResult().getIntersectedNode().getStyle().equals("-fx-text-fill: WHITE;-fx-font-size: 12PX;-fx-alignment: CENTER")) {
+                else if (event.getPickResult().getIntersectedNode().getStyle().equals("-fx-text-fill: WHITE;-fx-font-size: 12PX;-fx-alignment: CENTER")) {
                     for (i = 0; i < Gridpane.getChildren().size(); i++) {
                         if (Gridpane.getChildren().get(i).getStyle().equals("-fx-background-color: GREEN")) {
                             Gridpane.getChildren().get(i).setStyle("-fx-text-fill: WHITE;-fx-font-size: 12PX;-fx-alignment: CENTER");
@@ -85,7 +97,7 @@ public class ClientTablesPane implements Initializable {
         for (Table table : Restaurant.getRestaurant().getTables()) {
             JFXButton b = new JFXButton(table.info());
             if (!table.isReserved())
-            b.setStyle("-fx-text-fill: WHITE;-fx-font-size: 12PX;-fx-alignment: CENTER");
+                b.setStyle("-fx-text-fill: WHITE;-fx-font-size: 12PX;-fx-alignment: CENTER");
             else b.setStyle("-fx-background-color: RED");
             b.setTextAlignment(TextAlignment.CENTER);
             tab.add(b);

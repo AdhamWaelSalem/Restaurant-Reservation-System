@@ -18,7 +18,7 @@ public class Restaurant {
     private List<Table> Tables = new ArrayList<>();
     private List<Dish> Dishes = new ArrayList<>();
     private List<Reservation> Reservations = new ArrayList<>();
-    private List<Order> Orders;
+    private List<Order> Orders= new ArrayList<>();
 
     //Singleton Class
     private Restaurant() {
