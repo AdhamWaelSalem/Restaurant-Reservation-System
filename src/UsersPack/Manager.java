@@ -1,28 +1,30 @@
 package UsersPack;
 
-import DashboardsPack.UserDash;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
-import java.io.IOException;
-
 public class Manager extends Employee {
-    public Manager(String username, String password, String firstName, String lastName) {
-        this.username = username;
-        this.password = password;
-        this.firstName = firstName;
-        this.lastName = lastName;
+
+    //Constructor
+
+    public Manager() {
     }
-    @Override
-    public float getDailyWages() {
-        this.dailyWages= (float) 30;
-        return this.dailyWages;
+    public Manager(String name, String username, String password) {
+        super(name, username, password);
     }
 
+    //Methods
     @Override
     public String dashLocation(){
-        return "/DashboardsPack/Manager/ManagerDash.fxml";
+        return "/Dashboards/Manager/Home.fxml";
+    }
+
+    @Override
+    public float getWages() {
+        Wages = (float)120;
+        return Wages;
+    }
+
+    @Override
+    public Access getAccess() {
+        access = Access.Full;
+        return access;
     }
 }

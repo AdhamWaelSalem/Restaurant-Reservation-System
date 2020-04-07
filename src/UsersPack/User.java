@@ -1,6 +1,5 @@
 package UsersPack;
 
-import DashboardsPack.UserDash;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -11,35 +10,44 @@ import java.io.IOException;
 public abstract class User {
 
     //Attributes
-    protected String firstName;
-    protected String lastName;
+    protected String name;
     protected String username;
     protected String password;
     protected boolean loggedIn;
-    //Constructors
 
-    public boolean isLoggedIn() {
-        return loggedIn;
+    //Constructor
+    public User() {
+    }
+    public User(String name, String username, String password) {
+        this.name = name;
+        this.username = username;
+        this.password = password;
     }
 
-    public void setLoggedIn(boolean loggedIn) {
-        this.loggedIn = loggedIn;
+    //Methods
+    public void login(Stage S){
+        this.setLoggedIn(true);
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource(this.dashLocation()));
+            Parent parent = loader.load();
+            Scene Dash = new Scene(parent);
+            S.setScene(Dash);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public String dashLocation(){
+        return null;
     }
 
-    public String getFirstName() {
-        return firstName;
+    //Getters and Setters
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getUsername() {
@@ -58,24 +66,11 @@ public abstract class User {
         this.password = password;
     }
 
-    public void login(Stage S){
-        try {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource(this.dashLocation()));
-            Parent parent = loader.load();
-            Scene Dash = new Scene(parent);
-            S.setScene(Dash);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public boolean isLoggedIn() {
+        return loggedIn;
     }
 
-    public String dashLocation(){return null;}
-
-    public void logout() {
-    }
-
-    public String info(){
-        return this.firstName + " " + this.lastName;
+    public void setLoggedIn(boolean loggedIn) {
+        this.loggedIn = loggedIn;
     }
 }

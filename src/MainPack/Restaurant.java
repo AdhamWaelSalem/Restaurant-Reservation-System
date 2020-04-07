@@ -1,34 +1,34 @@
 package MainPack;
 
-import FinancesPack.Statement.IncomeStatement;
-import OrdersPack.Dish;
+//import Finances.Statement.IncomeStatement;
 import OrdersPack.Order;
 import OrdersPack.OrderItem;
 import ReservationPack.Reservation;
 import ReservationPack.ReserveItem;
-import ReservationPack.Table;
 import UsersPack.User;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Restaurant {
-    private static Restaurant Restaurant = new Restaurant();
-    private List<User> Users;
-    private List<Table> Tables = new ArrayList<>();
-    private List<Dish> Dishes = new ArrayList<>();
+
+    //Attributes
+    private List<User> Users = new ArrayList<>();
+    private List<ReserveItem> ReserveItems = new ArrayList<>();
+    private List<OrderItem> OrderItems = new ArrayList<>();
     private List<Reservation> Reservations = new ArrayList<>();
     private List<Order> Orders = new ArrayList<>();
-    private IncomeStatement incomeStatement = new IncomeStatement();
-    //Singleton Class
-    private Restaurant() {
-    }
+    //private IncomeStatement IncomeStatement;
 
+    //Singleton Class
+    private static Restaurant Restaurant = new Restaurant();
     public static MainPack.Restaurant getRestaurant() {
         return Restaurant;
     }
 
+    //Methods
 
+    //Getters and Setter
     public List<User> getUsers() {
         return Users;
     }
@@ -37,20 +37,20 @@ public class Restaurant {
         Users = users;
     }
 
-    public List<Table> getTables() {
-        return Tables;
+    public List<ReserveItem> getReserveItems() {
+        return ReserveItems;
     }
 
-    public void setTables(List<Table> tables) {
-        Tables = tables;
+    public void setReserveItems(List<ReserveItem> reserveItems) {
+        ReserveItems = reserveItems;
     }
 
-    public List<Dish> getDishes() {
-        return Dishes;
+    public List<OrderItem> getOrderItems() {
+        return OrderItems;
     }
 
-    public void setDishes(List<Dish> dishes) {
-        Dishes = dishes;
+    public void setOrderItems(List<OrderItem> orderItems) {
+        OrderItems = orderItems;
     }
 
     public List<Reservation> getReservations() {
@@ -61,10 +61,6 @@ public class Restaurant {
         Reservations = reservations;
     }
 
-    public void addReservation(Reservation reservation) {
-        this.Reservations.add(reservation);
-    }
-
     public List<Order> getOrders() {
         return Orders;
     }
@@ -73,11 +69,15 @@ public class Restaurant {
         Orders = orders;
     }
 
-    public List<String> getStatement(){
-        List<String> blank = new ArrayList<>();
-        blank.add("NO ORDERS MADE YET");
-        try {
-            return incomeStatement.getInfo();
+//    public Finances.Statement.IncomeStatement getIncomeStatement() {
+//        return IncomeStatement;
+//    }
 
+//    public void setIncomeStatement(Finances.Statement.IncomeStatement incomeStatement) {
+//        IncomeStatement = incomeStatement;
+//    }
+
+    public static void setRestaurant(MainPack.Restaurant restaurant) {
+        Restaurant = restaurant;
     }
 }

@@ -9,26 +9,15 @@ import java.util.List;
 
 public class Order {
 
-    private Client client;
     private List<OrderItem> OrderedItems;
-    private Date readyAt;
     private String specialRequest;
 
     public Order() {
     }
 
-    public Order(List<OrderItem> OrderedItems, Client client, Date date) {
-        this.OrderedItems = OrderedItems;
-        this.readyAt = date;
-        this.client = client;
-    }
-
-    public Client getClient() {
-        return client;
-    }
-
-    public void setClient(Client client) {
-        this.client = client;
+    public Order(List<OrderItem> orderedItems, String specialRequest) {
+        OrderedItems = orderedItems;
+        this.specialRequest = specialRequest;
     }
 
     public List<OrderItem> getOrderedItems() {
@@ -37,14 +26,6 @@ public class Order {
 
     public void setOrderedItems(List<OrderItem> orderedItems) {
         OrderedItems = orderedItems;
-    }
-
-    public Date getReadyAt() {
-        return readyAt;
-    }
-
-    public void setReadyAt(Date readyAt) {
-        this.readyAt = readyAt;
     }
 
     public String getSpecialRequest() {

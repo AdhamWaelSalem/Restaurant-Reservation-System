@@ -1,15 +1,25 @@
 package ReservationPack;
 
 public abstract class ReserveItem {
+
+    //Attributes
     protected boolean reserved;
+    protected boolean major;
+
+    //Constructor
+
+
+    //Methods
     public void Reserve(){
-        this.reserved = true;
+        reserved = true;
     }
     public void Free(){
-        this.reserved = false;
+        reserved = false;
     }
-    public String info(){return null;}
     public boolean isReserved() {
         return reserved;
+    }
+    public boolean isMajor() {
+        return major;
     }
 }

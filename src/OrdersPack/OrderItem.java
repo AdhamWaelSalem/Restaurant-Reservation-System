@@ -2,10 +2,20 @@ package OrdersPack;
 
 public abstract class OrderItem {
 
+    //Attributes
     protected String name;
     protected int price;
     protected float taxes;
 
+    //Constructor
+    public OrderItem() {
+    }
+    public OrderItem(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    //Getters and Setters
     public String getName() {
         return name;
     }

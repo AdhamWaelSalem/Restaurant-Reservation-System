@@ -2,26 +2,26 @@ package OrdersPack;
 
 public class Dish extends OrderItem {
 
+    //Attributes
     public enum Type {
         MainCourse,
         Appetizer,
         Dessert
     }
-
     private Type type;
 
-    public void setName(String name) {
-        this.name = name;
+    //Constructor
+    public Dish() {
     }
-
-    public void setPrice(int price) {
-        this.price = price;
+    public Dish(String name, int price) {
+        super(name, price);
     }
-
-    public void setType(Type type) {
+    public Dish(String name, int price, Type type) {
+        super(name, price);
         this.type = type;
     }
 
+    //Methods
     @Override
     public float getTaxes() {
         if (type.equals(Type.MainCourse))
@@ -32,14 +32,20 @@ public class Dish extends OrderItem {
             this.taxes= (float) 0.2;
         return this.taxes;
     }
-
-    public String info() {
+    /*public String info() {
         String info;
         info = this.type.toString() + "\n" +
                 this.name + "\n" +
                 "Price " + this.price + " $";
-
-
         return info;
+    }*/
+
+    //Getters and Setters
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
     }
 }

@@ -1,53 +1,53 @@
 package ReservationPack;
 
+import OrdersPack.Order;
 import UsersPack.Client;
-import UsersPack.User;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Reservation {
 
-    private Client client;
-    private List<ReserveItem> ReservedItems;
-    private Table table;
+    private List<ReserveItem> reservedItems = new ArrayList<>();
+    private Order order;
     private Date reservationDate;
     private String specialRequest;
 
-    public Reservation(Client client, List<ReserveItem> reservedItems, Date reservationDate, String specialRequest) {
-        this.client = client;
-        this.ReservedItems = reservedItems;
+    //Constructor
+
+    public Reservation() {
+    }
+    public Reservation(List<ReserveItem> reservedItems, Date reservationDate, String specialRequest) {
+        this.reservedItems = reservedItems;
         this.reservationDate = reservationDate;
         this.specialRequest = specialRequest;
     }
 
-    public Reservation(Client client,Table table,Date date) {
-        this.table=table;
-        this.reservationDate=date;
+    //Methods
+    public boolean valid(){
+        for (ReserveItem ri:reservedItems) {
+            if (ri.isMajor())
+                return true;
+        }
+        return false;
     }
 
-    public Table getTable() {
-        return table;
-    }
-
-    public void setTable(Table table) {
-        this.table = table;
-    }
-
-    public Client getClient() {
-        return client;
-    }
-
-    public void setClient(Client client) {
-        this.client = client;
-    }
-
+    //Getters and Setters
     public List<ReserveItem> getReservedItems() {
-        return ReservedItems;
+        return reservedItems;
     }
 
     public void setReservedItems(List<ReserveItem> reservedItems) {
-        ReservedItems = reservedItems;
+        this.reservedItems = reservedItems;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
 
     public Date getReservationDate() {
@@ -64,16 +64,5 @@ public class Reservation {
 
     public void setSpecialRequest(String specialRequest) {
         this.specialRequest = specialRequest;
-    }
-
-    public String info() {
-        String reservedItems = null;
-        for (ReserveItem reserveItem : this.ReservedItems) {
-            reservedItems.concat(reserveItem.getClass().toString() + "\n" + reserveItem.info());
-        }
-
-        return "Client: " + this.client.info() + "\n" +
-                "Date: " + this.reservationDate.toString() + "\n" +
-                "Reserved Items\n" + reservedItems;
     }
 }

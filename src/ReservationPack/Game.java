@@ -1,4 +1,5 @@
 package ReservationPack;
 
-public class Game {
+public class Game extends ReserveItem{
+
 }

@@ -15,12 +15,11 @@ import java.util.List;
 import java.util.Random;
 
 
-public class LoadXML {
+public abstract class LoadXML {
 
     XMLRestaurant Restaurant = new XMLRestaurant();
-    File source = new File("main.xml");
+    File source = new File("source.xml");
     JAXBContext jaxbContext;
-
     {
         try {
             jaxbContext = JAXBContext.newInstance(XMLRestaurant.class);
@@ -32,58 +31,38 @@ public class LoadXML {
     }
 
     public List<User> LoadUsers(){
-
         List<User> Users = new ArrayList<>();
-
         for (XMLUser xmluser: Restaurant.getXMLUsers().getXMLUsers() ) {
             User user;
             if (xmluser.getRole().equals("Client")){
-                user = new Client(xmluser.getUsername(),xmluser.getPassword(),xmluser.getName().split(" ",2)[0],xmluser.getName().split(" ",2)[1]);
+                user = new Client(xmluser.getName(),xmluser.getUsername(),xmluser.getPassword());
             }else if (xmluser.getRole().equals("Manager")){
-                user = new Manager(xmluser.getUsername(),xmluser.getPassword(),xmluser.getName().split(" ",2)[0],xmluser.getName().split(" ",2)[1]);
+                user = new Manager(xmluser.getName(),xmluser.getUsername(),xmluser.getPassword());
             }else if (xmluser.getRole().equals("Waiter")){
-                user = new Waiter(xmluser.getUsername(),xmluser.getPassword(),xmluser.getName().split(" ",2)[0],xmluser.getName().split(" ",2)[1]);
+                user = new Waiter(xmluser.getName(),xmluser.getUsername(),xmluser.getPassword());
             }else if (xmluser.getRole().equals("Cooker")){
-                user = new Chef(xmluser.getUsername(),xmluser.getPassword(),xmluser.getName().split(" ",2)[0],xmluser.getName().split(" ",2)[1]);
+                user = new Chef(xmluser.getName(),xmluser.getUsername(),xmluser.getPassword());
             }else { user = null; }
             Users.add(user);
-        }
-        return Users;
+        }return Users;
     }
     public List<Dish> LoadDishes() {
-
         List<Dish> Dishes = new ArrayList<>();
-
         for (XMLDish xmldish : Restaurant.getXMLDishes().getXMLDishes()) {
-            Dish dish = new Dish();
-            dish.setName(xmldish.getName());
-            dish.setPrice(xmldish.getPrice());
-
+            Dish dish = new Dish(xmldish.getName(),xmldish.getPrice());
             if (xmldish.getType().equals("main_course"))
                 dish.setType(Dish.Type.MainCourse);
             else if (xmldish.getType().equals("appetizer"))
                 dish.setType(Dish.Type.Appetizer);
             else if (xmldish.getType().equals("desert"))
                 dish.setType(Dish.Type.Dessert);
-
             Dishes.add(dish);
-        }
-
-        return Dishes;
+        }return Dishes;
     }
-
     public List<Table> LoadTables() {
         List<Table> Tables = new ArrayList<>();
-
         for (XMLTable xmltable : Restaurant.getXMLTables().getXMLTables()) {
-            Table table = new Table();
-            table.setNumber(xmltable.getNumber());
-            table.setNumberOfSeats(xmltable.getNumberOfSeats());
-            table.setSmoking(xmltable.getSmoking());
-            table.setLocation(Table.randomLocation());
-            Tables.add(table);
-        }
-
-        return Tables;
+            Tables.add(new Table(xmltable.getNumber(),xmltable.getNumberOfSeats(),xmltable.getSmoking()));
+        }return Tables;
     }
 }

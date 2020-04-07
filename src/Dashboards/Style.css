@@ -1,0 +1,78 @@
+.parent {
+    -fx-background-color: TRANSPARENT;
+}
+
+.dark-panel {
+    -fx-background-color: #45515F;
+}
+
+.main-buttons {
+    -fx-background-color: TRANSPARENT;
+    -fx-background-radius: 0px;
+    -fx-text-fill: TRANSPARENT;
+}
+.orders-buttons {
+    -fx-background-color: TRANSPARENT;
+    -fx-background-radius: 0px;
+    -fx-text-fill: WHITE;
+}
+.orders-buttons:hover {
+    -fx-background-color: TRANSPARENT;
+    -fx-background-radius: 0px;
+    -fx-border-color: BLACK;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-border-radius: 0px;
+    -fx-text-fill: BLACK;
+}
+
+.main-buttons:hover {
+    -fx-background-color: TRANSPARENT;
+    -fx-background-radius: 0px;
+    -fx-border-color: #F3A978;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-border-radius: 0px;
+    -fx-text-fill: TRANSPARENT;
+}
+
+.main-buttons:hover.icons {
+    -fx-fill: WHITE;
+}
+
+.buttons {
+    -fx-background-color: #596575;
+    -fx-background-radius: 0px;
+    -fx-text-fill: WHITE;
+}
+.buttons:hover{
+    -fx-background-color: #F3A978;
+    -fx-background-radius: 0px;
+    -fx-text-fill: WHITE;
+}
+.icons {
+    -fx-fill: #596575;
+}
+/*.circle{
+    -fx-background-color: 100%;
+    -fx-border-radius: 100%;
+    -fx-border-color: #596575;
+    -fx-border-width: 2px;
+}*/
+.label {
+    -fx-background-color: TRANSPARENT;
+    -fx-background-radius: 0px;
+    -fx-text-fill: WHITE;
+}
+.text {
+    -fx-background-color: TRANSPARENT;
+    -fx-background-radius: 0px;
+    -fx-text-fill: BLACK;
+}
+.text:hover{
+    -fx-border-color: WHITE;
+    -fx-background-radius: 0px;
+    -fx-text-fill: BLACK;
+}
+.loggedIn{
+    -fx-background-color: #00cc33;
+    -fx-background-radius: 100%;
+}

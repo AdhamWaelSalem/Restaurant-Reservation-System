@@ -1,28 +1,30 @@
 package UsersPack;
 
-import DashboardsPack.UserDash;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
-import java.io.IOException;
-
 public class Chef extends Employee {
-    public Chef(String username, String password, String firstName, String lastName) {
-        this.username = username;
-        this.password = password;
-        this.firstName = firstName;
-        this.lastName = lastName;
+
+    //Constructor
+    public Chef() {
     }
-    @Override
-    public float getDailyWages() {
-        this.dailyWages= (float) 22.5;
-        return this.dailyWages;
+    public Chef(String name, String username, String password) {
+        super(name, username, password);
     }
 
+    //Methods
     @Override
     public String dashLocation(){
-        return "/DashboardsPack/Chef/ChefDash.fxml";
+        return "/Dashboards/Chef/Home.fxml";
     }
+
+    @Override
+    public float getWages() {
+        Wages = (float)75.25;
+        return Wages;
+    }
+
+    @Override
+    public Access getAccess() {
+        access = Access.Minimum;
+        return access;
+    }
+
 }

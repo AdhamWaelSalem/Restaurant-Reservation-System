@@ -1,28 +1,30 @@
 package UsersPack;
 
-import DashboardsPack.UserDash;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
-import java.io.IOException;
-
 public class Waiter extends Employee {
-    public Waiter(String username, String password, String firstName, String lastName) {
-        this.username = username;
-        this.password = password;
-        this.firstName = firstName;
-        this.lastName = lastName;
+
+    //Constructor
+
+    public Waiter() {
     }
-    @Override
-    public float getDailyWages() {
-        this.dailyWages= (float) 17.75;
-        return this.dailyWages;
+    public Waiter(String name, String username, String password) {
+        super(name, username, password);
     }
 
+    //Methods
     @Override
     public String dashLocation(){
-        return "/DashboardsPack/Waiter/WaiterDash.fxml";
+        return "/Dashboards/Waiter/Home.fxml";
+    }
+
+    @Override
+    public float getWages() {
+        Wages = (float)55.5;
+        return Wages;
+    }
+
+    @Override
+    public Access getAccess() {
+        access = Access.Partial;
+        return access;
     }
 }
