@@ -49,7 +49,7 @@ public class Tables implements Initializable {
             if (t instanceof Table){
                 TableDetails D = new TableDetails();
                 D.setTable("Table "+((Table) t).getNumber());
-                D.setSeats(((Table) t).getNumberOfSeats()+ "Seats");
+                D.setSeats(((Table) t).getNumberOfSeats()+ " Seats");
                 D.setSmoking(((Table) t).isSmoking() ? "Smoking" : "Non Smoking");
                 D.setLocation(((Table) t).getLocation().toString());
                 D.setReserve(new JFXToggleButton());

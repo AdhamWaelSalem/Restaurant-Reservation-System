@@ -1,171 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Fy Amal">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/scenebuilder_kit_8_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Chef/ChefMainScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Chef/Home.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Chef/Orders.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Chef/ViewOrders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/Appetizers.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/ClientMainScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/ClientProfileDash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/Desserts.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/Home.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/MainCourses.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/Orders.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/OrdersDash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/Profile.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/Reservations.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Food.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/AddEmployee.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/AddNewEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Employee.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Employees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Finances.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Home.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/ManagerFinances.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/ManagerMainScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/ManagerOrders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/ManagerReservation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Orders.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Reservations.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/ViewEmployee.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/ViewEmployees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Profile.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/ProfileDash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Waiter/Home.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Waiter/Reservations.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Waiter/ViewReservations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/Waiter/WaiterMainScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dashboards/members.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FXML/TableDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FXML/Tables.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FXML/Tables.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Restaurant.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Z/Client/ClientDishesPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Z/Client/ClientTablesPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Z/LoginDash.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Z/LoginDash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Z/Manager/OrdersPane.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="TableView">
+      <change afterPath="$PROJECT_DIR$/src/FXML/DishDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FXML/Dishes.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FXML/Dishes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurant Reservation FX.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant Reservation FX.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/source.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Chef/ChefDash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Chef/ChefDash.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Client/ClientDash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Client/ClientDash.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/ItemsToBeReserved.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/ItemsToBeReserved.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/LoginDash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/LoginDash.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Manager/FinancesPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Manager/FinancesPane.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Manager/ManagerDash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Manager/ManagerDash.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Manager/OrdersPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Manager/OrdersPane.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Manager/ReservationsPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Manager/ReservationsPane.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Waiter/WaiterDash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/DashboardsPack/Waiter/WaiterDash.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/Icons/LoginPhoto.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/Icons/fd80ecec48eba2a9adb76e4133905879.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/Icons/icons8_Box_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/Icons/icons8_GPS_Antenna_64px_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/Icons/icons8_Home_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/Icons/icons8_Meanpath_64px_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/Icons/icons8_Open_Envelope_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/Icons/icons8_Person_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/Icons/icons8_Search_52px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/Icons/icons8_Sign_Out_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/Icons/icons8_Slider__32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/Icons/icons8_Xbox_Menu_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/Icons/jimmy-fallon.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/MainPack/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/MainPack/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/MainPack/Restaurant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/MainPack/Restaurant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/Dish$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/Dish$Type.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/Dish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/Dish.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/OrderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/OrderItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/SpecialEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/SpecialEvents.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/Reservation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/ReserveItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/ReserveItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/Table.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Chef.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Chef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Manager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Waiter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Waiter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/XMLPack/LoadXML.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/XMLPack/LoadXML.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Chef/ChefDash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Chef/ChefDash.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Chef/ChefDash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Chef/ChefDash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientDash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Client/ClientDash.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientDash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Client/ClientDash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientDishesPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Client/ClientDishesPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientDishesPane.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientOrdersPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Client/ClientOrdersPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientOrdersPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Client/ClientOrdersPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientReservationPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Client/ClientReservationPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientReservationPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Client/ClientReservationPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/ClientTablesPane.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Client/TablePane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Client/TablePane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/ItemsToBeReserved.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/ItemsToBeReserved.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/ItemsToBeReserved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/ItemsToBeReserved.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/LoginDash.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/LoginDash.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Manager/FinancesPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Manager/FinancesPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Manager/FinancesPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Manager/FinancesPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Manager/ManagerDash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Manager/ManagerDash.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Manager/ManagerDash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Manager/ManagerDash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Manager/OrdersPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Manager/OrdersPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Manager/OrdersPane.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Manager/ReservationsPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Manager/ReservationsPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Manager/ReservationsPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Manager/ReservationsPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/UserDash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/UserDash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Waiter/WaiterDash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Waiter/WaiterDash.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardsPack/Waiter/WaiterDash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Waiter/WaiterDash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FinancesPack/Invoice/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Invoice/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FinancesPack/Statement/IncomeStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Statement/IncomeStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FinancesPack/Statement/Profit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Statement/Profit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FinancesPack/Statement/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Statement/Sales.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FinancesPack/Statement/StatementValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Statement/StatementValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FinancesPack/Statement/Taxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Statement/Taxes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FinancesPack/Statement/Wages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Statement/Wages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Icons/LoginPhoto.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Icons/fd80ecec48eba2a9adb76e4133905879.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Icons/icons8_Box_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Icons/icons8_GPS_Antenna_64px_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Icons/icons8_Home_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Icons/icons8_Meanpath_64px_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Icons/icons8_Open_Envelope_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Icons/icons8_Person_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Icons/icons8_Search_52px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Icons/icons8_Sign_Out_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Icons/icons8_Slider__32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Icons/icons8_Xbox_Menu_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Icons/jimmy-fallon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FXML/TableDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FXML/TableDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FXML/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FXML/Tables.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainPack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPack/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainPack/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPack/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OrdersPack/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrdersPack/Dish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OrdersPack/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrdersPack/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OrdersPack/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrdersPack/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OrdersPack/SpecialEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrdersPack/SpecialEvents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReservationPack/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReservationPack/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReservationPack/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReservationPack/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReservationPack/ReserveItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReservationPack/ReserveItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReservationPack/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReservationPack/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersPack/Chef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/Chef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersPack/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersPack/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersPack/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersPack/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersPack/Waiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/Waiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XMLPack/LoadXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/XMLPack/LoadXML.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,8 +78,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -405,7 +249,7 @@
       <workItem from="1586086753363" duration="8895000" />
       <workItem from="1586128190658" duration="703000" />
       <workItem from="1586138103426" duration="40994000" />
-      <workItem from="1586246710718" duration="15802000" />
+      <workItem from="1586246710718" duration="23673000" />
     </task>
     <task id="LOCAL-00001" summary="Message">
       <created>1586014827311</created>
@@ -512,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586090900115</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="TableView">
+      <created>1586278470195</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1586278470195</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +378,8 @@
     <MESSAGE value="ABC" />
     <MESSAGE value="Pushed" />
     <MESSAGE value="Fy Amal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fy Amal" />
+    <MESSAGE value="TableView" />
+    <option name="LAST_COMMIT_MESSAGE" value="TableView" />
   </component>
   <component name="WindowStateProjectService">
     <state x="397" y="22" key="#Main" timestamp="1585959703636">
@@ -547,10 +399,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="429" y="200" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1360.728@0.0.1360.728" timestamp="1586247443302" />
-    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1586276423569">
+    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1586283111964">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1586276423569" />
+    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1586283111964" />
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586042291642" />
     <state x="476" y="249" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586167451156">
       <screen x="0" y="0" width="1360" height="728" />
@@ -565,35 +417,35 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="528" y="293" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1585925851434" />
-    <state x="201" y="0" key="CommitChangelistDialog2" timestamp="1586090895461">
+    <state x="201" y="0" key="CommitChangelistDialog2" timestamp="1586278459837">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="201" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1586090895461" />
+    <state x="201" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1586278459837" />
     <state x="227" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586043172122" />
     <state x="277" y="150" width="588" height="481" key="FileChooserDialogImpl" timestamp="1586264787471">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="277" y="150" width="588" height="481" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1586264787471" />
     <state x="473" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586033300178" />
-    <state width="1317" height="80" key="GridCell.Tab.0.bottom" timestamp="1586278326598">
+    <state width="1317" height="18" key="GridCell.Tab.0.bottom" timestamp="1586285843664">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="80" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1586278326598" />
+    <state width="1317" height="18" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1586285843664" />
     <state width="1493" height="80" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586080732884" />
-    <state width="1317" height="80" key="GridCell.Tab.0.center" timestamp="1586278326598">
+    <state width="1317" height="18" key="GridCell.Tab.0.center" timestamp="1586285843649">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="80" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1586278326598" />
+    <state width="1317" height="18" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1586285843649" />
     <state width="1493" height="80" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586080732884" />
-    <state width="1317" height="80" key="GridCell.Tab.0.left" timestamp="1586278326598">
+    <state width="1317" height="18" key="GridCell.Tab.0.left" timestamp="1586285843649">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="80" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1586278326598" />
+    <state width="1317" height="18" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1586285843649" />
     <state width="1493" height="80" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586080732883" />
-    <state width="1317" height="80" key="GridCell.Tab.0.right" timestamp="1586278326598">
+    <state width="1317" height="18" key="GridCell.Tab.0.right" timestamp="1586285843664">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="80" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1586278326598" />
+    <state width="1317" height="18" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1586285843664" />
     <state width="1493" height="80" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586080732884" />
     <state width="1317" height="223" key="GridCell.Tab.1.bottom" timestamp="1586086669490">
       <screen x="0" y="0" width="1360" height="728" />
@@ -620,10 +472,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="527" y="279" key="VCS.ChangelistChooser/0.0.1360.728@0.0.1360.728" timestamp="1586047145157" />
-    <state x="320" y="128" key="Vcs.Push.Dialog.v2" timestamp="1586090910153">
+    <state x="320" y="128" key="Vcs.Push.Dialog.v2" timestamp="1586278475337">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="320" y="128" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1586090910153" />
+    <state x="320" y="128" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1586278475337" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586039761870" />
     <state x="376" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1586246779186">
       <screen x="0" y="0" width="1360" height="728" />
