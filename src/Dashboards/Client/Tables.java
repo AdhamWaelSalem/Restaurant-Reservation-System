@@ -5,6 +5,7 @@ import ReservationPack.ReserveItem;
 import ReservationPack.Table;
 import UsersPack.Client;
 import UsersPack.User;
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXToggleButton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -42,12 +43,16 @@ public class Tables implements Initializable {
     private TableColumn<TableDetails, String> Location;
     @FXML
     private TableColumn<TableDetails, JFXToggleButton> Reserve;
+
+
+
     List<JFXToggleButton> jfxToggleButtons = new ArrayList<>();
     ToggleGroup toggleGroup = new ToggleGroup();
 
     @Override
 
     public void initialize(URL location, ResourceBundle resources) {
+
         initColumns();
         LoadTables();
     }
@@ -91,20 +96,30 @@ public class Tables implements Initializable {
     }
 
     //NEED CHANGE OF CONCEPT AS ONLY ONE TABLE
-    public  void confirmReservation(MouseEvent mouseEvent) {
+    public void confirmReservation(MouseEvent mouseEvent) throws IOException {
         Table table = null;
-       /* for (JFXToggleButton b : jfxToggleButtons) {
-            if (b.isSelected() && !Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(b)).isReserved() && Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(b)) instanceof Table) {
-            }
-        }*/
-        table = (Table) Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(toggleGroup.getSelectedToggle()));
-        System.out.println(  Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(toggleGroup.getSelectedToggle())) );
+        try {
+            table = (Table) Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(toggleGroup.getSelectedToggle()));
+
+        } catch (Exception e) {
+
+        }
         for (int i = 0; i < Restaurant.getRestaurant().getUsers().size(); i++) {
             User user = Restaurant.getRestaurant().getUsers().get(i);
             if (user.isLoggedIn()) {
-                ((Client) Restaurant.getRestaurant().getUsers().get(i)).MakeReservation(table, Calendar.getInstance().getTime());
-                //try and catch for other reserve items using constructors
+                try {
+                    ((Client) Restaurant.getRestaurant().getUsers().get(i)).MakeReservation(table, Calendar.getInstance().getTime());
+                    Parent fxml = FXMLLoader.load(getClass().getResource("Dishes.fxml"));
+                    pane.getChildren().removeAll();
+                    pane.getChildren().setAll(fxml);
+
+                } catch (Exception e) {
+                    //ALERT BOX
+                    System.out.println("no table chosen");
+                }
             }
         }
+
     }
+
 }

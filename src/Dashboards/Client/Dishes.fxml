@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="530.0" styleClass="dark-panel" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.Dishes">
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="680.0" styleClass="dark-panel" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.Dishes">
    <children>
-      <TableView fx:id="DishesView" prefHeight="395.0" prefWidth="530.0">
+      <TableView fx:id="DishesView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="680.0">
          <columns>
             <TableColumn fx:id="Name" prefWidth="75.0" text="Name" />
             <TableColumn fx:id="Price" prefWidth="75.0" text="Price" />
@@ -18,12 +18,7 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <JFXButton layoutX="265.0" layoutY="395.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="265.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@../Style.css" text="Confirm">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </JFXButton>
-      <JFXButton layoutY="395.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#CheckReservations" prefHeight="35.0" prefWidth="265.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@../Style.css" text="Check Reservation">
+      <JFXButton layoutX="415.0" layoutY="469.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#confirmOrder" prefHeight="35.0" prefWidth="265.0" ripplerFill="WHITE" style="-fx-background-radius: 2cm;" styleClass="buttons" stylesheets="@../Style.css" text="Confirm">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

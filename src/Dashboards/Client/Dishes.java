@@ -10,8 +10,10 @@ import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -20,6 +22,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -63,20 +66,20 @@ public class Dishes implements Initializable {
                 d.setPrice(String.valueOf(o.getPrice()));
                 JFXSlider jfxSlider = new JFXSlider(0, 20, 0);
                 Label label = new Label();
-                label.setStyle("-fx-text-fill: BLACK");
+                label.setStyle("-fx-text-fill: WHITE");
                 jfxSliders.add(jfxSlider);
                 jfxSlider.setShowTickLabels(true);
                 jfxSlider.setMajorTickUnit(5f);
                 labelList.add(label);
                 label.textProperty().bind(Bindings.format("%.0f", jfxSlider.valueProperty()));
-                d.setAmount(new HBox(jfxSlider,label));
+                d.setAmount(new HBox(jfxSlider, label));
                 Dishes.add(d);
             }
         }
         DishesView.setItems(Dishes);
     }
 
-    public void confirmOrder(MouseEvent mouseEvent) {
+    public void confirmOrder(MouseEvent mouseEvent) throws IOException {
         List<OrderItem> confirmedOrderedItems = new ArrayList<>();
         for (JFXSlider jfxslider : jfxSliders) {
             if (jfxslider.getValue() != 0) {
@@ -99,7 +102,11 @@ public class Dishes implements Initializable {
 
             }
         }
+        Parent fxml = FXMLLoader.load(getClass().getResource("Invoice.fxml"));
+        pane.getChildren().removeAll();
+        pane.getChildren().setAll(fxml);
     }
+
     public void CheckReservations(MouseEvent mouseEvent) throws IOException {
         ((StackPane) (((Node) mouseEvent.getSource()).getParent()).getParent()).getChildren().remove(((Node) mouseEvent.getSource()).getParent());
         //Alert will lose progress if went back 3ashan begad kfaya ba2a!

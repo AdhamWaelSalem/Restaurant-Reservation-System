@@ -13,7 +13,8 @@ public class Reservation {
     private Order order;
     private Date reservationDate;
     private String specialRequest;
-
+/////
+    private boolean confirmed;
     //Constructor
 
     public Reservation() {
@@ -22,6 +23,7 @@ public class Reservation {
     public Reservation(Table table, Date reservationDate) {
         this.table = table;
         this.reservationDate = reservationDate;
+        this.confirmed=false;
     }
 
 
@@ -61,4 +63,11 @@ public class Reservation {
         this.specialRequest = specialRequest;
     }
 
+    public boolean isConfirmed() {
+        return confirmed;
+    }
+
+    public void setConfirmed(boolean confirmed) {
+        this.confirmed = confirmed;
+    }
 }

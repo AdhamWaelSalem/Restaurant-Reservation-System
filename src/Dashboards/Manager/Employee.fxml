@@ -5,14 +5,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
-<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="530.0" styleClass="dark-panel" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards _2.ManagerDashboard.Employees">
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="530.0" styleClass="dark-panel" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Manager.Employees">
     <children>
         <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="530.0" styleClass="dark-panel" stylesheets="@../Style.css">
             <padding>
                 <Insets top="10.0" />
             </padding>
             <children>
-                <JFXButton fx:id="viewEmpolyees" alignment="CENTER" layoutX="10.0" layoutY="22.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#viewEmployees" prefHeight="45.0" prefWidth="202.0" styleClass="orders-buttons" text="View Employees">
+                <JFXButton fx:id="viewEmployees" alignment="CENTER" layoutX="10.0" layoutY="22.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#viewEmployees" prefHeight="45.0" prefWidth="202.0" styleClass="orders-buttons" text="View Employees">
                     <font>
                         <Font size="21.0" />
                     </font>
