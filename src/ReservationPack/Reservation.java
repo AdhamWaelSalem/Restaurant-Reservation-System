@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Reservation {
 
-    private List<ReserveItem> reservedItems = new ArrayList<>();
+    private Table table;
     private Order order;
     private Date reservationDate;
     private String specialRequest;
@@ -19,30 +19,22 @@ public class Reservation {
     public Reservation() {
     }
 
-    public Reservation(List<ReserveItem> reservedItems, Date reservationDate, String specialRequest) {
-        this.reservedItems = reservedItems;
+    public Reservation(Table table, Date reservationDate) {
+        this.table = table;
         this.reservationDate = reservationDate;
-        this.specialRequest = specialRequest;
     }
 
 
 
     //Methods
-    public boolean valid() {
-        for (ReserveItem ri : reservedItems) {
-            if (ri.isMajor())
-                return true;
-        }
-        return false;
-    }
 
     //Getters and Setters
-    public List<ReserveItem> getReservedItems() {
-        return reservedItems;
+    public Table getTable() {
+        return table;
     }
 
-    public void setReservedItems(List<ReserveItem> reservedItems) {
-        this.reservedItems = reservedItems;
+    public void setTable(Table table) {
+        this.table = table;
     }
 
     public Order getOrder() {

@@ -6,7 +6,7 @@ import UsersPack.User;
 import java.util.List;
 
 class Wages extends StatementValue{
-    /*private List<User> users;
+    private List<User> users;
 
     public Wages(List<User> users) {
         this.users = users;
@@ -16,9 +16,9 @@ class Wages extends StatementValue{
     protected float calculate() {
         for (User user: users) {
             if (user instanceof Employee){
-                value+= ((Employee) user).getDailyWages();
+                value+= ((Employee) user).getWages();
             }
         }
         return value;
-    }*/
+    }
 }

@@ -1,5 +1,6 @@
 package OrdersPack;
 
+import Finances.Invoice.Invoice;
 import ReservationPack.ReserveItem;
 import UsersPack.Client;
 
@@ -10,15 +11,25 @@ import java.util.List;
 public class Order {
 
     private List<OrderItem> OrderedItems;
-    private String specialRequest;
+    private Invoice PaymentCheck = new Invoice(this);
 
     public Order() {
     }
 
-    public Order(List<OrderItem> orderedItems, String specialRequest) {
+    public Order(List<OrderItem> orderedItems) {
         OrderedItems = orderedItems;
-        this.specialRequest = specialRequest;
     }
+
+    public List<String> Details(){
+        List<String> details = new ArrayList<>();
+        for (OrderItem o: OrderedItems) {
+            if(o instanceof Dish){
+                details.add(((Dish) o).getType().toString() +"\t"+ o.getName() +"\t"+ o.getAmount() +" Dishes");
+            }
+        }
+        return details;
+    }
+
 
     public List<OrderItem> getOrderedItems() {
         return OrderedItems;
@@ -28,11 +39,4 @@ public class Order {
         OrderedItems = orderedItems;
     }
 
-    public String getSpecialRequest() {
-        return specialRequest;
-    }
-
-    public void setSpecialRequest(String specialRequest) {
-        this.specialRequest = specialRequest;
-    }
 }

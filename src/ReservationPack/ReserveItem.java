@@ -18,6 +18,8 @@ public abstract class ReserveItem {
         reserved = false;
     }
 
+    public String Details(){return null;}
+
     //Getters
     public boolean isReserved() {
         return reserved;

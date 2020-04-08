@@ -1,4 +1,4 @@
-package Dashboards.Client;
+package Dashboards.Client.OrdersOLD;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

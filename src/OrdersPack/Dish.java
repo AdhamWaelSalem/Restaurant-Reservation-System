@@ -32,13 +32,6 @@ public class Dish extends OrderItem {
             this.taxes= (float) 0.2;
         return this.taxes;
     }
-    /*public String info() {
-        String info;
-        info = this.type.toString() + "\n" +
-                this.name + "\n" +
-                "Price " + this.price + " $";
-        return info;
-    }*/
 
     //Getters and Setters
     public Type getType() {

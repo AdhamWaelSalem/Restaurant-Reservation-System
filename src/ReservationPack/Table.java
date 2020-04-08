@@ -36,13 +36,14 @@ public class Table extends ReserveItem {
     }
 
     //Methods
-    public String getDetails() {
+    @Override
+    public String Details() {
         String info, smoking = "Non Smoking";
         if (this.smoking)
             smoking = "Smoking";
-        info = "Table " + this.number + "\n" +
-                this.numberOfSeats + " Seats\n" +
-                smoking + "\n" + location.toString();
+        info =  "Number " + this.number + "\t" +
+                this.numberOfSeats + " Seats\t" +
+                smoking + "\t" + location.toString() + "\n";
         return info;
     }
 

@@ -2,7 +2,7 @@
 //
 //import MainPack.Restaurant;
 //import ReservationPack.Table;
-//import javafx.fxml.FXML;
+//import javafx.fxml.ClientFXML;
 //import javafx.fxml.Initializable;
 //import javafx.scene.control.Button;
 //import javafx.scene.layout.GridPane;
@@ -14,7 +14,7 @@
 //
 //
 //
-//    @FXML
+//    @ClientFXML
 //    private GridPane gridPane;
 //    @Override
 //    public void initialize(URL location, ResourceBundle resources) {

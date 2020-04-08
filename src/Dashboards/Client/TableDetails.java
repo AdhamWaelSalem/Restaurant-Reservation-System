@@ -1,9 +1,6 @@
-package FXML;
+package Dashboards.Client;
 
-import ReservationPack.Table;
 import com.jfoenix.controls.JFXToggleButton;
-import javafx.fxml.FXML;
-import javafx.scene.control.TableColumn;
 
 public class TableDetails {
 

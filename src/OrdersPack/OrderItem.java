@@ -6,7 +6,7 @@ public abstract class OrderItem {
     protected String name;
     protected int price;
     protected float taxes;
-   // protected int numberOfOrderedItem;
+    protected int amount;
 
     //Constructor
     public OrderItem() {
@@ -40,5 +40,13 @@ public abstract class OrderItem {
 
     public void setTaxes(float taxes) {
         this.taxes = taxes;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 }

@@ -5,6 +5,7 @@ import OrdersPack.Order;
 import OrdersPack.OrderItem;
 import ReservationPack.Reservation;
 import ReservationPack.ReserveItem;
+import ReservationPack.Table;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -25,28 +26,22 @@ public class Client extends User {
     //Methods
     @Override
     public String dashLocation(){
-        return "../Dashboards/Client/Home.fxml";
+        return "../Dashboards/Client/HomePage.fxml";
     }
 
-    public void MakeReservation(List<ReserveItem> reserveItems,Date date,String specialRequests) {
-        for (ReserveItem item: reserveItems) {
-            item.Reserve();
-        }
-        Reservation reservation = new Reservation(reserveItems,date,specialRequests);
+    public void MakeReservation(Table table, Date date) {
+        table.Reserve();
+        Reservation reservation = new Reservation(table,date);
         Reservations.add(reservation);
-        Restaurant.getRestaurant().getReservations().add(reservation);
         starPoints += 10;
     }
     public void CancelReservation(Reservation reservation) {
-        for (ReserveItem item: reservation.getReservedItems()) {
-            item.Free();
-        }
+        reservation.getTable().Free();
         Reservations.remove(reservation);
-        Restaurant.getRestaurant().getReservations().remove(reservation);
         starPoints -= 10;
     }
-    public void AddOrder(Reservation reservation, List<OrderItem> orderItems,String specialRequests) {
-        Order order = new Order(orderItems,specialRequests);
+    public void AddOrder(Reservation reservation, List<OrderItem> orderItems) {
+        Order order = new Order(orderItems);
         reservation.setOrder(order);
         starPoints += 5;
     }

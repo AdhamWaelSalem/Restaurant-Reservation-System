@@ -16,8 +16,6 @@ public class Restaurant {
     private List<User> Users = new ArrayList<>();
     private List<ReserveItem> ReserveItems = new ArrayList<>();
     private List<OrderItem> OrderItems = new ArrayList<>();
-    private List<Reservation> Reservations = new ArrayList<>();
-    private List<Order> Orders = new ArrayList<>();
     //private IncomeStatement IncomeStatement;
 
     //Singleton Class
@@ -51,22 +49,6 @@ public class Restaurant {
 
     public void setOrderItems(List<OrderItem> orderItems) {
         OrderItems = orderItems;
-    }
-
-    public List<Reservation> getReservations() {
-        return Reservations;
-    }
-
-    public void setReservations(List<Reservation> reservations) {
-        Reservations = reservations;
-    }
-
-    public List<Order> getOrders() {
-        return Orders;
-    }
-
-    public void setOrders(List<Order> orders) {
-        Orders = orders;
     }
 
 //    public Finances.Statement.IncomeStatement getIncomeStatement() {

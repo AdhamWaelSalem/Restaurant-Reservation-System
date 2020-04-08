@@ -1,4 +1,4 @@
-package FXML;
+package Dashboards.Client;
 
 import MainPack.Restaurant;
 import ReservationPack.ReserveItem;
@@ -8,14 +8,18 @@ import UsersPack.User;
 import com.jfoenix.controls.JFXToggleButton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -23,6 +27,9 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class Tables implements Initializable {
+
+    @FXML
+    protected StackPane pane;
     @FXML
     private TableView<TableDetails> TablesView;
     @FXML
@@ -77,30 +84,25 @@ public class Tables implements Initializable {
         TablesView.setItems(Tables);
     }
 
+    public void AddOrder(MouseEvent mouseEvent) throws IOException {
+        Parent fxml = FXMLLoader.load(getClass().getResource("Dishes.fxml"));
+        pane.getChildren().add(fxml);
+    }
 
+    //NEED CHANGE OF CONCEPT AS ONLY ONE TABLE
     public void confirmReservation(MouseEvent mouseEvent) {
-        List<ReserveItem> confirmedReservedItems = new ArrayList<>();
+        Table table = null;
         for (JFXToggleButton b : jfxToggleButtons) {
-            if (b.isSelected()) {
-                confirmedReservedItems.add(Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(b)));
-                // Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(b)).
-                b.setToggleLineColor(Color.RED);
-                b.setToggleColor(Color.RED);
-                b.setDisable(true);
-                //System.out.println("hi");
+            if (b.isSelected() && !Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(b)).isReserved() && Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(b)) instanceof Table) {
+                table = (Table) Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(b));
             }
-
         }
-
         for (int i = 0; i < Restaurant.getRestaurant().getUsers().size(); i++) {
             User user = Restaurant.getRestaurant().getUsers().get(i);
             if (user.isLoggedIn()) {
-                Client client = (Client) Restaurant.getRestaurant().getUsers().get(i);
-                ((Client) Restaurant.getRestaurant().getUsers().get(i)).MakeReservation(confirmedReservedItems, Calendar.getInstance().getTime(), " ");
-
+                ((Client) Restaurant.getRestaurant().getUsers().get(i)).MakeReservation(table, Calendar.getInstance().getTime());
+                //try and catch for other reserve items using constructors
             }
-
         }
-        //System.out.println();
     }
 }

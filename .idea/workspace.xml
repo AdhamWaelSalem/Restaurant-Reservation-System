@@ -1,35 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="TableView">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="A">
+      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/Invoice.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/Invoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/OrdersOLD/MainCourses.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/Reservations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ManagerFXML/Reservations.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ManagerFXML/Reservations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_8_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/scenebuilder_kit_8_5_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant Reservation FX.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant Reservation FX.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/MainPack/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/MainPack/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/MainPack/Restaurant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/MainPack/Restaurant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/Dish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/Dish.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/Order.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/OrderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/OrderItem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/Reservation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/ReserveItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/ReserveItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/Table.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/ClientMainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/ClientMainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Appetizers.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/OrdersOLD/Appetizers.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/ClientMainScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/ClientProfileDash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Desserts.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/OrdersOLD/Desserts.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/HomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/MainCourses.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Orders.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/OrdersOLD/Orders.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/OrdersDash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/OrdersOLD/OrdersDash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Profile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Profile.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Reservations.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Reservations.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/ManagerMainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/ManagerMainScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FXML/DishDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FXML/DishDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FXML/Dishes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/FXML/Dishes.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FXML/Dishes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FXML/Dishes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FXML/Tables.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/FXML/Tables.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FXML/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FXML/Tables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FXML/DishDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/DishDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FXML/Dishes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Dishes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FXML/Dishes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Dishes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FXML/TableDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/TableDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FXML/Tables.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Tables.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FXML/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Tables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Finances/Invoice/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Invoice/Invoice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Finances/Statement/IncomeStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Statement/IncomeStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Finances/Statement/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Statement/Sales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Finances/Statement/Taxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Statement/Taxes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Finances/Statement/Wages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Statement/Wages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainPack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPack/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainPack/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPack/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OrdersPack/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrdersPack/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OrdersPack/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrdersPack/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OrdersPack/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrdersPack/OrderItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReservationPack/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReservationPack/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReservationPack/ReserveItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReservationPack/ReserveItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReservationPack/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReservationPack/Table.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UsersPack/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersPack/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Z/Client/ClientReservationPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Client/ClientReservationPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Z/Client/ClientDishesPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Client/ClientDishesPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Z/Client/ClientTablesPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Client/ClientTablesPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Z/ItemsToBeReserved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/ItemsToBeReserved.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Z/Manager/FinancesPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Manager/FinancesPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Z/Manager/OrdersPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Z/Manager/OrdersPane.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +125,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -138,7 +165,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/jar_files (1)/fontawesomefx-8.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Dashboards/Client" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -154,19 +181,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Yousef\assignment_2_6351_6486\src\FXML" />
-      <recent name="C:\Users\Yousef\assignment_2_6351_6486\src\Dashboards\Client" />
-      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\DashboardsPack\Waiter" />
-      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\DashboardsPack\Chef" />
-      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\DashboardsPack\Client" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\Dashboards\Client" />
+      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\ClientFXML" />
       <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\Dashboards" />
       <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src" />
       <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\Images" />
-      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\DashboardsPack\Client" />
-      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\FinancesPack\Invoice" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\Dashboards\Client" />
+      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\ClientFXML" />
+      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\Dashboards\Client\OrdersOLD" />
+      <recent name="C:\Users\Yousef\assignment_2_6351_6486\src\FXML" />
+      <recent name="C:\Users\Yousef\assignment_2_6351_6486\src\Dashboards\Client" />
     </key>
   </component>
   <component name="RunManager">
@@ -399,7 +426,8 @@
     <MESSAGE value="Pushed" />
     <MESSAGE value="Fy Amal" />
     <MESSAGE value="TableView" />
-    <option name="LAST_COMMIT_MESSAGE" value="TableView" />
+    <MESSAGE value="A" />
+    <option name="LAST_COMMIT_MESSAGE" value="A" />
   </component>
   <component name="WindowStateProjectService">
     <state x="397" y="22" key="#Main" timestamp="1585959703636">
@@ -419,53 +447,53 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="429" y="200" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1360.728@0.0.1360.728" timestamp="1586247443302" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1586312944372">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1586349219130">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1586283111964" />
+    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1586349219130" />
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586312944372" />
-    <state x="476" y="249" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586167451156">
+    <state x="476" y="249" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586347516292">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="476" y="249" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1360.728@0.0.1360.728" timestamp="1586167451156" />
-    <state x="442" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586247301098">
+    <state x="476" y="249" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1360.728@0.0.1360.728" timestamp="1586347516292" />
+    <state x="442" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586334879909">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="442" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1360.728@0.0.1360.728" timestamp="1586247301098" />
+    <state x="442" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1360.728@0.0.1360.728" timestamp="1586334879909" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585926884104" />
     <state x="528" y="293" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585925851434">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="528" y="293" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1585925851434" />
-    <state x="201" y="0" key="CommitChangelistDialog2" timestamp="1586278459837">
+    <state x="195" y="0" key="CommitChangelistDialog2" timestamp="1586350170370">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="201" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1586278459837" />
+    <state x="195" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1586350170370" />
     <state x="227" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586043172122" />
-    <state x="473" y="154" width="588" height="481" key="FileChooserDialogImpl" timestamp="1586289987814">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="277" y="150" width="588" height="481" key="FileChooserDialogImpl" timestamp="1586317105947">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="277" y="150" width="588" height="481" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1586264787471" />
+    <state x="277" y="150" width="588" height="481" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1586317105947" />
     <state x="473" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586289987814" />
-    <state width="1493" height="124" key="GridCell.Tab.0.bottom" timestamp="1586316550512">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1317" height="101" key="GridCell.Tab.0.bottom" timestamp="1586350170558">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="18" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1586285843664" />
+    <state width="1317" height="101" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1586350170558" />
     <state width="1493" height="124" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586316550512" />
-    <state width="1493" height="124" key="GridCell.Tab.0.center" timestamp="1586316550511">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1317" height="101" key="GridCell.Tab.0.center" timestamp="1586350170558">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="18" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1586285843649" />
+    <state width="1317" height="101" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1586350170558" />
     <state width="1493" height="124" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586316550511" />
-    <state width="1493" height="124" key="GridCell.Tab.0.left" timestamp="1586316550511">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1317" height="101" key="GridCell.Tab.0.left" timestamp="1586350170558">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="18" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1586285843649" />
+    <state width="1317" height="101" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1586350170558" />
     <state width="1493" height="124" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586316550511" />
-    <state width="1493" height="124" key="GridCell.Tab.0.right" timestamp="1586316550511">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1317" height="101" key="GridCell.Tab.0.right" timestamp="1586350170558">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="18" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1586285843664" />
+    <state width="1317" height="101" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1586350170558" />
     <state width="1493" height="124" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586316550511" />
     <state width="1317" height="223" key="GridCell.Tab.1.bottom" timestamp="1586086669490">
       <screen x="0" y="0" width="1360" height="728" />
@@ -483,10 +511,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state width="1317" height="223" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1586086669489" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1586289991715">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="220" y="0" key="SettingsEditor" timestamp="1586317110152">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="220" y="0" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1586264789130" />
+    <state x="220" y="0" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1586317110152" />
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586289991715" />
     <state x="527" y="279" key="VCS.ChangelistChooser" timestamp="1586047145157">
       <screen x="0" y="0" width="1360" height="728" />

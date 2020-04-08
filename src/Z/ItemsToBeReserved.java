@@ -3,7 +3,7 @@ package Z;
 
 import MainPack.Restaurant;
 import UsersPack.Client;
-import javafx.fxml.FXML;
+import javafx.fxml.ClientFXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
@@ -19,15 +19,15 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class ItemsToBeReserved implements Initializable {
-    @FXML
+    @ClientFXML
     VBox vbox;
-    @FXML
+    @ClientFXML
     VBox vboxNumber;
-    @FXML
+    @ClientFXML
     VBox vboxSmoking;
-    @FXML
+    @ClientFXML
     Button Signout;
-    @FXML
+    @ClientFXML
     Label ClientName2;
     public void details(Client client) {
         ClientName2.getStylesheets().add(getClass().getResource("style.css").toExternalForm());

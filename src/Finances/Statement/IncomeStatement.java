@@ -1,4 +1,3 @@
-/*
 package Finances.Statement;
 
 import MainPack.Restaurant;
@@ -13,8 +12,8 @@ public class IncomeStatement {
     public List<String> getInfo(){
 
         try {
-            Sales sales = new Sales(Restaurant.getRestaurant().getOrders());
-            Taxes taxes = new Taxes(Restaurant.getRestaurant().getOrders());
+            Sales sales = new Sales(Restaurant.getRestaurant().getUsers());
+            Taxes taxes = new Taxes(Restaurant.getRestaurant().getUsers());
             Wages wages = new Wages(Restaurant.getRestaurant().getUsers());
             Profit profit = new Profit(sales,taxes,wages);
             info.add("Sales\t"+sales.calculate());
@@ -31,4 +30,3 @@ public class IncomeStatement {
         }
     }
 }
-*/

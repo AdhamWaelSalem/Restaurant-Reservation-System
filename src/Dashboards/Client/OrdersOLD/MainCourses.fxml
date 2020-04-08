@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="foodPane" prefHeight="440.0" prefWidth="530.0" styleClass="dark-panel" stylesheets="@../../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.OrdersOLD.OrdersDash">
+    <children>
+        <JFXButton fx:id="Confirm" layoutX="430.0" layoutY="409.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#ConfirmOrder" prefHeight="35.0" prefWidth="100.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@../../Style.css" text="Confirm">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </JFXButton>
+      <JFXButton fx:id="Confirm1" layoutX="330.0" layoutY="409.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#ConfirmOrder" prefHeight="35.0" prefWidth="100.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@../../Style.css" text="Add Order">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

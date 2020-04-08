@@ -7,7 +7,7 @@
 //import UsersPack.User;
 //import com.jfoenix.controls.JFXButton;
 //import javafx.event.ActionEvent;
-//import javafx.fxml.FXML;
+//import javafx.fxml.ClientFXML;
 //import javafx.fxml.Initializable;
 //import javafx.scene.layout.GridPane;
 //import javafx.scene.layout.Priority;
@@ -19,7 +19,7 @@
 //
 //public class ClientTablesPane extends ClientDash implements Initializable {
 //
-//    @FXML
+//    @ClientFXML
 //    GridPane Gridpane = new GridPane();
 //    List<JFXButton> tab = new ArrayList<>();
 //    Client client = new Client();

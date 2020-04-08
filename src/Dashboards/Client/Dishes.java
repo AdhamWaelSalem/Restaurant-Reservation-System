@@ -1,33 +1,41 @@
-package FXML;
+package Dashboards.Client;
 
 import MainPack.Restaurant;
 import OrdersPack.Dish;
 import OrdersPack.OrderItem;
-import ReservationPack.ReserveItem;
 import ReservationPack.Table;
 import UsersPack.Client;
 import UsersPack.User;
 import com.jfoenix.controls.JFXSlider;
-import com.jfoenix.controls.JFXToggleButton;
 import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 import java.util.ResourceBundle;
 
 public class Dishes implements Initializable {
+
+    @FXML
+    AnchorPane pane;
     @FXML
     private TableView<DishDetails> DishesView;
     @FXML
@@ -35,7 +43,7 @@ public class Dishes implements Initializable {
     @FXML
     private TableColumn<DishDetails, String> Price;
     @FXML
-    private TableColumn<DishDetails, JFXSlider> Amount;
+    private TableColumn<DishDetails, HBox> Amount;
 
     List<JFXSlider> jfxSliders = new ArrayList<>();
     List<Label> labelList = new ArrayList<>();
@@ -55,62 +63,52 @@ public class Dishes implements Initializable {
     private void LoadDishes() {
         ObservableList<DishDetails> Dishes = FXCollections.observableArrayList();
         for (OrderItem o : Restaurant.getRestaurant().getOrderItems()) {
-           // int i=0;
             if (o instanceof Dish) {
                 DishDetails d = new DishDetails();
                 d.setName(o.getName());
                 d.setPrice(String.valueOf(o.getPrice()));
                 JFXSlider jfxSlider = new JFXSlider(0, 20, 0);
                 Label label = new Label();
-
+                label.setStyle("-fx-text-fill: BLACK");
                 jfxSliders.add(jfxSlider);
                 jfxSlider.setShowTickLabels(true);
                 jfxSlider.setShowTickMarks(true);
                 jfxSlider.setMajorTickUnit(5f);
-                // jfxSlider.setBlockIncrement(1f);
                 labelList.add(label);
                 label.textProperty().bind(Bindings.format("%.0f", jfxSlider.valueProperty()));
-                System.out.println(label.getText());
-
-       /*         if (jfxSliders.get(i).getValue() != 0)
-                    jfxSlider.setDisable(true);
-*/
-                d.setAmount(jfxSlider);
+                d.setAmount(new HBox(jfxSlider,label));
                 Dishes.add(d);
-            }//i++;
+            }
         }
         DishesView.setItems(Dishes);
     }
 
     public void confirmOrder(MouseEvent mouseEvent) {
-      /*  for (Label label:labelList) {
-            System.out.println(label.getText());
-        }*/
         List<OrderItem> confirmedOrderedItems = new ArrayList<>();
         for (JFXSlider jfxslider : jfxSliders) {
             if (jfxslider.getValue() != 0) {
                 for (int i = 0; i < (int) (jfxslider.getValue()); i++)
-                    ///LOL
                     confirmedOrderedItems.add(Restaurant.getRestaurant().getOrderItems().get(jfxSliders.indexOf(jfxslider)));
-                jfxslider.setDisable(true);
             }
             for (int i = 0; i < Restaurant.getRestaurant().getUsers().size(); i++) {
                 User user = Restaurant.getRestaurant().getUsers().get(i);
                 if (user.isLoggedIn()) {
                     Client client = (Client) Restaurant.getRestaurant().getUsers().get(i);
                     try {
-                        ((Client) Restaurant.getRestaurant().getUsers().get(i)).AddOrder(((Client) Restaurant.getRestaurant().getUsers().get(i)).getReservations().get(0), confirmedOrderedItems, " ");
+                        ((Client) Restaurant.getRestaurant().getUsers().get(i)).AddOrder(((Client) Restaurant.getRestaurant().getUsers().get(i)).getReservations().get(0), confirmedOrderedItems);
 
                     } catch (Exception e) {
+                        //ALERT BOXES
                         System.out.println("NO RESERVATION MADE");
-
                     }
-
                     break;
                 }
 
             }
         }
-
+    }
+    public void CheckReservations(MouseEvent mouseEvent) throws IOException {
+        ((StackPane) (((Node) mouseEvent.getSource()).getParent()).getParent()).getChildren().remove(((Node) mouseEvent.getSource()).getParent());
+        //Alert will lose progress if went back 3ashan begad kfaya ba2a!
     }
 }
