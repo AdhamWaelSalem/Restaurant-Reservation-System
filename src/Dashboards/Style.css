@@ -76,3 +76,8 @@
     -fx-background-color: #00cc33;
     -fx-background-radius: 100%;
 }
+.table-view{
+    -fx-background-color: #45515F;
+    -fx-background-radius: 20;
+
+}

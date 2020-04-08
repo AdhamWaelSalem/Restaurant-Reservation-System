@@ -7,11 +7,11 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.Tables">
+<StackPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="530.0" styleClass="parent" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.Tables">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="530.0" styleClass="dark-panel" stylesheets="@../Style.css">
          <children>
-            <TableView fx:id="TablesView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="530.0" stylesheets="@../Style.css">
+            <TableView fx:id="TablesView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="530.0" styleClass="dark-panel" stylesheets="@../Style.css">
                <columns>
                   <TableColumn fx:id="Table" prefWidth="75.0" text="Table" />
                   <TableColumn fx:id="Seats" prefWidth="75.0" text="Seats" />
@@ -23,12 +23,12 @@
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                </columnResizePolicy>
             </TableView>
-            <JFXButton layoutX="265.0" layoutY="395.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="265.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@../Style.css" text="Confirm">
+            <JFXButton layoutX="265.0" layoutY="395.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#confirmReservation" prefHeight="35.0" prefWidth="265.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@../Style.css" text="Confirm">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutY="395.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#AddOrder" prefHeight="35.0" prefWidth="265.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@../Style.css" text="Add Order">
+            <JFXButton layoutY="395.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#confirmReservation" prefHeight="35.0" prefWidth="265.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@../Style.css" text="Add Order">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>

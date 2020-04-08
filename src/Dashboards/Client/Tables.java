@@ -43,6 +43,7 @@ public class Tables implements Initializable {
     @FXML
     private TableColumn<TableDetails, JFXToggleButton> Reserve;
     List<JFXToggleButton> jfxToggleButtons = new ArrayList<>();
+    ToggleGroup toggleGroup = new ToggleGroup();
 
     @Override
 
@@ -68,15 +69,15 @@ public class Tables implements Initializable {
                 D.setSeats(((Table) t).getNumberOfSeats() + " Seats");
                 D.setSmoking(((Table) t).isSmoking() ? "Smoking" : "Non Smoking");
                 D.setLocation(((Table) t).getLocation().toString());
-                ///////////
+                // toggle buttons
                 JFXToggleButton jfxToggleButton = new JFXToggleButton();
                 jfxToggleButtons.add(jfxToggleButton);
                 if (Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(jfxToggleButton)).isReserved()) {
-                    jfxToggleButton.setDisable(true);
                     jfxToggleButton.setSelected(true);
+                    jfxToggleButton.setDisable(true);
                     jfxToggleButton.setToggleLineColor(Color.RED);
                     jfxToggleButton.setToggleColor(Color.RED);
-                }
+                } else jfxToggleButton.setToggleGroup(toggleGroup);
                 D.setReserve(jfxToggleButton);
                 Tables.add(D);
             }
@@ -90,13 +91,14 @@ public class Tables implements Initializable {
     }
 
     //NEED CHANGE OF CONCEPT AS ONLY ONE TABLE
-    public void confirmReservation(MouseEvent mouseEvent) {
+    public  void confirmReservation(MouseEvent mouseEvent) {
         Table table = null;
-        for (JFXToggleButton b : jfxToggleButtons) {
+       /* for (JFXToggleButton b : jfxToggleButtons) {
             if (b.isSelected() && !Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(b)).isReserved() && Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(b)) instanceof Table) {
-                table = (Table) Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(b));
             }
-        }
+        }*/
+        table = (Table) Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(toggleGroup.getSelectedToggle()));
+        System.out.println(  Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(toggleGroup.getSelectedToggle())) );
         for (int i = 0; i < Restaurant.getRestaurant().getUsers().size(); i++) {
             User user = Restaurant.getRestaurant().getUsers().get(i);
             if (user.isLoggedIn()) {
