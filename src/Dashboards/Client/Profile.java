@@ -1,5 +1,7 @@
 package Dashboards.Client;
 
+import MainPack.Restaurant;
+import UsersPack.User;
 import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
 
@@ -12,8 +14,12 @@ public class Profile implements Initializable {
 
     }
 
-    public void returnToLogin(MouseEvent mouseEvent) {
+    public void SignOut(MouseEvent mouseEvent) {
+        for (User u: Restaurant.getRestaurant().getUsers()) {
+            if (u.isLoggedIn()){
 
+            }
+        }
     }
 
 

@@ -39,4 +39,11 @@ public class Order {
         OrderedItems = orderedItems;
     }
 
+    public Invoice getPaymentCheck() {
+        return PaymentCheck;
+    }
+
+    public void setPaymentCheck(Invoice paymentCheck) {
+        PaymentCheck = paymentCheck;
+    }
 }

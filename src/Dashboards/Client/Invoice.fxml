@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXListView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="430.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.Invoice">
    <children>
-      <JFXListView prefHeight="430.0" prefWidth="530.0" />
+      <JFXListView fx:id="Invoice" prefHeight="395.0" prefWidth="530.0" />
+      <JFXButton layoutX="265.0" layoutY="394.0" prefHeight="55.0" prefWidth="265.0" text="Return" />
+      <JFXButton layoutY="394.0" prefHeight="55.0" prefWidth="265.0" text="Online Payment" />
    </children>
 </AnchorPane>
