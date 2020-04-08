@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="fontawesomefx-8.1">
     <CLASSES>
-      <root url="jar://C:/Program Files/Jar Files/fontawesomefx-8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Downloads/jar_files (1)/fontawesomefx-8.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

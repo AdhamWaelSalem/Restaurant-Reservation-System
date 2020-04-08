@@ -3,6 +3,7 @@ package UsersPack;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -22,6 +23,7 @@ public abstract class User {
         this.name = name;
         this.username = username;
         this.password = password;
+        this.loggedIn=false;
     }
 
     //Methods
@@ -32,6 +34,7 @@ public abstract class User {
             loader.setLocation(getClass().getResource(this.dashLocation()));
             Parent parent = loader.load();
             Scene Dash = new Scene(parent);
+            Dash.setFill(Color.TRANSPARENT);
             S.setScene(Dash);
         } catch (IOException e) {
             e.printStackTrace();

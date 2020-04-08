@@ -11,6 +11,7 @@ public class IncomeStatement {
 
     List<String> info = new ArrayList<>();
     public List<String> getInfo(){
+
         try {
             Sales sales = new Sales(Restaurant.getRestaurant().getOrders());
             Taxes taxes = new Taxes(Restaurant.getRestaurant().getOrders());

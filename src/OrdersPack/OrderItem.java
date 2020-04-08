@@ -6,10 +6,12 @@ public abstract class OrderItem {
     protected String name;
     protected int price;
     protected float taxes;
+   // protected int numberOfOrderedItem;
 
     //Constructor
     public OrderItem() {
     }
+
     public OrderItem(String name, int price) {
         this.name = name;
         this.price = price;

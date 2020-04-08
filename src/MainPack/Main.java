@@ -24,7 +24,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         //Parent root = FXMLLoader.load(getClass().getResource("../Z/LoginDash.fxml"));
-        Parent root = FXMLLoader.load(getClass().getResource("../FXML/Dishes.fxml"));
+    //    Parent root = FXMLLoader.load(getClass().getResource("../FXML/Dishes.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../Z/LoginDash.fxml"));
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);

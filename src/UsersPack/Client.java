@@ -5,12 +5,14 @@ import OrdersPack.Order;
 import OrdersPack.OrderItem;
 import ReservationPack.Reservation;
 import ReservationPack.ReserveItem;
+
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Client extends User {
 
-    private List<Reservation> Reservations;
+    private List<Reservation> Reservations = new ArrayList<>();
     private int starPoints;
 
     //Constructor
@@ -23,7 +25,7 @@ public class Client extends User {
     //Methods
     @Override
     public String dashLocation(){
-        return "/Dashboards/Client/Home.fxml";
+        return "../Dashboards/Client/Home.fxml";
     }
 
     public void MakeReservation(List<ReserveItem> reserveItems,Date date,String specialRequests) {

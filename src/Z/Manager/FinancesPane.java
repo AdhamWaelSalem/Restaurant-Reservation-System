@@ -17,9 +17,10 @@ public class FinancesPane implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         jfxListView.getItems().addAll(Restaurant.getRestaurant().getStatement());
+      //  System.out.println(Restaurant.getRestaurant().getOrders().get(0).getOrderedItems().get(0).getName());
     }
 
-    public void returnButton(){
+    public void returnButton() {
 
     }
 

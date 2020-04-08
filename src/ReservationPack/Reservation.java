@@ -18,15 +18,18 @@ public class Reservation {
 
     public Reservation() {
     }
+
     public Reservation(List<ReserveItem> reservedItems, Date reservationDate, String specialRequest) {
         this.reservedItems = reservedItems;
         this.reservationDate = reservationDate;
         this.specialRequest = specialRequest;
     }
 
+
+
     //Methods
-    public boolean valid(){
-        for (ReserveItem ri:reservedItems) {
+    public boolean valid() {
+        for (ReserveItem ri : reservedItems) {
             if (ri.isMajor())
                 return true;
         }
@@ -65,4 +68,5 @@ public class Reservation {
     public void setSpecialRequest(String specialRequest) {
         this.specialRequest = specialRequest;
     }
+
 }

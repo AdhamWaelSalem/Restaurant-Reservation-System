@@ -10,16 +10,31 @@ public abstract class ReserveItem {
 
 
     //Methods
-    public void Reserve(){
+    public void Reserve() {
         reserved = true;
     }
-    public void Free(){
+
+    public void Free() {
         reserved = false;
     }
+
+    //Getters
     public boolean isReserved() {
         return reserved;
     }
+
     public boolean isMajor() {
         return major;
+    }
+
+
+    //Setters
+
+    public void setReserved(boolean reserved) {
+        this.reserved = reserved;
+    }
+
+    public void setMajor(boolean major) {
+        this.major = major;
     }
 }

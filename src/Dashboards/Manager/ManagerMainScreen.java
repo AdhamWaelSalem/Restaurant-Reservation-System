@@ -9,7 +9,6 @@ import javafx.scene.layout.Pane;
 import java.io.IOException;
 
 public class ManagerMainScreen {
-  //  public Image image=new Image("\\Users\\Yousef\\newProject\\src\\Dashboards\\Food.png");
 
     @FXML
     private Pane pane;
