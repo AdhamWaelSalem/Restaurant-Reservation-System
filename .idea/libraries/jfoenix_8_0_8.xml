@@ -1,67 +1,9 @@
 <component name="libraryTable">
   <library name="jfoenix-8.0.8">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Downloads/jfoenix-8.0.8.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Downloads" />
+      <root url="jar://C:/Program Files/Jar Files/jfoenix-8.0.8.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="file://$PROJECT_DIR$/../Downloads/Aisha's/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/FXMLController-master/FXMLController-master/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/Restaurant Reservation FX/Restaurant Reservation FX/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/Restaurant Reservation System (2)/Restaurant Reservation System/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/Restaurant Reservation System (4)/Restaurant Reservation System/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/Restaurant Reservation System (5)/Restaurant Reservation System/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/Restaurant Reservation System last/Restaurant Reservation System/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/assignment_1_6351-master/assignment_1_6351-master/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/assignment_1_6351-master/assignment_1_6351-master/trial/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/docs/download" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/character-escape/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/class-resolver/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/create-marshal/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/cycle-recovery/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/datatypeconverter/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/dtd/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/element-substitution/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/external-customize/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/fix-collides/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/inline-customize/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/j2s-create-marshal/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/j2s-xmlAccessorOrder/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/j2s-xmlAdapter/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/j2s-xmlAttribute/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/j2s-xmlRootElement/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/j2s-xmlSchemaType/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/j2s-xmlType/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/modify-marshal/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/namespace-prefix/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/partial-unmarshalling/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/pull-parser/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/relaxng/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/spec-samples/j2s/class-propOrder-complextype" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/spec-samples/j2s/class-simpletype" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/spec-samples/runtime/derivedtype" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/spec-samples/runtime/javabean-nosetter" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/streaming-unmarshalling/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/subgroup-extend/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/type-substitution/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/ubl/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/unmarshal-read/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/unmarshal-validate/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/updateablePartialBind/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/vendor-extensions/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/xml-channel/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/jaxb-ri-2.3.1/jaxb-ri/samples/xml-stylesheet/src" />
-      <root url="file://$PROJECT_DIR$/../Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/src/javafx.base" />
-      <root url="file://$PROJECT_DIR$/../Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/src/javafx.controls" />
-      <root url="file://$PROJECT_DIR$/../Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/src/javafx.fxml" />
-      <root url="file://$PROJECT_DIR$/../Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/src/javafx.graphics" />
-      <root url="file://$PROJECT_DIR$/../Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/src/javafx.media" />
-      <root url="file://$PROJECT_DIR$/../Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/src/javafx.swing" />
-      <root url="file://$PROJECT_DIR$/../Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/src/javafx.web" />
-      <root url="file://$PROJECT_DIR$/../Downloads" />
-    </SOURCES>
-    <jarDirectory url="file://$PROJECT_DIR$/../Downloads" recursive="false" />
-    <jarDirectory url="file://$PROJECT_DIR$/../Downloads" recursive="false" type="SOURCES" />
+    <SOURCES />
   </library>
 </component>

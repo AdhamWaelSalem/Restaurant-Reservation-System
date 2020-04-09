@@ -8,7 +8,7 @@ import javafx.scene.layout.Pane;
 
 import java.io.IOException;
 
-public class ManagerMainScreen {
+public class Home {
 
     @FXML
     private Pane pane;
@@ -32,13 +32,13 @@ public class ManagerMainScreen {
     }
 
     public void openProfile(MouseEvent mouseEvent) throws IOException {
-        Parent fxml = FXMLLoader.load(getClass().getResource("../Profile.fxml"));
+        Parent fxml = FXMLLoader.load(getClass().getResource("../Profile/Profile.fxml"));
         pane.getChildren().removeAll();
         pane.getChildren().setAll(fxml);
     }
 
     public void viewEmployees(MouseEvent event) throws IOException {
-        Parent fxml = FXMLLoader.load(getClass().getResource("Employee.fxml"));
+        Parent fxml = FXMLLoader.load(getClass().getResource("Employees/Employee.fxml"));
         pane.getChildren().removeAll();
         pane.getChildren().setAll(fxml);
     }

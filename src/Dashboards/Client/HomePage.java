@@ -28,41 +28,49 @@ public class HomePage implements Initializable {
     @FXML
     private Pane pane;
     @FXML
-    JFXButton openProfile;
-    @FXML
     JFXButton openReservations;
     @FXML
     JFXButton openOrders;
-    Client client;
-
+    protected Client client;
+    @FXML
+    public Label Name;
+    @FXML
     public Label UserName;
+    @FXML
     public Label StarPoints;
+    @FXML
+    private Tables tablesController;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        for (User u : Restaurant.getRestaurant().getUsers()) {
-            if (u.isLoggedIn()) {
-              //  u.setLoggedIn(false);
-                try {
-                    UserName.setText(u.getName());
-                    StarPoints.setText("StarPoints " + ((Client) u).getStarPoints());
-                } catch (Exception e) {
-                    ///not logged in
-                }
-                break;
-            }
 
-        }
-
+        initClient();
+        client.getName();
+        Name.setText(client.getName());
+        UserName.setText("@"+client.getUsername());
+        StarPoints.setText("StarPoints " + client.getStarPoints());
     }
 
-    public void openProfile(MouseEvent mouseEvent) throws IOException {
-        Parent fxml = FXMLLoader.load(getClass().getResource("Profile.fxml"));
-        pane.getChildren().removeAll();
-        pane.getChildren().setAll(fxml);
+    private void initClient(){
+        for (User u : Restaurant.getRestaurant().getUsers()) {
+            if (u.isLoggedIn() && u instanceof Client) {
+                client = (Client) u;
+                break;
+            }
+        }
+    }
+
+    public Client getLoggedClient() {
+        return client;
     }
 
     public void openReservations(MouseEvent mouseEvent) throws IOException {
-        Parent fxml = FXMLLoader.load(getClass().getResource("Reservations.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("Reservations.fxml"));
+        fxmlLoader.load();
+        Reservations reservationsController = fxmlLoader.getController();
+        reservationsController.initHomePage(this);
+        Parent fxml = fxmlLoader.getRoot();
         pane.getChildren().removeAll();
         pane.getChildren().setAll(fxml);
     }
@@ -90,10 +98,4 @@ public class HomePage implements Initializable {
         }
 
     }
-
-   /* public void openFinances() throws IOException {
-        Parent fxml = FXMLLoader.load(getClass().getResource("Invoice.fxml"));
-        pane.getChildren().removeAll();
-        pane.getChildren().setAll(fxml);
-    }*/
 }

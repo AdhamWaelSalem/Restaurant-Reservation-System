@@ -24,7 +24,7 @@
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                </columnResizePolicy>
             </TableView>
-            <JFXButton layoutX="495.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#confirmReservation" prefHeight="32.0" prefWidth="171.0" ripplerFill="WHITE" style="-fx-background-radius: 2cm;" styleClass="buttons" stylesheets="@../Style.css" text="Add Order">
+            <JFXButton layoutX="495.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#RESERVATION" prefHeight="32.0" prefWidth="171.0" ripplerFill="WHITE" style="-fx-background-radius: 2cm;" styleClass="buttons" stylesheets="@../Style.css" text="Add Order">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>

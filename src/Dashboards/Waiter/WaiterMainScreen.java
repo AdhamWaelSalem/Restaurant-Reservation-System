@@ -12,7 +12,7 @@ public class WaiterMainScreen {
     @FXML
     private Pane pane;
     public void openProfile(MouseEvent mouseEvent) throws IOException {
-        Parent fxml = FXMLLoader.load(getClass().getResource("../Profile.fxml"));
+        Parent fxml = FXMLLoader.load(getClass().getResource("../Profile/Profile.fxml"));
         pane.getChildren().removeAll();
         pane.getChildren().setAll(fxml);
     }

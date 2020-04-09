@@ -1,8 +1,6 @@
 package Dashboards.Manager;
 
-import Dashboards.Client.DishDetails;
 import MainPack.Restaurant;
-import ReservationPack.Reservation;
 import UsersPack.Client;
 import UsersPack.User;
 import javafx.collections.FXCollections;
@@ -13,24 +11,21 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
 
 import java.net.URL;
-import java.util.Date;
 import java.util.ResourceBundle;
 
-public class ManagerReservations implements Initializable {
+public class Reservations implements Initializable {
     @FXML
     protected AnchorPane pane;
     @FXML
-    private TableView<ManagerReservationDetails> ReservationsView;
+    private TableView<ReservationDetails> ReservationsView;
     @FXML
-    private TableColumn<ManagerReservationDetails, String> ClientName;
+    private TableColumn<ReservationDetails, String> ClientName;
     @FXML
-    private TableColumn<ManagerReservationDetails, String> TableNumber;
+    private TableColumn<ReservationDetails, String> TableNumber;
     @FXML
-    private TableColumn<ManagerReservationDetails, String> Date;
+    private TableColumn<ReservationDetails, String> Date;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -45,12 +40,12 @@ public class ManagerReservations implements Initializable {
     }
 
     private void loadReservations() {
-        ObservableList<ManagerReservationDetails> managerReservationDetails = FXCollections.observableArrayList();
+        ObservableList<ReservationDetails> managerReservationDetails = FXCollections.observableArrayList();
         for (User u : Restaurant.getRestaurant().getUsers()) {
             if (u instanceof Client) {
                 try {
                     for (int i = 0; i < ((Client) u).getReservations().size(); i++) {
-                        ManagerReservationDetails m = new ManagerReservationDetails();
+                        ReservationDetails m = new ReservationDetails();
                         m.setTableNumber(String.valueOf(((Client) u).getReservations().get(i).getTable().getNumber()));
                         m.setDate(String.valueOf(((Client) u).getReservations().get(i).getReservationDate()));
                         m.setClientName(u.getName());

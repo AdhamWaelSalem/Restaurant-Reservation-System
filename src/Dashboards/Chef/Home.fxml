@@ -28,7 +28,7 @@
                     <graphic>
                         <ImageView fitHeight="24.0" fitWidth="28.0">
                             <image>
-                                <Image url="@../Food.png" />
+                                <Image url="@../Profile/Food.png" />
                             </image>
                         </ImageView>
                     </graphic>

@@ -2,29 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="A">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/save.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dashboards/Client/InvoiceDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Finances/Finances.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Finances/Finances.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Finances/IncomeStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_8_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant Reservation FX.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant Reservation FX.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/MainPack/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/MainPack/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/MainPack/Restaurant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/MainPack/Restaurant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/OrderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/OrdersPack/OrderItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/ReservationPack/Reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Chef.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Chef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Waiter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurant Reservation FX/UsersPack/Waiter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Chef/ChefMainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Chef/ChefMainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Chef/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Chef/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Dishes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Dishes.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Dishes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Dishes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/HomePage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Invoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Invoice.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Profile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Profile.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Profile.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Profile.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Reservations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Reservations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Tables.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Tables.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboards/Client/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Client/Tables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/ManagerReservations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/ManagerReservations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Food.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Profile/Food.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/AddEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Employees/Add.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/AddNewEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Employees/Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/Employee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Employees/Employee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/Employees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Employees/Employees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/EmployeesDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Employees/Details.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/Finances.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/ManagerFinances.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/ManagerMainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/ManagerOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/ManagerReservationDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/ReservationDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/ManagerReservations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Reservations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/Orders.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Orders.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/Reservations.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Reservations.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/ViewEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/ViewEmployee.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/ViewEmployees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/ViewEmployees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dashboards/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/ViewEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Employees/View.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Manager/ViewEmployees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Manager/Employees/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Profile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Profile/Profile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/ProfileDash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Profile/ProfileDash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Waiter/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Waiter/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/Waiter/WaiterMainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Waiter/WaiterMainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboards/members.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboards/Profile/members.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Finances/Invoice/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Invoice/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Finances/Statement/IncomeStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Statement/IncomeStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Finances/Statement/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Finances/Statement/Sales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainPack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPack/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainPack/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPack/Restaurant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OrdersPack/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrdersPack/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersPack/Chef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/Chef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersPack/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersPack/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersPack/Waiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/Waiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReservationPack/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReservationPack/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UsersPack/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersPack/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +172,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/jar_files (1)/fontawesomefx-8.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Dashboards/Manager/Finances" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -151,18 +189,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\Dashboards\Manager\Employees" />
+      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\Dashboards\Profile" />
       <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\Dashboards\Client" />
       <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\ClientFXML" />
       <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\Dashboards\Client\OrdersOLD" />
-      <recent name="C:\Users\Yousef\assignment_2_6351_6486\src\FXML" />
-      <recent name="C:\Users\Yousef\assignment_2_6351_6486\src\Dashboards\Client" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\Dashboards\Manager\Finances" />
       <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\Dashboards\Client" />
       <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\ClientFXML" />
       <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\Dashboards" />
       <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src" />
-      <recent name="D:\Education\Term 4\Programming II\Projects\Restaurant Reservation FX\src\Images" />
     </key>
   </component>
   <component name="RunManager">
@@ -268,6 +306,7 @@
       <workItem from="1586246710718" duration="23673000" />
       <workItem from="1586356975696" duration="16614000" />
       <workItem from="1586377122492" duration="21022000" />
+      <workItem from="1586429806010" duration="476000" />
     </task>
     <task id="LOCAL-00001" summary="Message">
       <created>1586014827311</created>
@@ -425,58 +464,66 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="429" y="200" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1360.728@0.0.1360.728" timestamp="1586247443302" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1586392718314">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1586427036177">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1586349219130" />
+    <state x="508" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1586427036177" />
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586392718314" />
     <state x="538" y="282" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586392455214">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="476" y="249" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1360.728@0.0.1360.728" timestamp="1586347516292" />
     <state x="538" y="282" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1586392455214" />
-    <state x="442" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586334879909">
+    <state x="225" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586428662751">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="442" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1360.728@0.0.1360.728" timestamp="1586334879909" />
+    <state x="225" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1360.728@0.0.1360.728" timestamp="1586428662751" />
+    <state x="442" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586429932574">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="442" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1360.728@0.0.1360.728" timestamp="1586429932574" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585926884104" />
     <state x="528" y="293" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585925851434">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="528" y="293" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1585925851434" />
-    <state x="227" y="0" key="CommitChangelistDialog2" timestamp="1586384861129">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="195" y="0" key="CommitChangelistDialog2" timestamp="1586430307811">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="195" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1586350170370" />
+    <state x="195" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1586430307811" />
     <state x="227" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586384861129" />
     <state x="516" y="128" key="DetectedRootsChooserDialog" timestamp="1586350957510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="128" key="DetectedRootsChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1586350957510" />
-    <state x="473" y="154" width="588" height="481" key="FileChooserDialogImpl" timestamp="1586350977245">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="92" y="92" width="1176" height="544" key="DiffContextDialog" timestamp="1586426041739">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="277" y="150" width="588" height="481" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1586317105947" />
+    <state x="92" y="92" width="1176" height="544" key="DiffContextDialog/0.0.1360.728@0.0.1360.728" timestamp="1586426041739" />
+    <state x="277" y="150" width="588" height="481" key="FileChooserDialogImpl" timestamp="1586403084682">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="277" y="150" width="588" height="481" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1586403084682" />
     <state x="473" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586350977245" />
-    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1586402163807">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1317" height="2" key="GridCell.Tab.0.bottom" timestamp="1586429577677">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="101" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1586350170558" />
+    <state width="1317" height="2" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1586429577677" />
     <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586402163807" />
-    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1586402163807">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1317" height="2" key="GridCell.Tab.0.center" timestamp="1586429577676">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="101" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1586350170558" />
+    <state width="1317" height="2" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1586429577676" />
     <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586402163807" />
-    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1586402163807">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1317" height="2" key="GridCell.Tab.0.left" timestamp="1586429577675">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="101" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1586350170558" />
+    <state width="1317" height="2" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1586429577675" />
     <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586402163807" />
-    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1586402163807">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1317" height="2" key="GridCell.Tab.0.right" timestamp="1586429577676">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="101" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1586350170558" />
+    <state width="1317" height="2" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1586429577676" />
     <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586402163807" />
     <state width="1493" height="211" key="GridCell.Tab.1.bottom" timestamp="1586378829760">
       <screen x="0" y="0" width="1536" height="824" />
@@ -498,10 +545,10 @@
     </state>
     <state width="1317" height="223" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1586086669489" />
     <state width="1493" height="211" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586378829759" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1586350996519">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="220" y="0" key="SettingsEditor" timestamp="1586403093464">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="220" y="0" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1586317110152" />
+    <state x="220" y="0" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1586403093464" />
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586350996519" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1586381489756">
       <screen x="0" y="0" width="1536" height="824" />
@@ -516,10 +563,10 @@
     </state>
     <state x="320" y="128" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1586278475337" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586039761870" />
-    <state x="376" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1586246779186">
+    <state x="376" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1586429824005">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="376" y="188" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1586246779186" />
+    <state x="376" y="188" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1586429824005" />
     <state x="816" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586371098647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

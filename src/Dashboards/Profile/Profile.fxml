@@ -5,9 +5,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="530.0" styleClass="dark-panel" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.ProfileDash">
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="530.0" styleClass="dark-panel" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Profile.ProfileDash">
    <children>
-      <JFXButton fx:id="SignOut" layoutX="408.0" layoutY="391.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#returnToLogin" prefHeight="35.0" prefWidth="100.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@Style.css" text="Sign Out">
+      <JFXButton fx:id="SignOut" layoutX="408.0" layoutY="391.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#returnToLogin" prefHeight="35.0" prefWidth="100.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@../Style.css" text="Sign Out">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

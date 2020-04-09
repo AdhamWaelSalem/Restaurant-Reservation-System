@@ -26,6 +26,7 @@ public class IncomeStatement {
             return info;
         }catch (NullPointerException e){
             info.add("No Orders Made Yet");
+            e.printStackTrace();
             return info;
         }
     }

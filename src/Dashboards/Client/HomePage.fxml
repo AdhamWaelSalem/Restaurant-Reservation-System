@@ -18,7 +18,7 @@
                 <Insets top="10.0" />
             </padding>
             <children>
-                <JFXButton fx:id="openProfile" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openProfile" prefHeight="65.0" prefWidth="65.0" styleClass="main-buttons">
+                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="65.0" styleClass="main-buttons">
                     <graphic>
                         <FontAwesomeIcon iconName="USER" size="1.6em" styleClass="icons" />
                     </graphic>
@@ -26,7 +26,7 @@
                         <Insets left="30.0" />
                     </HBox.margin>
                 </JFXButton>
-                <JFXButton fx:id="openReservations" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openReservations" prefHeight="65.0" prefWidth="65.0" styleClass="main-buttons" text="Button">
+                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openReservations" prefHeight="65.0" prefWidth="65.0" styleClass="main-buttons" text="Button">
                     <HBox.margin>
                         <Insets />
                     </HBox.margin>
@@ -41,7 +41,7 @@
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../Food.png" />
+                                <Image url="@../Profile/Food.png" />
                             </image>
                         </ImageView>
                     </graphic>
@@ -57,14 +57,15 @@
                         <FontAwesomeIcon glyphStyle="-fx-fill: #596575" iconName="USER" size="6em" styleClass="icons" text="" />
                      </graphic>
                   </Label>
-                  <Label fx:id="UserName" alignment="CENTER" contentDisplay="CENTER" layoutX="188.0" layoutY="206.0" prefHeight="35.0" prefWidth="154.0" text="USERNAME" textFill="WHITE" />
-                  <Label fx:id="StarPoints" alignment="CENTER" contentDisplay="CENTER" layoutX="187.0" layoutY="271.0" prefHeight="35.0" prefWidth="154.0" text="STARPOINTS" textFill="WHITE" />
+                  <Label fx:id="Name" alignment="CENTER" contentDisplay="CENTER" layoutX="188.0" layoutY="206.0" prefHeight="35.0" prefWidth="154.0" text="NAME" textFill="WHITE" />
+                  <Label fx:id="StarPoints" alignment="CENTER" contentDisplay="CENTER" layoutX="188.0" layoutY="276.0" prefHeight="35.0" prefWidth="154.0" text="STARPOINTS" textFill="WHITE" />
                   <Label layoutX="317.0" layoutY="213.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" styleClass="loggedIn" text="Label" />
                   <JFXButton fx:id="SignOut" layoutX="372.0" layoutY="374.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#returnToLogin" prefHeight="35.0" prefWidth="144.0" ripplerFill="WHITE" style="-fx-background-radius: 2cm;" styleClass="buttons" stylesheets="@../Style.css" text="Sign Out">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </JFXButton>
+                  <Label fx:id="UserName" alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="241.0" prefHeight="35.0" prefWidth="154.0" text="\@username" textFill="WHITE" />
                </children>
             </AnchorPane>
          </children></StackPane>

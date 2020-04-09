@@ -43,7 +43,7 @@ public class Invoice {
         this.order = order;
     }
 
-    public List<String> getInvoice() {
+    /*public List<String> getInvoice() {
         info.add("Order\tPrice\tTaxes\tAfter Taxes");
         float a = 0, b = 0, c = 0;
         for (OrderItem item : order.getOrderedItems()) {
@@ -57,6 +57,7 @@ public class Invoice {
         info.add("\n");
         info.add("Total\t\t\t" + c);
         return info;
-    }
+    }*/
+
 
 }

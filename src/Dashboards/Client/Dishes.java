@@ -3,8 +3,6 @@ package Dashboards.Client;
 import MainPack.Restaurant;
 import OrdersPack.Dish;
 import OrdersPack.OrderItem;
-import UsersPack.Client;
-import UsersPack.User;
 import com.jfoenix.controls.JFXSlider;
 import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
@@ -12,7 +10,6 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
@@ -21,8 +18,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -42,8 +37,17 @@ public class Dishes implements Initializable {
     @FXML
     private TableColumn<DishDetails, HBox> Amount;
 
+
     List<JFXSlider> jfxSliders = new ArrayList<>();
     List<Label> labelList = new ArrayList<>();
+
+    Restaurant restaurant = Restaurant.getRestaurant();
+    List<OrderItem> orderItems = restaurant.getOrderItems();
+
+    private HomePage homePage;
+    protected void initHomePage(HomePage controller){
+        homePage = controller;
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -79,37 +83,29 @@ public class Dishes implements Initializable {
         DishesView.setItems(Dishes);
     }
 
-    public void confirmOrder(MouseEvent mouseEvent) throws IOException {
-        List<OrderItem> confirmedOrderedItems = new ArrayList<>();
-        for (JFXSlider jfxslider : jfxSliders) {
-            if (jfxslider.getValue() != 0) {
-             //   for (int i = 0; i < (int) (jfxslider.getValue()); i++)
-                Restaurant.getRestaurant().getOrderItems().get(jfxSliders.indexOf(jfxslider)).setAmount(Integer.parseInt(labelList.get(jfxSliders.indexOf(jfxslider)).getText()));
-                confirmedOrderedItems.add(Restaurant.getRestaurant().getOrderItems().get(jfxSliders.indexOf(jfxslider)));
-            }
-            for (int i = 0; i < Restaurant.getRestaurant().getUsers().size(); i++) {
-                User user = Restaurant.getRestaurant().getUsers().get(i);
-                if (user.isLoggedIn()) {
-                    Client client = (Client) Restaurant.getRestaurant().getUsers().get(i);
-                    try {
-                        ((Client) Restaurant.getRestaurant().getUsers().get(i)).AddOrder(((Client) Restaurant.getRestaurant().getUsers().get(i)).getReservations().get(0), confirmedOrderedItems);
-
-                    } catch (Exception e) {
-                        //ALERT BOXES
-                        System.out.println("NO RESERVATION MADE");
-                    }
-                    break;
-                }
-
-            }
-        }
-        Parent fxml = FXMLLoader.load(getClass().getResource("Invoice.fxml"));
+    public void viewInvoice() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("Invoice.fxml"));
+        fxmlLoader.load();
+        Invoice invoiceController = fxmlLoader.getController();
+        invoiceController.initHomePage(homePage);
+        Parent fxml = fxmlLoader.getRoot();
         pane.getChildren().removeAll();
         pane.getChildren().setAll(fxml);
     }
-
-    public void CheckReservations(MouseEvent mouseEvent) throws IOException {
-        ((StackPane) (((Node) mouseEvent.getSource()).getParent()).getParent()).getChildren().remove(((Node) mouseEvent.getSource()).getParent());
-        //Alert will lose progress if went back 3ashan begad kfaya ba2a!
+    public void ORDER(MouseEvent mouseEvent) throws IOException {
+        List<OrderItem> orderedItems = new ArrayList<>();
+        for (JFXSlider s: jfxSliders) {
+            if (s.getValue()!=0){
+                orderItems.get(jfxSliders.indexOf(s)).setAmount((int) s.getValue());
+                orderedItems.add(orderItems.get(jfxSliders.indexOf(s)));
+            }
+        }
+        homePage.client.AddOrder(homePage.client.getReservations().get(homePage.client.getReservations().size()-1),orderedItems);
+        try {
+            viewInvoice();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

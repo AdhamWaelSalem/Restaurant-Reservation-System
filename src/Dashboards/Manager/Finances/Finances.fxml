@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
-
 <AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="680.0" styleClass="dark-panel" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.Invoice">
    <children>
       <JFXButton fx:id="returnToProfile" layoutX="14.0" layoutY="456.0" onMouseClicked="#returnToProfile" prefHeight="42.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../Style.css" text="Return" />
       <TableView fx:id="InvoiceView" prefHeight="400.0" prefWidth="680.0">
-        <columns>
-          <TableColumn fx:id="order" prefWidth="178.0" text="Order" />
+         <columns>
+            <TableColumn fx:id="order" prefWidth="178.0" text="Order" />
             <TableColumn fx:id="price" prefWidth="100.0" text="Price" />
-          <TableColumn fx:id="amount" prefWidth="100.0" text="Amount" />
+            <TableColumn fx:id="amount" prefWidth="100.0" text="Amount" />
             <TableColumn fx:id="sumPrice" prefWidth="100.0" text="Sum Price" />
             <TableColumn fx:id="taxes" prefWidth="100.0" text="Taxes" />
             <TableColumn fx:id="afterTaxes" prefWidth="100.0" text="After Taxes" />
-        </columns>
+         </columns>
       </TableView>
       <Label fx:id="Total" layoutX="580.0" layoutY="400.0" prefHeight="42.0" prefWidth="100.0" />
       <Label layoutX="480.0" layoutY="400.0" prefHeight="42.0" prefWidth="100.0" text="Total" />

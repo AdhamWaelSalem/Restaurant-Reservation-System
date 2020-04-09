@@ -1,4 +1,4 @@
-package Dashboards.Manager;
+package Dashboards.Manager.Employees;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -15,14 +15,14 @@ public class Employees {
 
 
     public void viewEmployees(MouseEvent mouseEvent) throws IOException {
-        Parent fxml = FXMLLoader.load(getClass().getResource("ViewEmployee.fxml"));
+        Parent fxml = FXMLLoader.load(getClass().getResource("View.fxml"));
         employeesPane.getChildren().removeAll();
         employeesPane.getChildren().setAll(fxml);
 
     }
 
     public void addNewEmployee(MouseEvent mouseEvent) throws IOException {
-        Parent fxml = FXMLLoader.load(getClass().getResource("AddEmployee.fxml"));
+        Parent fxml = FXMLLoader.load(getClass().getResource("Add.fxml"));
         employeesPane.getChildren().removeAll();
         employeesPane.getChildren().setAll(fxml);
     }

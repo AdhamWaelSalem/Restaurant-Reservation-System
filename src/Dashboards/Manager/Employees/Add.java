@@ -1,10 +1,10 @@
-package Dashboards.Manager;
+package Dashboards.Manager.Employees;
 
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
-public class AddNewEmployee {
+public class Add {
     @FXML
     private AnchorPane employeesPane;
 

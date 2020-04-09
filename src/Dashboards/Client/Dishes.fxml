@@ -18,7 +18,7 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <JFXButton layoutX="415.0" layoutY="469.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#confirmOrder" prefHeight="35.0" prefWidth="265.0" ripplerFill="WHITE" style="-fx-background-radius: 2cm;" styleClass="buttons" stylesheets="@../Style.css" text="Confirm">
+      <JFXButton layoutX="415.0" layoutY="469.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#ORDER" prefHeight="35.0" prefWidth="265.0" ripplerFill="WHITE" style="-fx-background-radius: 2cm;" styleClass="buttons" stylesheets="@../Style.css" text="Confirm">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

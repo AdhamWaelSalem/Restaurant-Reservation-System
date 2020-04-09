@@ -6,7 +6,7 @@ import javafx.scene.layout.Pane;
 
 import java.util.Date;
 
-public class ManagerReservationDetails {
+public class ReservationDetails {
 
     @FXML
     private Pane Pane;

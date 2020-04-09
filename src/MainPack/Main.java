@@ -14,6 +14,10 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
+import java.io.File;
+import java.io.StringWriter;
 import java.util.Calendar;
 
 
@@ -39,6 +43,16 @@ public class Main extends Application {
         scene.setFill(Color.TRANSPARENT);
         primaryStage.setScene(scene);
         primaryStage.show();
+    }
+
+    @Override
+    public void stop() throws Exception {
+
+//        JAXBContext jaxbContext = JAXBContext.newInstance(Client.class);
+//        Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+//        jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+//        jaxbMarshaller.marshal(Restaurant.getUsers(),new File("save.xml"));
+//        System.out.println("FILE SAVING!!!");
     }
 
     public static void main(String[] args) {

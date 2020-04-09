@@ -1,4 +1,4 @@
-package Dashboards;
+package Dashboards.Profile;
 
 import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;

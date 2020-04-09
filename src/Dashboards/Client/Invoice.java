@@ -1,16 +1,19 @@
 package Dashboards.Client;
 
-import MainPack.Restaurant;
-import ReservationPack.Reservation;
-import UsersPack.Client;
-import UsersPack.User;
-import com.jfoenix.controls.JFXListView;
+import OrdersPack.Order;
+import OrdersPack.OrderItem;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
@@ -24,30 +27,54 @@ public class Invoice implements Initializable {
     @FXML
     private AnchorPane pane;
     @FXML
-    JFXListView<String> Invoice;
+    TableView<InvoiceDetails> InvoiceView;
+    @FXML
+    TableColumn<InvoiceDetails,String> order;
+    @FXML
+    TableColumn<InvoiceDetails,String> price;
+    @FXML
+    TableColumn<InvoiceDetails,String> amount;
+    @FXML
+    TableColumn<InvoiceDetails,String> sumPrice;
+    @FXML
+    TableColumn<InvoiceDetails,String> taxes;
+    @FXML
+    TableColumn<InvoiceDetails,String> afterTaxes;
+    @FXML
+    Label Total;
+
+    private HomePage homePage;
+    Order InvoiceOrder;
+    protected void initHomePage(HomePage controller){
+        homePage = controller;
+        InvoiceOrder = homePage.client.getReservations().get(homePage.client.getReservations().size()-1).getOrder();
+        showInvoice();
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        viewInvoice();
+        initColumns();
     }
 
-    public void viewInvoice() {
-        int i = 0;
-        for (User u : Restaurant.getRestaurant().getUsers()) {
-            if (u.isLoggedIn()) {
-                for (Reservation r : ((Client) u).getReservations()) {
-                    try {
-                        r.getOrder();
-                        Invoice.getItems().add("Order " + (++i));
-                        Invoice.getItems().addAll(r.getOrder().getPaymentCheck().getInvoice());
-                        Invoice.getItems().add("");
-                    } catch (Exception e) {
-                        //
-                    }
-                }
-            }
-        }
+    private void initColumns() {
+        order.setCellValueFactory(new PropertyValueFactory<>("order"));
+        price.setCellValueFactory(new PropertyValueFactory<>("price"));
+        amount.setCellValueFactory(new PropertyValueFactory<>("amount"));
+        sumPrice.setCellValueFactory(new PropertyValueFactory<>("sumPrice"));
+        taxes.setCellValueFactory(new PropertyValueFactory<>("taxes"));
+        afterTaxes.setCellValueFactory(new PropertyValueFactory<>("afterTaxes"));
+    }
 
+    public void showInvoice(){
+        ObservableList<InvoiceDetails> Invoice = FXCollections.observableArrayList();
+        float total = 0;
+        for (OrderItem o: InvoiceOrder.getOrderedItems()) {
+            InvoiceDetails i = new InvoiceDetails(o);
+            total += (o.getTaxes()+1)*o.getPrice()*o.getAmount();
+            Invoice.add(i);
+        }
+        InvoiceView.setItems(Invoice);
+        Total.setText("$" + total);
     }
 
     public void returnToProfile(MouseEvent mouseEvent) throws IOException {

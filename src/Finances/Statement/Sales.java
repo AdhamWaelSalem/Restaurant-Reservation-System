@@ -6,11 +6,12 @@ import ReservationPack.Reservation;
 import UsersPack.Client;
 import UsersPack.User;
 
+import java.util.ArrayList;
 import java.util.List;
 
 class Sales extends StatementValue{
 
-    private List<Order> orders;
+    private List<Order> orders = new ArrayList<>();
 
     public Sales(List<User> users) {
         for (User u: users) {

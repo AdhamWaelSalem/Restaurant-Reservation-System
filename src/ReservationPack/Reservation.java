@@ -3,10 +3,12 @@ package ReservationPack;
 import OrdersPack.Order;
 import UsersPack.Client;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
+@XmlRootElement
 public class Reservation {
 
     private Table table;
@@ -31,6 +33,7 @@ public class Reservation {
     //Methods
 
     //Getters and Setters
+    @XmlElement
     public Table getTable() {
         return table;
     }
@@ -38,7 +41,7 @@ public class Reservation {
     public void setTable(Table table) {
         this.table = table;
     }
-
+    @XmlElement
     public Order getOrder() {
         return order;
     }
@@ -46,7 +49,7 @@ public class Reservation {
     public void setOrder(Order order) {
         this.order = order;
     }
-
+    @XmlElement
     public Date getReservationDate() {
         return reservationDate;
     }
@@ -54,7 +57,7 @@ public class Reservation {
     public void setReservationDate(Date reservationDate) {
         this.reservationDate = reservationDate;
     }
-
+    @XmlElement
     public String getSpecialRequest() {
         return specialRequest;
     }

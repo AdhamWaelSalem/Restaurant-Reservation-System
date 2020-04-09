@@ -6,6 +6,7 @@ public abstract class OrderItem {
     protected String name;
     protected int price;
     protected float taxes;
+    protected int amount;
 
 
     //Constructor
@@ -23,7 +24,6 @@ public abstract class OrderItem {
     public String getName() {
         return name;
     }
-    protected int amount;
     public void setName(String name) {
         this.name = name;
     }
