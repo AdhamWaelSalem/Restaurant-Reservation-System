@@ -12,7 +12,7 @@
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="680.0" styleClass="dark-panel" stylesheets="@../Style.css">
          <children>
-            <TableView fx:id="TablesView" layoutY="43.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="680.0" stylesheets="@../Style.css">
+            <TableView fx:id="TablesView" layoutY="43.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="680.0" style="-fx-background-radius: 0.15cm;" stylesheets="@../Style.css">
                <columns>
                   <TableColumn fx:id="Table" prefWidth="75.0" text="   Table" />
                   <TableColumn fx:id="Seats" prefWidth="75.0" text="Seats" />

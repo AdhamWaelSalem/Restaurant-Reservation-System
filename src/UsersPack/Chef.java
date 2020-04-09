@@ -27,4 +27,9 @@ public class Chef extends Employee {
         return access;
     }
 
+    @Override
+    public String Role() {
+        return "Chef";
+    }
+
 }

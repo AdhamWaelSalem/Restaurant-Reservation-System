@@ -26,6 +26,7 @@ public class Reservations extends HomePage {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Tables.fxml"));
         Parent parent = (Parent) fxmlLoader.load();
         Scene scene = new Scene(parent);
+        scene.setFill(Color.TRANSPARENT);
         Stage stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();

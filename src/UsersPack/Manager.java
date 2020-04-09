@@ -27,4 +27,9 @@ public class Manager extends Employee {
         access = Access.Full;
         return access;
     }
+
+    @Override
+    public String Role() {
+        return "Manager";
+    }
 }

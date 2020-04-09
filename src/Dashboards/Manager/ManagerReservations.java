@@ -48,12 +48,14 @@ public class ManagerReservations implements Initializable {
         ObservableList<ManagerReservationDetails> managerReservationDetails = FXCollections.observableArrayList();
         for (User u : Restaurant.getRestaurant().getUsers()) {
             if (u instanceof Client) {
-                ManagerReservationDetails m = new ManagerReservationDetails();
                 try {
-                    m.setTableNumber(String.valueOf(((Client) u).getReservations().get(0).getTable().getNumber()));
-                    m.setDate(String.valueOf(((Client) u).getReservations().get(0).getReservationDate()));
-                    m.setClientName(u.getName());
-                    managerReservationDetails.add(m);
+                    for (int i = 0; i < ((Client) u).getReservations().size(); i++) {
+                        ManagerReservationDetails m = new ManagerReservationDetails();
+                        m.setTableNumber(String.valueOf(((Client) u).getReservations().get(i).getTable().getNumber()));
+                        m.setDate(String.valueOf(((Client) u).getReservations().get(i).getReservationDate()));
+                        m.setClientName(u.getName());
+                        managerReservationDetails.add(m);
+                    }
                 } catch (Exception e) {
                     continue;
                 }

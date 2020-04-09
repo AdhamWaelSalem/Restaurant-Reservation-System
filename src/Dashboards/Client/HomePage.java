@@ -1,6 +1,7 @@
 package Dashboards.Client;
 
 import MainPack.Restaurant;
+import UsersPack.Client;
 import UsersPack.User;
 import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXML;
@@ -9,6 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
@@ -20,6 +22,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class HomePage implements Initializable {
+
     @FXML
     private AnchorPane mainPane;
     @FXML
@@ -30,12 +33,27 @@ public class HomePage implements Initializable {
     JFXButton openReservations;
     @FXML
     JFXButton openOrders;
+    Client client;
 
+    public Label UserName;
+    public Label StarPoints;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        for (User u : Restaurant.getRestaurant().getUsers()) {
+            if (u.isLoggedIn()) {
+              //  u.setLoggedIn(false);
+                try {
+                    UserName.setText(u.getName());
+                    StarPoints.setText("StarPoints " + ((Client) u).getStarPoints());
+                } catch (Exception e) {
+                    ///not logged in
+                }
+                break;
+            }
+
+        }
 
     }
-
 
     public void openProfile(MouseEvent mouseEvent) throws IOException {
         Parent fxml = FXMLLoader.load(getClass().getResource("Profile.fxml"));

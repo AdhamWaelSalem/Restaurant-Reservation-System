@@ -45,7 +45,6 @@ public class Tables implements Initializable {
     private TableColumn<TableDetails, JFXToggleButton> Reserve;
 
 
-
     List<JFXToggleButton> jfxToggleButtons = new ArrayList<>();
     ToggleGroup toggleGroup = new ToggleGroup();
 
@@ -119,7 +118,7 @@ public class Tables implements Initializable {
                 }
             }
         }
-
+        toggleGroup.getToggles().removeAll();
     }
 
 }

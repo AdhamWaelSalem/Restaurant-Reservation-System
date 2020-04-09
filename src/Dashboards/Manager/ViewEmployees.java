@@ -1,10 +1,7 @@
 package Dashboards.Manager;
 
 import MainPack.Restaurant;
-import UsersPack.Chef;
-import UsersPack.Client;
-import UsersPack.User;
-import UsersPack.Waiter;
+import UsersPack.*;
 import com.jfoenix.controls.JFXButton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -24,7 +21,7 @@ public class ViewEmployees implements Initializable {
     @FXML
     private TableView<EmployeesDetails> EmployeesView;
     @FXML
-    private TableColumn<EmployeesDetails, String> EmployeesName;
+    private TableColumn<EmployeesDetails, String> EmployeeName;
     @FXML
     private TableColumn<EmployeesDetails, String> Role;
     @FXML
@@ -37,7 +34,7 @@ public class ViewEmployees implements Initializable {
     }
 
     private void initColumns() {
-        EmployeesName.setCellValueFactory(new PropertyValueFactory<>("EmployeesName"));
+        EmployeeName.setCellValueFactory(new PropertyValueFactory<>("EmployeeName"));
         Role.setCellValueFactory(new PropertyValueFactory<>("Role"));
         Fire.setCellValueFactory(new PropertyValueFactory<>("Fire"));
 
@@ -45,12 +42,15 @@ public class ViewEmployees implements Initializable {
 
     private void loadEmployees() {
         ObservableList<EmployeesDetails> employeesDetails = FXCollections.observableArrayList();
+
         for (User u : Restaurant.getRestaurant().getUsers()) {
+            System.out.println(u.getName());
             if (u instanceof Waiter || u instanceof Chef) {
                 EmployeesDetails e = new EmployeesDetails();
                 JFXButton jfxButton = new JFXButton();
                 e.setEmployeeName(u.getName());
-                e.setRole(String.valueOf(u.getClass()));
+              //  System.out.println(u.getName());
+                e.setRole(((Employee) u).Role());
                 e.setFire(jfxButton);
                 employeesDetails.add(e);
             }

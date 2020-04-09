@@ -83,8 +83,9 @@ public class Dishes implements Initializable {
         List<OrderItem> confirmedOrderedItems = new ArrayList<>();
         for (JFXSlider jfxslider : jfxSliders) {
             if (jfxslider.getValue() != 0) {
-                for (int i = 0; i < (int) (jfxslider.getValue()); i++)
-                    confirmedOrderedItems.add(Restaurant.getRestaurant().getOrderItems().get(jfxSliders.indexOf(jfxslider)));
+             //   for (int i = 0; i < (int) (jfxslider.getValue()); i++)
+                Restaurant.getRestaurant().getOrderItems().get(jfxSliders.indexOf(jfxslider)).setAmount(Integer.parseInt(labelList.get(jfxSliders.indexOf(jfxslider)).getText()));
+                confirmedOrderedItems.add(Restaurant.getRestaurant().getOrderItems().get(jfxSliders.indexOf(jfxslider)));
             }
             for (int i = 0; i < Restaurant.getRestaurant().getUsers().size(); i++) {
                 User user = Restaurant.getRestaurant().getUsers().get(i);

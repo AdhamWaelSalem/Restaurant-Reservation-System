@@ -25,7 +25,6 @@ public class Invoice implements Initializable {
     private AnchorPane pane;
     @FXML
     JFXListView<String> Invoice;
-   // private static int i = 0;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -37,7 +36,6 @@ public class Invoice implements Initializable {
         for (User u : Restaurant.getRestaurant().getUsers()) {
             if (u.isLoggedIn()) {
                 for (Reservation r : ((Client) u).getReservations()) {
-                    System.out.println("l");
                     try {
                         r.getOrder();
                         Invoice.getItems().add("Order " + (++i));

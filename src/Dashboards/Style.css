@@ -41,7 +41,7 @@
 }
 
 .buttons {
-    -fx-background-color: PINK;
+    -fx-background-color: #FFB6C1;
     -fx-background-radius: 0.25cm;
     -fx-text-fill: WHITE;
 }
@@ -75,7 +75,7 @@
 }
 .table-view .column-header,
 .table-view .column-header-background .filler {
-    -fx-background-color:  PINK;
+    -fx-background-color:  #FFB6C1;
     //-fx-border-color: White;
 
 }
@@ -89,8 +89,9 @@
 }
 .table-view .cell{
     -fx-cell-size: 35;
-    -fx-alignment: center-left;
+   // -fx-alignment: center-left;
     -fx-background-color: #4A86E8;
+    -fx-border-radius: 0.5cm;
     -fx-border-color:#4A86E8;
     -fx-text-fill: lightgray;
     -fx-alignment: CENTER_LEFT;

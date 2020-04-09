@@ -1,18 +1,21 @@
 package UsersPack;
 
-public abstract class Employee extends User{
+public abstract class Employee extends User {
 
     protected float Wages;
-    public enum Access{
+
+    public enum Access {
         Full,
         Partial,
         Minimum
     }
+
     protected Access access;
 
     //Constructor
     public Employee() {
     }
+
     public Employee(String name, String username, String password) {
         super(name, username, password);
     }
@@ -33,4 +36,7 @@ public abstract class Employee extends User{
     public void setAccess(Access access) {
         this.access = access;
     }
+    //Method
+    public abstract String Role();
+
 }

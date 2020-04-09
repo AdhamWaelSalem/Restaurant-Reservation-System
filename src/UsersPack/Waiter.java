@@ -27,4 +27,9 @@ public class Waiter extends Employee {
         access = Access.Partial;
         return access;
     }
+
+    @Override
+    public String Role() {
+        return "Waiter";
+    }
 }

@@ -10,7 +10,7 @@
         <columns>
           <TableColumn fx:id="ClientName" prefWidth="150.0" text="C1" />
           <TableColumn fx:id="TableNumber" prefWidth="150.0" text="C2" />
-            <TableColumn fx:id="Date" prefWidth="150.0" text="C1" />
+            <TableColumn fx:id="Date" prefWidth="200.0" text="C1" />
         </columns>
       </TableView>
    </children>

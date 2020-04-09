@@ -4,10 +4,9 @@
 <?import com.jfoenix.controls.JFXListView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="pane" prefHeight="511.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.Invoice">
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="680.0" styleClass="dark-panel" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.Invoice">
    <children>
-      <JFXListView fx:id="Invoice" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="680.0" styleClass="table-view" stylesheets="@../Style.css" />
-      <JFXButton fx:id="returnToProfile" layoutX="415.0" layoutY="500.0" onMouseClicked="#returnToProfile" prefHeight="42.0" prefWidth="265.0" text="Return" />
-      <JFXButton layoutY="499.0" prefHeight="42.0" prefWidth="265.0" text="Online Payment" />
+      <JFXListView fx:id="Invoice" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="680.0" styleClass="table-view" stylesheets="@../Style.css" />
+      <JFXButton fx:id="returnToProfile" layoutX="536.0" layoutY="461.0" onMouseClicked="#returnToProfile" prefHeight="42.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../Style.css" text="Return" />
    </children>
 </AnchorPane>
