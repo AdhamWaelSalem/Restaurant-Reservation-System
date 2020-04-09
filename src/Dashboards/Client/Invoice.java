@@ -1,8 +1,8 @@
 package Dashboards.Client;
 
-import OrdersPack.Order;
-import OrdersPack.OrderItem;
-import UsersPack.Client;
+import Orders.Order;
+import Orders.OrderItem;
+import Users.Client;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

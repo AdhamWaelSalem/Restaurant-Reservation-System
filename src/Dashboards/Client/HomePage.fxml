@@ -2,42 +2,26 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="530.0" styleClass="parent" stylesheets="@../Employee/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.HomePage">
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" styleClass="parent" stylesheets="@../Employee/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.HomePage">
     <children>
-        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="530.0" spacing="120.0" styleClass="dark-panel" stylesheets="@../Employee/Style.css">
-            <padding>
-                <Insets top="10.0" />
-            </padding>
-            <children>
-                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="65.0" styleClass="main-buttons">
+      <AnchorPane prefHeight="80.0" prefWidth="850.0" styleClass="dark-panel" stylesheets="@../Employee/Style.css">
+         <children>
+                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openProfile" prefHeight="80.0" prefWidth="200.0" styleClass="main-buttons" text="Profile">
                     <graphic>
                         <FontAwesomeIcon iconName="USER" size="1.6em" styleClass="icons" />
                     </graphic>
-                    <HBox.margin>
-                        <Insets left="30.0" />
-                    </HBox.margin>
                 </JFXButton>
-                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openReservations" prefHeight="65.0" prefWidth="65.0" styleClass="main-buttons" text="Button">
-                    <HBox.margin>
-                        <Insets />
-                    </HBox.margin>
+                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="325.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openReservations" prefHeight="80.0" prefWidth="200.0" styleClass="main-buttons" text="Reservations">
                     <graphic>
                         <FontAwesomeIcon glyphStyleClass="" iconName="ARCHIVE" size="1.6em" styleClass="icons" />
                     </graphic>
                 </JFXButton>
-                <JFXButton fx:id="openOrders" alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openOrders" prefHeight="65.0" prefWidth="65.0" styleClass="main-buttons">
-                    <HBox.margin>
-                        <Insets />
-                    </HBox.margin>
+                <JFXButton fx:id="openOrders" alignment="CENTER" contentDisplay="CENTER" layoutX="636.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="200.0" styleClass="main-buttons" text="Invoice">
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -46,28 +30,8 @@
                         </ImageView>
                     </graphic>
                 </JFXButton>
-            </children>
-        </HBox>
-      <StackPane fx:id="pane" layoutY="110.0" prefHeight="430.0" prefWidth="530.0">
-         <children>
-            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="530.0" styleClass="dark-panel" stylesheets="@../Employee/Style.css">
-               <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="181.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="169.0" prefWidth="169.0" styleClass="circle">
-                     <graphic>
-                        <FontAwesomeIcon glyphStyle="-fx-fill: #596575" iconName="USER" size="6em" styleClass="icons" text="" />
-                     </graphic>
-                  </Label>
-                  <Label fx:id="Name" alignment="CENTER" contentDisplay="CENTER" layoutX="188.0" layoutY="206.0" prefHeight="35.0" prefWidth="154.0" text="NAME" textFill="WHITE" />
-                  <Label fx:id="StarPoints" alignment="CENTER" contentDisplay="CENTER" layoutX="188.0" layoutY="276.0" prefHeight="35.0" prefWidth="154.0" text="STARPOINTS" textFill="WHITE" />
-                  <Label layoutX="317.0" layoutY="213.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" styleClass="loggedIn" text="Label" />
-                  <JFXButton fx:id="SignOut" layoutX="372.0" layoutY="374.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#returnToLogin" prefHeight="35.0" prefWidth="144.0" ripplerFill="WHITE" style="-fx-background-radius: 2cm;" styleClass="buttons" stylesheets="@../Employee/Style.css" text="Sign Out">
-                     <font>
-                        <Font name="System Bold" size="15.0" />
-                     </font>
-                  </JFXButton>
-                  <Label fx:id="UserName" alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="241.0" prefHeight="35.0" prefWidth="154.0" text="\@username" textFill="WHITE" />
-               </children>
-            </AnchorPane>
-         </children></StackPane>
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="pane" layoutY="100.0" prefHeight="450.0" prefWidth="850.0" />
     </children>
 </AnchorPane>

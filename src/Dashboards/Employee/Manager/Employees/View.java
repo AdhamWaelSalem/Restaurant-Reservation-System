@@ -1,7 +1,7 @@
 package Dashboards.Employee.Manager.Employees;
 
-import MainPack.Restaurant;
-import UsersPack.*;
+import Main.Restaurant;
+import Users.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

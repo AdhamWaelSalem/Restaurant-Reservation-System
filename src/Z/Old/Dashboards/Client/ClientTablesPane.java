@@ -1,10 +1,10 @@
 //package Z.Client;
 //
-//import MainPack.Restaurant;
-//import ReservationPack.Reservation;
-//import ReservationPack.Table;
-//import UsersPack.Client;
-//import UsersPack.User;
+//import Main.Restaurant;
+//import Reservation.Reservation;
+//import Reservation.Table;
+//import Users.Client;
+//import Users.User;
 //import com.jfoenix.controls.JFXButton;
 //import javafx.event.ActionEvent;
 //import javafx.fxml.ClientFXML;

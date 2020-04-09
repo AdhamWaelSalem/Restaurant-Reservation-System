@@ -1,7 +1,7 @@
 package Dashboards.Login;
 
-import MainPack.Restaurant;
-import UsersPack.User;
+import Main.Restaurant;
+import Users.User;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.Initializable;

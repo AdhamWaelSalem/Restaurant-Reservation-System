@@ -1,8 +1,6 @@
 package Finances.Invoice;
 
-import OrdersPack.Order;
-import OrdersPack.OrderItem;
-import UsersPack.Client;
+import Orders.Order;
 
 import java.util.ArrayList;
 import java.util.List;

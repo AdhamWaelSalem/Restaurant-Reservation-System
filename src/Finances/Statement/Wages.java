@@ -1,15 +1,8 @@
 package Finances.Statement;
 
-import MainPack.Restaurant;
-import OrdersPack.Order;
-import OrdersPack.OrderItem;
-import ReservationPack.Reservation;
-import UsersPack.Client;
-import UsersPack.Employee;
-import UsersPack.User;
-
-import java.util.ArrayList;
-import java.util.List;
+import Main.Restaurant;
+import Users.Employee;
+import Users.User;
 
 class Wages extends StatementItem{
 

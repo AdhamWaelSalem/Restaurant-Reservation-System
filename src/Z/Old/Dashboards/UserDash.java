@@ -1,6 +1,6 @@
 package Z.Old.Dashboards;
 
-import UsersPack.User;
+import Users.User;
 
 public abstract class UserDash {
 

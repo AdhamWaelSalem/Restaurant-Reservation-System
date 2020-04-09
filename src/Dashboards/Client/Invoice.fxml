@@ -6,10 +6,10 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="680.0" styleClass="dark-panel" stylesheets="@../Employee/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.Invoice">
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" styleClass="dark-panel" stylesheets="@../Employee/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.Invoice">
    <children>
-      <JFXButton fx:id="returnToProfile" layoutX="14.0" layoutY="456.0" onMouseClicked="#returnToProfile" prefHeight="42.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../Employee/Style.css" text="Return" />
-      <TableView fx:id="InvoiceView" prefHeight="400.0" prefWidth="680.0">
+      <JFXButton fx:id="returnToProfile" layoutX="14.0" layoutY="494.0" onMouseClicked="#returnToProfile" prefHeight="42.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../Employee/Style.css" text="Return" />
+      <TableView fx:id="InvoiceView" prefHeight="450.0" prefWidth="850.0">
         <columns>
           <TableColumn fx:id="order" prefWidth="178.0" text="Order" />
             <TableColumn fx:id="price" prefWidth="100.0" text="Price" />
@@ -18,8 +18,11 @@
             <TableColumn fx:id="taxes" prefWidth="100.0" text="Taxes" />
             <TableColumn fx:id="afterTaxes" prefWidth="100.0" text="After Taxes" />
         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
       </TableView>
-      <Label fx:id="Total" layoutX="580.0" layoutY="400.0" prefHeight="42.0" prefWidth="100.0" />
-      <Label layoutX="480.0" layoutY="400.0" prefHeight="42.0" prefWidth="100.0" text="Total" />
+      <Label fx:id="Total" layoutX="702.0" layoutY="452.0" prefHeight="42.0" prefWidth="141.0" />
+      <Label layoutX="561.0" layoutY="452.0" prefHeight="42.0" prefWidth="141.0" text="Total" />
    </children>
 </AnchorPane>

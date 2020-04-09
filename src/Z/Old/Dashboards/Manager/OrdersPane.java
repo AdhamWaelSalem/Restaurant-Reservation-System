@@ -1,7 +1,7 @@
 //package Z.Manager;
 //
-//import MainPack.Restaurant;
-//import ReservationPack.Table;
+//import Main.Restaurant;
+//import Reservation.Table;
 //import javafx.fxml.ClientFXML;
 //import javafx.fxml.Initializable;
 //import javafx.scene.control.Button;

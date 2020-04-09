@@ -1,7 +1,7 @@
 /*
 package Z.Manager;
 
-import MainPack.Restaurant;
+import Main.Restaurant;
 import com.jfoenix.controls.JFXListView;
 import javafx.fxml.ClientFXML;
 import javafx.fxml.Initializable;

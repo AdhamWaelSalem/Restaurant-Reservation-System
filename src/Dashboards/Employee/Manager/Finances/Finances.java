@@ -1,7 +1,7 @@
 package Dashboards.Employee.Manager.Finances;
 
 import Finances.Statement.StatementItem;
-import MainPack.Restaurant;
+import Main.Restaurant;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;

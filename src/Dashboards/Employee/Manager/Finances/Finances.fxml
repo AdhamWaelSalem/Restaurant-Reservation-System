@@ -4,9 +4,9 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Employee.Manager.Finances.Finances">
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Employee.Manager.Finances.Finances">
    <children>
-      <TableView fx:id="Statement" prefHeight="430.0" prefWidth="530.0">
+      <TableView fx:id="Statement" prefHeight="450.0" prefWidth="850.0">
          <columns>
             <TableColumn fx:id="Title" prefWidth="75.0" text="Income Statement" />
             <TableColumn fx:id="Value" prefWidth="75.0" text="Values" />

@@ -1,7 +1,5 @@
 package Dashboards.Employee.Manager;
 
-import MainPack.Restaurant;
-import UsersPack.User;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -30,12 +28,6 @@ public class HomePage implements Initializable {
 
     public void openFinances(MouseEvent mouseEvent) throws IOException {
         Parent fxml = FXMLLoader.load(getClass().getResource("Finances/Finances.fxml"));
-        pane.getChildren().removeAll();
-        pane.getChildren().setAll(fxml);
-    }
-
-    public void openOrders(MouseEvent mouseEvent) throws IOException {
-        Parent fxml = FXMLLoader.load(getClass().getResource("Orders.fxml"));
         pane.getChildren().removeAll();
         pane.getChildren().setAll(fxml);
     }

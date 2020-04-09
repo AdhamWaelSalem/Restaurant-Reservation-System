@@ -1,9 +1,6 @@
 package Dashboards.Client;
 
-import OrdersPack.OrderItem;
-import javafx.fxml.FXML;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import Orders.OrderItem;
 
 public class InvoiceDetails {
 

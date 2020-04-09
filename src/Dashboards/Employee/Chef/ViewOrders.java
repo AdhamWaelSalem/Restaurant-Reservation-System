@@ -1,10 +1,10 @@
 package Dashboards.Employee.Chef;
 
-import MainPack.Restaurant;
-import OrdersPack.OrderItem;
-import ReservationPack.Reservation;
-import UsersPack.Client;
-import UsersPack.User;
+import Main.Restaurant;
+import Orders.OrderItem;
+import Reservation.Reservation;
+import Users.Client;
+import Users.User;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

@@ -1,11 +1,11 @@
 //package Z.Client;
 //
-//import MainPack.Restaurant;
-//import OrdersPack.Dish;
-//import OrdersPack.Order;
-//import OrdersPack.OrderItem;
-//import UsersPack.Client;
-//import UsersPack.User;
+//import Main.Restaurant;
+//import Orders.Dish;
+//import Orders.Order;
+//import Orders.OrderItem;
+//import Users.Client;
+//import Users.User;
 //import com.jfoenix.controls.JFXButton;
 //import javafx.fxml.ClientFXML;
 //import javafx.fxml.Initializable;

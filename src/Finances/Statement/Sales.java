@@ -1,12 +1,11 @@
 package Finances.Statement;
 
-import MainPack.Restaurant;
-import OrdersPack.Order;
-import OrdersPack.OrderItem;
-import ReservationPack.Reservation;
-import UsersPack.Client;
-import UsersPack.User;
-import com.sun.org.apache.xpath.internal.operations.Or;
+import Main.Restaurant;
+import Orders.Order;
+import Orders.OrderItem;
+import Reservation.Reservation;
+import Users.Client;
+import Users.User;
 
 import java.util.ArrayList;
 import java.util.List;

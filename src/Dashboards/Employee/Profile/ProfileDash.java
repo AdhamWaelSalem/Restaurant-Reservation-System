@@ -1,7 +1,7 @@
 package Dashboards.Employee.Profile;
 
-import MainPack.Restaurant;
-import UsersPack.User;
+import Main.Restaurant;
+import Users.User;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
