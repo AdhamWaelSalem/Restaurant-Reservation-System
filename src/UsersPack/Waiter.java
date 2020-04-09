@@ -13,7 +13,7 @@ public class Waiter extends Employee {
     //Methods
     @Override
     public String dashLocation(){
-        return "/Dashboards/Waiter/Home.fxml";
+        return "/Dashboards/Employee/Waiter/HomePage.fxml";
     }
 
     @Override

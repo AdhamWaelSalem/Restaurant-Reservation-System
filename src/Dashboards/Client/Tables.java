@@ -3,6 +3,7 @@ package Dashboards.Client;
 import MainPack.Restaurant;
 import ReservationPack.ReserveItem;
 import ReservationPack.Table;
+import UsersPack.Client;
 import com.jfoenix.controls.JFXToggleButton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -102,7 +103,7 @@ public class Tables implements Initializable {
     public void RESERVATION(){
         try {
             Table table = (Table) Restaurant.getRestaurant().getReserveItems().get(jfxToggleButtons.indexOf(toggleGroup.getSelectedToggle()));
-            homePage.client.MakeReservation(table,Calendar.getInstance().getTime());
+            ((Client) homePage.user).MakeReservation(table,Calendar.getInstance().getTime());
             AddOrder();
         } catch (Exception e) {
             System.out.println("ENTERED EXCEPTION!!!");

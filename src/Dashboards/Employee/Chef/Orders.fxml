@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Employee.Chef.ViewOrders">
+   <children>
+      <TableView fx:id="Orders" prefHeight="430.0" prefWidth="530.0">
+        <columns>
+          <TableColumn fx:id="Order" prefWidth="75.0" text="Order" />
+            <TableColumn fx:id="Amount" prefWidth="75.0" text="Amount" />
+          <TableColumn fx:id="Table" prefWidth="75.0" text="Table" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

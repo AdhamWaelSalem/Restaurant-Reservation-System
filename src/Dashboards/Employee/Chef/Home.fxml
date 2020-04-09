@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="530.0" styleClass="parent" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Employee.Chef.HomePage">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="530.0" spacing="125.0" styleClass="dark-panel" stylesheets="@../Style.css">
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+            <children>
+                <JFXButton fx:id="Profile" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openProfile" prefHeight="65.0" prefWidth="65.0" styleClass="main-buttons" text="Button">
+                    <graphic>
+                        <FontAwesomeIcon iconName="USER" size="1.6em" styleClass="icons" />
+                    </graphic>
+                    <HBox.margin>
+                        <Insets left="100.0" />
+                    </HBox.margin>
+                </JFXButton>
+                <JFXButton fx:id="Orders" alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openOrders" prefHeight="65.0" prefWidth="65.0" styleClass="main-buttons">
+                    <HBox.margin>
+                        <Insets left="40.0" />
+                    </HBox.margin>
+                    <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="28.0">
+                            <image>
+                                <Image url="@../Profile/Food.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+
+                </JFXButton>
+            </children>
+        </HBox>
+        <AnchorPane fx:id="pane" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="530.0" styleClass="parent" stylesheets="@../Style.css" />
+    </children>
+</AnchorPane>

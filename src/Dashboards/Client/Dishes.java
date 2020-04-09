@@ -3,6 +3,7 @@ package Dashboards.Client;
 import MainPack.Restaurant;
 import OrdersPack.Dish;
 import OrdersPack.OrderItem;
+import UsersPack.Client;
 import com.jfoenix.controls.JFXSlider;
 import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
@@ -101,7 +102,7 @@ public class Dishes implements Initializable {
                 orderedItems.add(orderItems.get(jfxSliders.indexOf(s)));
             }
         }
-        homePage.client.AddOrder(homePage.client.getReservations().get(homePage.client.getReservations().size()-1),orderedItems);
+        ((Client) homePage.user).AddOrder(((Client) homePage.user).getReservations().get(((Client) homePage.user).getReservations().size()-1),orderedItems);
         try {
             viewInvoice();
         } catch (IOException e) {

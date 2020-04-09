@@ -12,7 +12,7 @@ public class Chef extends Employee {
     //Methods
     @Override
     public String dashLocation(){
-        return "/Dashboards/Chef/Home.fxml";
+        return "/Dashboards/Employee/Chef/Home.fxml";
     }
 
     @Override

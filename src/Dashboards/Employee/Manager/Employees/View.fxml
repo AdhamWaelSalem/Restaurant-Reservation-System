@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="530.0" styleClass="dark-panel" stylesheets="@../../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Employee.Manager.Employees.View">
+   <children>
+      <TableView fx:id="EmployeesView" prefHeight="301.0" prefWidth="530.0">
+        <columns>
+          <TableColumn fx:id="Name" prefWidth="150.0" text="Name" />
+          <TableColumn fx:id="Role" prefWidth="170.0" text="Role" />
+            <TableColumn fx:id="Wages" prefWidth="150.0" text="Wages" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

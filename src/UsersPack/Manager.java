@@ -13,7 +13,7 @@ public class Manager extends Employee {
     //Methods
     @Override
     public String dashLocation(){
-        return "/Dashboards/Manager/Home.fxml";
+        return "/Dashboards/Employee/Manager/HomePage.fxml";
     }
 
     @Override

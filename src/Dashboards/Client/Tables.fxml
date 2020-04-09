@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="675.0" styleClass="parent" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.Tables">
+<StackPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="675.0" styleClass="parent" stylesheets="@../Employee/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Client.Tables">
    <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="680.0" styleClass="dark-panel" stylesheets="@../Style.css">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="680.0" styleClass="dark-panel" stylesheets="@../Employee/Style.css">
          <children>
-            <TableView fx:id="TablesView" layoutY="43.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="680.0" style="-fx-background-radius: 0.15cm;" stylesheets="@../Style.css">
+            <TableView fx:id="TablesView" layoutY="43.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="680.0" style="-fx-background-radius: 0.15cm;" stylesheets="@../Employee/Style.css">
                <columns>
                   <TableColumn fx:id="Table" prefWidth="75.0" text="   Table" />
                   <TableColumn fx:id="Seats" prefWidth="75.0" text="Seats" />
@@ -24,12 +24,12 @@
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                </columnResizePolicy>
             </TableView>
-            <JFXButton layoutX="495.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#RESERVATION" prefHeight="32.0" prefWidth="171.0" ripplerFill="WHITE" style="-fx-background-radius: 2cm;" styleClass="buttons" stylesheets="@../Style.css" text="Add Order">
+            <JFXButton layoutX="495.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#RESERVATION" prefHeight="32.0" prefWidth="171.0" ripplerFill="WHITE" style="-fx-background-radius: 2cm;" styleClass="buttons" stylesheets="@../Employee/Style.css" text="Add Order">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </JFXButton>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="247.0" layoutY="6.0" prefHeight="40.0" prefWidth="149.0" styleClass="buttons" stylesheets="@../Style.css" text="Tables">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="247.0" layoutY="6.0" prefHeight="40.0" prefWidth="149.0" styleClass="buttons" stylesheets="@../Employee/Style.css" text="Tables">
                <font>
                   <Font name="System Italic" size="24.0" />
                </font>

@@ -1,24 +1,30 @@
 package Finances.Statement;
 
+import MainPack.Restaurant;
+import OrdersPack.Order;
+import OrdersPack.OrderItem;
+import ReservationPack.Reservation;
+import UsersPack.Client;
 import UsersPack.Employee;
 import UsersPack.User;
 
+import java.util.ArrayList;
 import java.util.List;
 
-class Wages extends StatementValue{
-    private List<User> users;
+class Wages extends StatementItem{
 
-    public Wages(List<User> users) {
-        this.users = users;
+    public Wages() {
+
+        Title = "Wages";
+        CalculateWages();
     }
-
-    @Override
-    protected float calculate() {
-        for (User user: users) {
+    private void CalculateWages(){
+        float value = 0;
+        for (User user: Restaurant.getRestaurant().getUsers()) {
             if (user instanceof Employee){
-                value+= ((Employee) user).getWages();
+                value += ((Employee) user).getWages();
             }
         }
-        return value;
+        Value = String.valueOf(value) ;
     }
 }

@@ -31,7 +31,6 @@ public class HomePage implements Initializable {
     JFXButton openReservations;
     @FXML
     JFXButton openOrders;
-    protected Client client;
     @FXML
     public Label Name;
     @FXML
@@ -41,27 +40,22 @@ public class HomePage implements Initializable {
     @FXML
     private Tables tablesController;
 
+    protected User user;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
-        initClient();
-        client.getName();
-        Name.setText(client.getName());
-        UserName.setText("@"+client.getUsername());
-        StarPoints.setText("StarPoints " + client.getStarPoints());
+        initUser();
     }
 
-    private void initClient(){
+    private void initUser(){
         for (User u : Restaurant.getRestaurant().getUsers()) {
-            if (u.isLoggedIn() && u instanceof Client) {
-                client = (Client) u;
+            if (u.isLoggedIn()) {
+                user = u;
                 break;
             }
         }
-    }
-
-    public Client getLoggedClient() {
-        return client;
+        Name.setText(user.getName());
+        UserName.setText("@"+user.getUsername());
+        StarPoints.setText("StarPoints " + ((Client) user).getStarPoints());
     }
 
     public void openReservations(MouseEvent mouseEvent) throws IOException {
@@ -81,21 +75,7 @@ public class HomePage implements Initializable {
         pane.getChildren().setAll(fxml);
     }
 
-    public void returnToLogin(MouseEvent mouseEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Z/LoginDash.fxml"));
-        Parent parent = (Parent) fxmlLoader.load();
-        Scene scene = new Scene(parent);
-        scene.setFill(Color.TRANSPARENT);
-        Stage stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
-        for (User u : Restaurant.getRestaurant().getUsers()) {
-            if (u.isLoggedIn()) {
-                u.setLoggedIn(false);
-                break;
-            }
-
-        }
-
+    public void returnToLogin(MouseEvent mouseEvent) {
+        user.logout((Stage) ((Node) mouseEvent.getSource()).getScene().getWindow());
     }
 }

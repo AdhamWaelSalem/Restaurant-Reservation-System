@@ -1,20 +1,19 @@
 package Finances.Statement;
 
-class Profit extends StatementValue{
+class Profit extends StatementItem{
 
-    private Sales sales;
-    private Taxes taxes;
-    private Wages wages;
+    public Profit() {
+        Title = "Profit";
+        CalculateProfit();
 
-    protected Profit(Sales sales, Taxes taxes, Wages wages) {
-        this.sales = sales;
-        this.taxes = taxes;
-        this.wages = wages;
     }
 
-    @Override
-    protected float calculate() {
-        value+=sales.value-taxes.value-wages.value;
-        return value;
+    private void CalculateProfit(){
+        float value = 0;
+        Sales sales = new Sales();
+        Taxes taxes = new Taxes();
+        Wages wages = new Wages();
+        value = Float.valueOf(sales.Value) - Float.valueOf(taxes.Value) - Float.valueOf(wages.Value);
+        Value= String.valueOf(value);
     }
 }

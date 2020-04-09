@@ -2,6 +2,7 @@ package Dashboards.Client;
 
 import OrdersPack.Order;
 import OrdersPack.OrderItem;
+import UsersPack.Client;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -47,7 +48,7 @@ public class Invoice implements Initializable {
     Order InvoiceOrder;
     protected void initHomePage(HomePage controller){
         homePage = controller;
-        InvoiceOrder = homePage.client.getReservations().get(homePage.client.getReservations().size()-1).getOrder();
+        InvoiceOrder = ((Client) homePage.user).getReservations().get(((Client) homePage.user).getReservations().size()-1).getOrder();
         showInvoice();
     }
 

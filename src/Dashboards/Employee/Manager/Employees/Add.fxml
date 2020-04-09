@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="employeesPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="530.0" styleClass="dark-panel" stylesheets="@../../Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboards.Employee.Manager.Employees.Add">
+    <children>
+        <JFXButton fx:id="Add" layoutX="372.0" layoutY="313.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#Add" prefHeight="35.0" prefWidth="144.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@../../Style.css" text="Add employee">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </JFXButton>
+        <VBox layoutX="14.0" layoutY="56.0" prefHeight="236.0" prefWidth="100.0" spacing="10.0">
+            <children>
+                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="89.0" stylesheets="@../../Style.css" text="First Name :" />
+                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="89.0" stylesheets="@../../Style.css" text="Last Name :" />
+                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="89.0" stylesheets="@../../Style.css" text="Role :" />
+                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="89.0" stylesheets="@../../Style.css" text="Username :" />
+                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="89.0" stylesheets="@../../Style.css" text="Password :" />
+            </children>
+        </VBox>
+        <VBox layoutX="114.0" layoutY="65.0" prefHeight="219.0" prefWidth="190.0" spacing="10.0">
+            <children>
+                <JFXTextField fx:id="firstname" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="199.0" styleClass="text" stylesheets="@../../Style.css" />
+                <JFXTextField fx:id="lastname" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="199.0" styleClass="text" stylesheets="@../../Style.css" />
+                <JFXTextField fx:id="role" layoutX="10.0" layoutY="41.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="199.0" styleClass="text" stylesheets="@../../Style.css" />
+                <JFXTextField fx:id="username" layoutX="10.0" layoutY="41.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="199.0" styleClass="text" stylesheets="@../../Style.css" />
+                <JFXTextField fx:id="password" layoutX="10.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="199.0" styleClass="text" stylesheets="@../../Style.css" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

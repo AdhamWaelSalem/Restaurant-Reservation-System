@@ -1,6 +1,6 @@
 package MainPack;
 
-//import Finances.Statement.IncomeStatement;
+//import Finances.Statement.StatementItem;
 import Finances.Statement.IncomeStatement;
 import OrdersPack.Order;
 import OrdersPack.OrderItem;

@@ -1,5 +1,6 @@
 package Finances.Statement;
 
+import MainPack.Restaurant;
 import OrdersPack.Order;
 import OrdersPack.OrderItem;
 import ReservationPack.Reservation;
@@ -9,24 +10,28 @@ import UsersPack.User;
 import java.util.ArrayList;
 import java.util.List;
 
-class Taxes extends StatementValue{
-    private List<Order> orders = new ArrayList<>();
+class Taxes extends StatementItem{
 
-    public Taxes(List<User> users) {
-        for (User u: users) {
-            if (u instanceof Client)
-            for (Reservation r: ((Client) u).getReservations()) {
-                orders.add(r.getOrder());
+    List<Order> Orders = new ArrayList<>();
+
+    public Taxes() {
+        for (User user: Restaurant.getRestaurant().getUsers()) {
+            if (user instanceof Client){
+                for (Reservation reservation: ((Client) user).getReservations()) {
+                    Orders.add(reservation.getOrder());
+                }
             }
         }
+        Title = "Taxes";
+        CalculateTaxes();
     }
-
-    @Override
-    protected float calculate() {
-        for (Order order: orders) {
-            for (OrderItem item: order.getOrderedItems()) {
-                value+=item.getPrice()*(item.getTaxes());
+    private void CalculateTaxes(){
+        float value = 0;
+        for (Order O: Orders) {
+            for (OrderItem item: O.getOrderedItems()) {
+                value += item.getPrice()*(item.getTaxes());
             }
-        }return value;
+        }
+        Value = String.valueOf(value) ;
     }
 }

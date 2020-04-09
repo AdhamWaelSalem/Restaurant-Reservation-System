@@ -40,6 +40,19 @@ public abstract class User {
             e.printStackTrace();
         }
     }
+    public void logout(Stage S){
+        this.setLoggedIn(false);
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("../Dashboards/Login/LoginDash.fxml"));
+            Parent parent = loader.load();
+            Scene Dash = new Scene(parent);
+            Dash.setFill(Color.TRANSPARENT);
+            S.setScene(Dash);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 
     public String dashLocation(){
