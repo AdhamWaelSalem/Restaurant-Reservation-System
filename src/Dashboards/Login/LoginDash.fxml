@@ -26,7 +26,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="415.0" prefHeight="550.0" prefWidth="435.0" style="-fx-background-radius: 0.5cm; -fx-border-radius: 0.5cm; -fx-background-color: #0b2f55;">
+      <AnchorPane layoutX="425.0" prefHeight="550.0" prefWidth="435.0" style="-fx-background-radius: 0.5cm; -fx-border-radius: 0.5cm; -fx-background-color: #0b2f55;">
          <effect>
             <DropShadow blurType="GAUSSIAN" color="#0b2f55" height="25.0" offsetX="-5.0" radius="18.25" width="50.0" />
          </effect>
@@ -80,12 +80,13 @@
                   </VBox>
                </children>
             </GridPane>
-            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="40.0" layoutY="492.0" onAction="#Login" prefHeight="29.0" prefWidth="72.0" ripplerFill="#f59471" style="-fx-border-radius: 0.5cm; -fx-background-radius: 0.5cm; -fx-background-color: #4A86E8;" text="Sign In" textAlignment="JUSTIFY" textFill="WHITE" />
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="40.0" layoutY="491.0" onAction="#Login" prefHeight="30.0" prefWidth="130.0" ripplerFill="#f59471" style="-fx-border-radius: 0.5cm; -fx-background-radius: 0.5cm; -fx-background-color: #4A86E8;" text="Sign In" textAlignment="JUSTIFY" textFill="WHITE" />
             <ImageView fitHeight="98.0" fitWidth="72.0" layoutX="182.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Images/Cutlery.png" />
                </image>
             </ImageView>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="268.0" layoutY="491.0" onAction="#Exit" prefHeight="30.0" prefWidth="130.0" ripplerFill="#f59471" style="-fx-border-radius: 0.5cm; -fx-background-radius: 0.5cm; -fx-background-color: #f59471;" text="Exit" textAlignment="JUSTIFY" textFill="WHITE" />
          </children>
       </AnchorPane>
    </children>
