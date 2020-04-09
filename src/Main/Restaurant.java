@@ -6,19 +6,18 @@ import Orders.OrderItem;
 import Reservation.ReserveItem;
 import Users.User;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.List;
-@XmlRootElement
+
 public class Restaurant {
 
     //Attributes
-    @XmlElement
     private List<User> Users = new ArrayList<>();
-    @XmlElement
     private List<ReserveItem> ReserveItems = new ArrayList<>();
-    @XmlElement
     private List<OrderItem> OrderItems = new ArrayList<>();
     private IncomeStatement incomeStatement;
 

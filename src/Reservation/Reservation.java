@@ -6,14 +6,12 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
 
-@XmlRootElement
 public class Reservation {
 
     private Table table;
     private Order order;
     private Date reservationDate;
     private String specialRequest;
-/////
     private boolean confirmed;
     //Constructor
 

@@ -6,8 +6,8 @@ import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
+import javax.xml.bind.annotation.*;
 import java.io.IOException;
-
 public abstract class User {
 
     //Attributes
