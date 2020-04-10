@@ -69,7 +69,7 @@ public class Dishes implements Initializable {
 
     private void LoadDishes() {
         ObservableList<DishDetails> Dishes = FXCollections.observableArrayList();
-        for (OrderItem o : Restaurant.getRestaurant().getOrderItems()) {
+        for (OrderItem o : orderItems) {
             if (o instanceof Dish) {
                 DishDetails d = new DishDetails();
                 d.setName(o.getName());

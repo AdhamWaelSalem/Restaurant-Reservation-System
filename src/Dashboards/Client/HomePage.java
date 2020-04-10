@@ -16,7 +16,7 @@ import java.util.ResourceBundle;
 public class HomePage implements Initializable {
 
     @FXML
-    private StackPane pane;
+    protected StackPane pane;
 
     protected User user;
     @Override
@@ -55,8 +55,15 @@ public class HomePage implements Initializable {
         pane.getChildren().setAll(fxml);
     }
 
-    public void openInvoice(MouseEvent mouseEvent) throws IOException{
-
+    public void openMenu(MouseEvent mouseEvent) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("Menu.fxml"));
+        fxmlLoader.load();
+        Menu menuController = fxmlLoader.getController();
+        menuController.initHomePage(this);
+        Parent fxml = fxmlLoader.getRoot();
+        pane.getChildren().removeAll();
+        pane.getChildren().setAll(fxml);
     }
 
 }

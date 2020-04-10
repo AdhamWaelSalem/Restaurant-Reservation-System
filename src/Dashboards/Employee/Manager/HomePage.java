@@ -1,5 +1,6 @@
 package Dashboards.Employee.Manager;
 
+import Dashboards.Client.Menu;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -46,6 +47,14 @@ public class HomePage implements Initializable {
 
     public void viewEmployees(MouseEvent event) throws IOException {
         Parent fxml = FXMLLoader.load(getClass().getResource("Employees/Employee.fxml"));
+        pane.getChildren().removeAll();
+        pane.getChildren().setAll(fxml);
+    }
+    public void openMenu(MouseEvent mouseEvent) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("Menu.fxml"));
+        fxmlLoader.load();
+        Parent fxml = fxmlLoader.getRoot();
         pane.getChildren().removeAll();
         pane.getChildren().setAll(fxml);
     }

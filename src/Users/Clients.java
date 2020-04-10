@@ -26,7 +26,7 @@ public class Clients {
     }
 
     @XmlElement(name = "client")
-    private List<Client> clients = new ArrayList<>();
+    public List<Client> clients = new ArrayList<>();
 
     public List<Client> getListClients() {
         return clients;

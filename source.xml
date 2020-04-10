@@ -30,30 +30,6 @@
             <username>hobbens_tom</username>
             <password>cooker_pass</password>
         </user>
-        <user>
-            <name>Client</name>
-            <role>Client</role>
-            <username>c</username>
-            <password>c</password>
-        </user>
-        <user>
-            <name>Manager</name>
-            <role>Manager</role>
-            <username>m</username>
-            <password>m</password>
-        </user>
-        <user>
-            <name>Chef</name>
-            <role>Cooker</role>
-            <username>f</username>
-            <password>f</password>
-        </user>
-        <user>
-            <name>Waiter</name>
-            <role>Waiter</role>
-            <username>w</username>
-            <password>w</password>
-        </user>
     </users>
     <tables>
         <table>

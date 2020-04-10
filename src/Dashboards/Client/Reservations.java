@@ -35,45 +35,15 @@ public class Reservations {
         stage.show();
     }
 
-    public void ViewReservation(MouseEvent mouseEvent) throws IOException{
+    public void ViewReservations(MouseEvent mouseEvent) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("Tables.fxml"));
+        fxmlLoader.setLocation(getClass().getResource("ViewReservations.fxml"));
         fxmlLoader.load();
-        Tables tablesController = fxmlLoader.getController();
-        tablesController.initHomePage(homePage);
+        ViewReservations viewController = fxmlLoader.getController();
+        viewController.initHomePage(homePage);
         Parent fxml = fxmlLoader.getRoot();
-        Scene scene = new Scene(fxml);
-        scene.setFill(Color.TRANSPARENT);
-        Stage stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    public void CancelReservation(MouseEvent mouseEvent) throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("Tables.fxml"));
-        fxmlLoader.load();
-        Tables tablesController = fxmlLoader.getController();
-        tablesController.initHomePage(homePage);
-        Parent fxml = fxmlLoader.getRoot();
-        Scene scene = new Scene(fxml);
-        scene.setFill(Color.TRANSPARENT);
-        Stage stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
-    }
-    public void ViewOrders(MouseEvent mouseEvent) throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("Tables.fxml"));
-        fxmlLoader.load();
-        Tables tablesController = fxmlLoader.getController();
-        tablesController.initHomePage(homePage);
-        Parent fxml = fxmlLoader.getRoot();
-        Scene scene = new Scene(fxml);
-        scene.setFill(Color.TRANSPARENT);
-        Stage stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
+        homePage.pane.getChildren().removeAll();
+        homePage.pane.getChildren().setAll(fxml);
     }
 
 }

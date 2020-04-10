@@ -21,7 +21,7 @@
                         <FontAwesomeIcon glyphStyleClass="" iconName="ARCHIVE" size="1.6em" styleClass="icons" />
                     </graphic>
                 </JFXButton>
-                <JFXButton fx:id="openOrders" alignment="CENTER" contentDisplay="CENTER" layoutX="636.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="200.0" styleClass="main-buttons" text="Invoice">
+                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="636.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openMenu" prefHeight="80.0" prefWidth="200.0" styleClass="main-buttons" text="Invoice">
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                             <image>

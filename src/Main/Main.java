@@ -44,7 +44,7 @@ public class Main extends Application {
                 Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
                 Clients.getClients().setClients((Clients) jaxbUnmarshaller.unmarshal(source));
             } catch (JAXBException a) {
-                a.printStackTrace();
+
             }
         }
         Clients.getClients().Merge();
@@ -62,6 +62,7 @@ public class Main extends Application {
 
     @Override
     public void stop() throws Exception {
+
         JAXBContext jaxbContext = null;
         try {
             jaxbContext = JAXBContext.newInstance(Clients.class);

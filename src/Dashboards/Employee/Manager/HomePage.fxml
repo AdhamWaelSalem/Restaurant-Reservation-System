@@ -11,12 +11,12 @@
         <AnchorPane fx:id="pane" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="850.0" styleClass="parent" stylesheets="@../Style.css" />
       <AnchorPane prefHeight="80.0" prefWidth="850.0" styleClass="dark-panel" stylesheets="@../Style.css">
          <children>
-                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openProfile" prefHeight="80.0" prefWidth="65.0" styleClass="main-buttons" text="Button">
+                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openProfile" prefHeight="80.0" prefWidth="150.0" styleClass="main-buttons" text="Button">
                     <graphic>
                         <FontAwesomeIcon iconName="USER" size="1.6em" styleClass="icons" />
                     </graphic>
                 </JFXButton>
-                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="393.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="65.0" styleClass="main-buttons">
+                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="350.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openMenu" prefHeight="80.0" prefWidth="150.0" styleClass="main-buttons">
                     <graphic>
                         <ImageView fitHeight="24.0" fitWidth="28.0">
                             <image>
@@ -26,17 +26,17 @@
                     </graphic>
 
                       </JFXButton>
-                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="193.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openReservations" prefHeight="80.0" prefWidth="65.0" styleClass="main-buttons" text="Button">
+                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="171.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openReservations" prefHeight="80.0" prefWidth="150.0" styleClass="main-buttons" text="Button">
                     <graphic>
                         <FontAwesomeIcon glyphStyleClass="" iconName="ARCHIVE" size="1.6em" styleClass="icons" />
                     </graphic>
                 </JFXButton>
-                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="605.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openFinances" prefHeight="80.0" prefWidth="65.0" styleClass="main-buttons" text="Button">
+                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="531.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openFinances" prefHeight="80.0" prefWidth="150.0" styleClass="main-buttons" text="Button">
                     <graphic>
                         <FontAwesomeIcon glyphStyleClass="" iconName="ARCHIVE" size="1.6em" styleClass="icons" />
                     </graphic>
                 </JFXButton>
-                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="771.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#viewEmployees" prefHeight="80.0" prefWidth="65.0" styleClass="main-buttons" text="Button">
+                <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="686.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#viewEmployees" prefHeight="80.0" prefWidth="150.0" styleClass="main-buttons" text="Button">
                     <graphic>
                         <ImageView fitHeight="29.0" fitWidth="28.0">
                             <image>

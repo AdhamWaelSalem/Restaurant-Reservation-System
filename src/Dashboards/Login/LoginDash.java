@@ -4,13 +4,13 @@ import Main.Restaurant;
 import Users.User;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
+import javafx.application.Platform;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.fxml.FXML;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import static java.lang.System.exit;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -66,6 +66,6 @@ public class LoginDash implements Initializable {
     }
 
     public void Exit(){
-        exit(0);
+        Platform.exit();
     }
 }

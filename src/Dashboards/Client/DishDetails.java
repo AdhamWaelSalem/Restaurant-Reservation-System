@@ -7,6 +7,7 @@ public class DishDetails {
     private String Name;
     private String Price;
     private HBox Amount;
+    private String Type;
 
     public String getName() {
         return Name;
@@ -30,5 +31,13 @@ public class DishDetails {
 
     public void setAmount(HBox amount) {
         Amount = amount;
+    }
+
+    public String getType() {
+        return Type;
+    }
+
+    public void setType(String type) {
+        Type = type;
     }
 }

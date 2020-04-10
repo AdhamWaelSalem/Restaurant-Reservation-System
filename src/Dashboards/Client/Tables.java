@@ -110,9 +110,8 @@ public class Tables implements Initializable {
             ((Client) homePage.user).MakeReservation(table,Calendar.getInstance().getTime());
             AddOrder();
         } catch (Exception e) {
-            System.out.println("ENTERED EXCEPTION!!!");
+            //MUST SELECT TABLE
             //No Table Selected ALERT BOX
-
         }
     }
 
